@@ -2,19 +2,22 @@
 
 ## Public IP Address
 
-- Public IP addresses allow resources in the VPC to communicate with the internet.
-- In the **Public IP Addresses** tab, you can see all assigned public IPs.
+Public IP addresses allow resources in the VPC to communicate with the internet.
 
-![Public IP Address](../../../images/vpc-net-5.png)
+- On the VPC page, open the **Public IP Addresses** tab. It lists the IP addresses of the VPC with their type, instances and VPC. The **SOURCE-NAT** address is assigned to the VPC automatically and is used for outgoing traffic.
 
-- Click **Aquire New IP** to request a new public IP.
-- Choose the desired **Billing Cycle** for your network and click on **Buy IP**.
+![Public IP Addresses](../../../images/vpc-net-5.png)
 
-![Public IP Address](../../../images/vpc-net-6.png)
+- To get another address, click **+ Acquire New IP**.
+- Choose the **Billing Cycle**, check the **Price Summary** and click **Buy IP**.
+
+![Acquire a new public IP](../../../images/vpc-net-6.png)
+
+- To configure firewall, port forwarding and VPN for an address, see **[Public IP Address](../public-ip-address.md)**.
 
 ### Conclusion
 
-**Public IP Addresses** in a VPC enable seamless communication between cloud resources and the internet. Through the Public IP tab, you can easily acquire, view, and manage IPs with flexible billing options to support your connectivity needs.
+On the **Public IP Addresses** tab, you can view, acquire and manage the IP addresses of the VPC.
 
 > [!TIP]
 > **See also:**

@@ -2,57 +2,53 @@
 
 ## Create VPC Networks
 
-A **Virtual Private Cloud (VPC)** network in UzCloud provides an isolated, secure, and scalable environment for cloud resources. It allows users to manage their networking infrastructure efficiently, ensuring communication between cloud instances while maintaining security and performance.
+A **Virtual Private Cloud (VPC)** network in UzCloud gives you full control over your network. Along with firewall rules, port forwarding and remote access VPN, you can set up VPN gateways and site-to-site VPN connections, add several networks (tiers) and control traffic between them with ACLs.
 
-- From the left-hand menu, click on the **Networks** tab.
-- You will be redirected to the **Networks** page. Go to the **VPC Network** tab.
+- In the left-hand menu, under **NETWORKING**, click **Networks**. The **Your Networks** page opens on the **VPC Network** tab.
+- Click **+ Create New** in the upper-right corner. The **Create VPC Network** page opens.
 
-![Create VPC Networks](../../../images/vpc-networks-1.png)
+![Networks page](../../../images/vpc-networks-1.png)
 
-- To create vpc network click the **plus (+)** icon located on the right side of the networks page.
+### Choose a Project
 
-### Choose a Location
+- Assign the VPC to one of your projects to keep resources organized.
 
-- Select the data center location where your server will be physically hosted.
-- Choose from the available locations listed.
+![Choose a project](../../../images/vpc-networks-3.png)
 
-![Choose a Location](../../../images/vpc-networks-2.png)
+### Select a Location
 
-### Assign to a Project
+- Select the data center where the VPC will be created: **TASHKENT** or **FERGANA**. A VPC can only contain resources from the same location.
 
-- You can choose projects to assign the server to one of your projects to organize and manage resources effectively.
+![Select a location](../../../images/vpc-networks-2.png)
 
-![Assign to a Project](../../../images/vpc-networks-3.png)
+### Network Configuration
 
-### Network Configurations
+- **Network Address** — the base address of the VPC address space (for example, `10.10.0.0`).
+- **Network Size** — the size of the address space, from **/16** (65,536 addresses) to **/30**. The default is **/24** (256 addresses).
 
-- Configure the gateway and network mask to define the routing and IP address structure for your network. You can choose the size of the network from the available options.
+![Network configuration](../../../images/vpc-networks-4.png)
 
-![Network Configurations](../../../images/vpc-networks-4.png)
+### VPC Details
 
-### Choose VPC Network Name
+- Enter a unique **Network Name** and a **Network Description** that explains the purpose of the VPC.
 
-- Provide a unique name for your Virtual Private Cloud(VPC) to easily identify it, and optionally, add a description to clarify its purpose.
+![VPC details](../../../images/vpc-networks-5.png)
 
-![Choose VPC Network Name](../../../images/vpc-networks-5.png)
+### Create the VPC
 
-### Create VPC Network
+- At the bottom of the page, choose the **Billing Cycle**: **Monthly** or **Yearly**. **Price Summary** shows the cost.
+- Check the configuration and click **Create VPC**.
 
-- Choose the desired **Billing Cycle** for your VPC Network. VPC supports Hourly, Monthly, Quarterly, Semiannually, Yearly, Bi-annually, and Tri-annually billing cycles.
-- It also supports Date to Date, Fixed Calendar Month, Unfixed Calendar Month, Fixed Prorata, and Unfixed Prorata billing rules.
-- It offers multiple VPC packages with varying networking capabilities. This enables flexible network topologies to meet performance, security, and connectivity requirements.
-- Verify all the configuration details and review the price summary. Click on **Create VPC** to create the VPC network.
-
-![Create VPC Network](../../../images/vpc-networks-6.png)
+![Create the VPC](../../../images/vpc-networks-6.png)
 
 ### Conclusion
 
-Creating a **VPC Network** in UzCloud provides a secure, isolated, and flexible environment for managing cloud resources. With configurable location, project assignment, and network settings, along with multiple billing options, VPC networks ensure optimized performance, scalability, and control over your cloud infrastructure.
+A **VPC network** in UzCloud provides a secure, isolated and flexible environment for your cloud resources. After creating the VPC, add networks to it and configure ACLs and VPN as needed.
 
 > [!TIP]
 > **See also:**
 >
 > - **[VPC Network Overview](network-overview.md)**
+> - **[Add Network](add-network.md)**
 > - **[Network ACL List](network-acl-list.md)**
-> - **[VPN Gateway](vpn-gateway.md)**
 > - **[VPN Connections](vpn-connections.md)**

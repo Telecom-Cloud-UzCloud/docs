@@ -2,19 +2,22 @@
 
 ## Ommaviy IP manzil
 
-- Ommaviy IP manzillar VPC resurslariga internet bilan aloqa qilish imkonini beradi.
-- **Public IP Addresses** yorligʻida barcha tayinlangan ommaviy IP manzillar koʻrsatiladi.
+Ommaviy IP manzillar VPC resurslariga internet bilan oʻzaro aloqa qilish imkonini beradi.
+
+- VPC sahifasida **Public IP Addresses** yorligʻini oching. Unda VPC’ning IP manzillari keltirilgan: turi, VM’lar va VPC. **SOURCE-NAT** manzili VPC’ga avtomatik tayinlanadi va chiquvchi trafik uchun ishlatiladi.
 
 ![Ommaviy IP manzillar](../../../images/vpc-net-5.png)
 
-- Yangi ommaviy IP manzil soʻrash uchun **Aquire New IP** tugmasini bosing.
-- Kerakli **Billing Cycle** ni tanlang va **Buy IP** tugmasini bosing.
+- Yana bitta manzil olish uchun **+ Acquire New IP** ni bosing.
+- **Billing Cycle** ni tanlang, **Price Summary** ni tekshiring va **Buy IP** tugmasini bosing.
 
-![IP manzil sotib olish](../../../images/vpc-net-6.png)
+![Yangi IP manzil olish](../../../images/vpc-net-6.png)
+
+- Manzil uchun xavfsizlik devori, portlarni yoʻnaltirish va VPN’ni sozlash haqida **[Ommaviy IP manzil](../public-ip-address.md)** ga qarang.
 
 ### Xulosa
 
-VPC’dagi **ommaviy IP manzillar** bulutli resurslarning internet bilan aloqasini taʼminlaydi. Public IP yorligʻida IP manzillarni moslashuvchan toʻlov variantlari bilan osongina olish, koʻrish va boshqarish mumkin.
+**Public IP Addresses** yorligʻida VPC’ning IP manzillarini koʻrish, olish va sozlash mumkin.
 
 > [!TIP]
 > **Shuningdek qarang:**
