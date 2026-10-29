@@ -10,15 +10,16 @@
 
 `kubectl` buyruqlar satri vositasi klasterni aniqlash va uning API serveriga ulanish uchun kubeconfig fayllaridan foydalanadi.
 
-- **Kubernetes** sahifasida klasterni oching va kubeconfig faylini yuklab olish uchun **Download Config** tugmasini bosing.
+- **Kubernetes** sahifasida klasterni oching va holat satridagi **Download config file** tugmasini bosing yoki **Access** yorligʻiga oʻting va **Download Kubernetes cluster config** ni bosing.
+- **Access** yorligʻida ushbu koʻrsatma klasteringizning Kubernetes versiyasi uchun havolalar va buyruqlar bilan ham keltirilgan.
 
 ### kubectl’ni yuklab olish
 
-Klasteringizdagi Kubernetes versiyasiga mos `kubectl` ni yuklab oling (quyidagi havolalar v1.27.3 uchun; klaster versiyasi boshqacha boʻlsa, URL’dagi versiyani almashtiring):
+Klasteringizdagi Kubernetes versiyasiga mos `kubectl` ni yuklab oling (quyidagi havolalar v1.36.0 uchun; klaster versiyasi boshqacha boʻlsa, URL’dagi versiyani almashtiring):
 
-- **Linux**: [Yuklab olish](https://storage.googleapis.com/kubernetes-release/release/v1.27.3/bin/linux/amd64/kubectl)
-- **macOS**: [Yuklab olish](https://storage.googleapis.com/kubernetes-release/release/v1.27.3/bin/darwin/amd64/kubectl)
-- **Windows**: [Yuklab olish](https://storage.googleapis.com/kubernetes-release/release/v1.27.3/bin/windows/amd64/kubectl.exe)
+- **Linux**: [Yuklab olish](https://dl.k8s.io/release/v1.36.0/bin/linux/amd64/kubectl)
+- **macOS**: [Yuklab olish](https://dl.k8s.io/release/v1.36.0/bin/darwin/amd64/kubectl)
+- **Windows**: [Yuklab olish](https://dl.k8s.io/release/v1.36.0/bin/windows/amd64/kubectl.exe)
 
 ### kubectl’dan kubeconfig fayli bilan foydalanish
 

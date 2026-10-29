@@ -10,15 +10,16 @@
 
 The `kubectl` command-line tool uses kubeconfig files to find the information it needs to choose a cluster and communicate with the API server of a cluster.
 
-- Open your cluster on the **Kubernetes** page and click **Download Config** to download the kubeconfig file.
+- Open your cluster on the **Kubernetes** page and click the **Download config file** button in the status bar, or go to the **Access** tab and click **Download Kubernetes cluster config**.
+- The **Access** tab also shows these instructions with the links and commands for your cluster's Kubernetes version.
 
 ### Download kubectl Tool
 
-Download the `kubectl` binary matching your cluster's Kubernetes version (the links below are for v1.27.3; replace the version in the URL if your cluster runs a different one):
+Download the `kubectl` binary matching your cluster's Kubernetes version (the links below are for v1.36.0; replace the version in the URL if your cluster runs a different one):
 
-- **Linux**: [Download](https://storage.googleapis.com/kubernetes-release/release/v1.27.3/bin/linux/amd64/kubectl)
-- **macOS**: [Download](https://storage.googleapis.com/kubernetes-release/release/v1.27.3/bin/darwin/amd64/kubectl)
-- **Windows**: [Download](https://storage.googleapis.com/kubernetes-release/release/v1.27.3/bin/windows/amd64/kubectl.exe)
+- **Linux**: [Download](https://dl.k8s.io/release/v1.36.0/bin/linux/amd64/kubectl)
+- **macOS**: [Download](https://dl.k8s.io/release/v1.36.0/bin/darwin/amd64/kubectl)
+- **Windows**: [Download](https://dl.k8s.io/release/v1.36.0/bin/windows/amd64/kubectl.exe)
 
 ### Use kubectl With Your Kubeconfig File
 

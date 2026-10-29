@@ -4,81 +4,65 @@
 
 A **Kubernetes** cluster is a set of preconfigured machines (nodes) that work together to run containerized applications in an automated and scalable way. Kubernetes manages the deployment, scaling, and operation of application containers across multiple nodes.
 
-In **UzCloud**, you can easily set up a Kubernetes cluster to manage your applications, scale resources, and maintain high availability.
+In **UzCloud**, you can set up a managed Kubernetes cluster in a few steps: the console creates the control plane and worker nodes, the cluster network and an API load balancer for you.
 
 ---
 
-### Creating a Kubernetes Cluster
+### Open the Kubernetes Page
 
-- From the left-hand menu, click on the **Kubernetes** tab.
-- You will be redirected to the **Kubernetes** page.
+- In the left-hand menu, under **CONTAINERS**, click **Kubernetes**. The page lists your clusters with their project, IP address, creation date, location, billing cycle and status.
+- Click **+ Create New** in the upper-right corner. The **Create Kubernetes** page opens.
 
-![Kubernetes Page](../../images/kb-1.png)
+![Kubernetes page](../../images/kb-1.png)
 
-- To create a cluster, click on **Create Cluster** or the **Create New** icon located on the right side of the page.
+### Choose a Project
 
-### Choose a Location
+- Assign the cluster to one of your projects to keep resources organized.
 
-- Select the data center location where your Kubernetes cluster will be deployed.
-- Choose from the available locations listed.
+![Choose a project](../../images/kb-2.png)
 
-![Choose Location](../../images/kb-7.png)
+### Select a Location and Version
 
-### Assign to a Project
+- Select the data center where the cluster will be deployed: **TASHKENT** or **FERGANA**.
+- Under **Select Version**, choose the Kubernetes version for the cluster.
 
-- Assign the cluster server to one of your projects to organize and manage resources effectively.
+![Location and version](../../images/kb-7.png)
 
-![Assign to Project](../../images/kb-2.png)
+### Configure Node Groups
 
-### Choose Network
+- **Master Group** — select a **Node Plan** for the control plane nodes. Turn on **Enable High Availability** to run several control nodes instead of one (**Control Nodes: 1** by default).
+- **Worker Group** — select a **Node Plan** for the worker nodes and set the number of nodes with **Node Count** (2 by default). Your workloads run on the worker nodes.
 
-- Set up or choose a network for your server. This can be an isolated private network, or you can create an elastic network to connect multiple regions.
-- Alternatively, you can also create or set up a new network by selecting **Create New Network**.
+![Node groups](../../images/kb-3.png)
 
-![Choose Network](../../images/kb-8.png)
+### Select a Disk Offering
 
-### Choose Cluster Capacity
+- Under **Select Disk Offering**, choose the disk type (**SSD**, **HDD** or **NVMe**) and the disk for the nodes. The monthly and hourly prices are shown for each option.
 
-- You can select the predefined **Node Plan** with fixed configurations for CPU, memory, and storage.
-- For a more tailored solution, you can create a **Custom Plan** by specifying CPU, memory, storage, and node count. More nodes improve scalability and distribute workloads efficiently.
+![Disk offering](../../images/kb-4.png)
 
-![Choose Cluster Capacity](../../images/kb-3.png)
+### SSH Key, Storage and Cluster Name
 
-### Advanced Settings (Optional)
+- An SSH key is required. Click **Add now** next to **Add SSH Key To Your Instance**, select an existing key or enter a name and paste the public key, then click **Add SSH Key**.
 
-- You can **Enable High Availability** for better redundancy and add **Control Nodes** to ensure stability in case of failures.
+![SSH key details](../../images/kb-10.png)
 
-![Advanced Settings](../../images/kb-4.png)
+- Turn on **Enable Cloud Storage Integration** to configure the CSI (Container Storage Interface) driver automatically. Kubernetes workloads can then dynamically provision and manage persistent volumes.
+- Enter a unique **Cluster Name**.
 
-- Configure additional settings for your server:
+### Create the Cluster
 
-  - **Add SSH Key** for secure access. Click on **Add Now** to add an SSH key.
-  - **Note**: For some OS images, such as Arch Linux, an SSH key is required because password login is not supported.
+- At the bottom of the page, choose the **Billing Cycle**: **Monthly** or **Yearly**. **Price Summary** shows the cost of the selected configuration.
+- Check the configuration and click **Review & Create Cluster**.
 
-![Add SSH Key](../../images/kb-9.png)
+![Create the cluster](../../images/kb-6.png)
 
-- Add the name of the SSH key with the key value and click **Add SSH Key**.
-
-![Add SSH Key Details](../../images/kb-10.png)
-
-### Choose Cluster Name
-
-- Provide a unique **Cluster Name** for your Kubernetes cluster to identify it easily in your dashboard.
-
-![Choose Cluster Name](../../images/create-kubernetes-cluster-inline-e0a45aae.png)
-
-### Create Cluster
-
-- Choose the desired **Billing Cycle** for your cluster. Kubernetes supports Hourly, Monthly, Quarterly, Semiannually, Yearly, Bi-annually, and Tri-annually billing cycles.
-- Supported billing rules are Date to Date, Fixed Calendar Month, Unfixed Calendar Month, Fixed Prorata, and Unfixed Prorata.
-- It supports multiple cluster packages based on resource needs such as nodes and disk size. This makes it suitable for a range of container-based application workloads.
-- Verify all the configuration details and review the price summary. Click on **Create Cluster** to create the cluster.
-
-![Create Cluster](../../images/kb-6.png)
+> [!NOTE]
+> You don't need to choose a network: UzCloud creates a separate network for the cluster (for example, `k8s-test-network`) and a load balancer for the Kubernetes API.
 
 ### Conclusion
 
-By following this guide, you can easily create and manage a Kubernetes cluster on UzCloud. Kubernetes clusters provide a powerful way to deploy, scale, and manage containerized applications with high availability and efficiency. For further assistance, refer to the UzCloud documentation or reach out to support.
+By following this guide, you can create a Kubernetes cluster on UzCloud in a few minutes. Kubernetes clusters provide a powerful way to deploy, scale, and manage containerized applications with high availability. For further assistance, refer to the UzCloud documentation or reach out to support.
 
 > [!TIP]
 > **See also:**
