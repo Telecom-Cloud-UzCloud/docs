@@ -2,57 +2,39 @@
 
 ## Virtual mashina snapshoti
 
-**Virtual mashina snapshotlari** VM’ning joriy holatini, jumladan konfiguratsiya va maʼlumotlarni maʼlum bir vaqtda saqlaydi. Snapshotlar zaxiralash, avariyadan keyin tiklash va testlash uchun kuchli vosita. Ular VM’ni snapshot yaratilgan paytdagi aynan oʻsha holatga tezda qaytarish, maʼlumotlar muvofiqligini taʼminlash va nosozlik yoki tasodifiy oʻzgarishlarda ishlamay qolish vaqtini kamaytirish imkonini beradi.
+**VM snapshoti** virtual mashinaning maʼlum bir vaqtdagi holatini saqlaydi. Muvaffaqiyatsiz yangilanish yoki tasodifiy oʻzgarishlardan keyin unga qaytish mumkin.
 
-**UzCloud** VM snapshotlarini yaratish va boshqarish uchun qulay interfeysni taqdim etadi, bu maʼlumotlarni himoya qilish va ish uzluksizligini saqlashga yordam beradi. Ushbu qoʻllanmada **UzCloud**’da VM snapshotini yaratish tushuntiriladi.
+> [!NOTE]
+> Snapshotlar har bir GB uchun soatiga UZS 3,00 dan hisoblanadi. Snapshotni faqat hajmi teng yoki kattaroq diskka tiklash mumkin.
 
 ---
 
-### Virtual mashina snapshotini yaratish
+### VM snapshotini yaratish
 
-- Chap menyuda **Snapshots** yorligʻini oching.
-- **Snapshots** sahifasi ochiladi. **Instances Snapshot** yorligʻiga oʻting.
+- Chap menyuda **Snapshots** ni bosing va **Instances Snapshot** yorligʻini oching. Bu yerda barcha snapshotlar — qoʻlda va jadval boʻyicha yaratilganlari koʻrsatiladi.
+- **+ Create New** tugmasini bosing. **Create Snapshot** sahifasi ochiladi. Snapshotni VM sahifasidagi **VM Snapshot** tugmasi bilan ham olish mumkin.
 
-![Snapshotlar sahifasi](../../images/create-snapshot-vm.png)
+![Snapshotlar](../../images/create-snapshot-vm.png)
 
-- Snapshot yaratish uchun sahifaning oʻng tomonidagi **Take Snapshot** yoki **plyus (+)** belgisini bosing.
+- VM joylashgan **loyiha** va **joylashuvni** tanlang.
 
-### Joylashuvni tanlash
+![Loyihani tanlash](../../images/create-snapshot-project.png)
 
-- Resurs jismoniy joylashadigan maʼlumotlar markazini tanlang.
-- Mavjud joylashuvlardan birini tanlang.
+- **Choose Instance or Volumes** blokida **Instances** yorligʻini oching va virtual mashinani tanlang.
 
-![Joylashuvni tanlash](../../images/create-snapshot-vm-instance-location.png)
-
-### Loyihaga biriktirish
-
-- Resurslarni qulay tartibga solish va boshqarish uchun snapshotni loyihalaringizdan biriga biriktiring.
-
-![Loyihaga biriktirish](../../images/create-block-storages-select-project.png)
-
-### Virtual mashinani tanlash
-
-- **Instances** roʻyxatidan snapshot yaratiladigan virtual mashinani tanlang.
+> [!IMPORTANT]
+> Hozircha VM snapshoti faqat virtual mashinaning asosiy (root) diskini saqlaydi. Qoʻshimcha ulangan disklar unga kirmaydi — ular uchun disk snapshotlarini alohida oling.
 
 ![VM’ni tanlash](../../images/create-snapshot-vm-instance.png)
 
-### Snapshot nomi
+- Noyob **Snapshot Name** ni kiriting.
+- **Price Summary** ni tekshiring va **Review And Create Snapshot** tugmasini bosing.
 
-- Snapshotni boshqaruv panelida oson topish uchun noyob **Snapshot Name** ni kiriting.
-
-![Snapshot nomi](../../images/create-volume-snapshot-inline-70690b5b.png)
-
-### Snapshotni yaratish
-
-- Kerakli **Billing Cycle** ni tanlang. Snapshotlar va zaxira nusxalar uchun faqat soatlik toʻlov va yagona billing qoidasi — Fixed Prorata qoʻllab-quvvatlanadi.
-- VM snapshotlari, blokli xotira snapshotlari va VM zaxira nusxalari uchun har bir zonada faqat bitta paket qoʻllab-quvvatlanadi. Avtomatik VM zaxira nusxalari administrator tomonidan yoqilgan boʻlsa, virtual mashina narxining 20% ini tashkil qiladi.
-- Barcha parametrlarni va umumiy narxni tekshiring. Virtual mashina snapshotini yaratish uchun **Take Snapshot** tugmasini bosing.
-
-![Snapshotni yaratish](../../images/create-snapshot-vm-instance-snapshot-takesnap.png)
+![Snapshot yaratish](../../images/create-snapshot-name.png)
 
 ### Xulosa
 
-Ushbu qoʻllanmaga amal qilib, siz UzCloud’da VM snapshotlarini osongina yaratishingiz va boshqarishingiz mumkin. Snapshotlar maʼlumotlar muvofiqligini hamda nosozlik yoki tasodifiy oʻzgarishlardan keyin tez tiklashni taʼminlaydigan ishonchli zaxiralash usulidir. Yordam kerak boʻlsa, UzCloud hujjatlarini oʻrganing yoki qoʻllab-quvvatlash xizmatiga murojaat qiling.
+VM snapshotlari virtual mashinani tezda ishchi holatga qaytarish imkonini beradi. Snapshotlar avtomatik yaratilishi uchun **Schedules** dan foydalaning. Yordam kerak boʻlsa, UzCloud hujjatlarini oʻrganing yoki qoʻllab-quvvatlash xizmatiga murojaat qiling.
 
 > [!TIP]
 > **Shuningdek qarang:**
