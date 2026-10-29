@@ -1,83 +1,80 @@
 # Manage Object Storage
 
-## Managing Ceph Object Storage
+## Managing Object Storage
 
-Once your Ceph Object Storage is active, use the dashboard to monitor storage performance, capacity usage, and object counts.
+To open an object store, click its name on the **Object Storage** page. The **Object Storage Overview** page shows the store details and its buckets.
 
-![Ceph Object Storage Dashboard](../../images/ob-8.png)
+![Object Storage Overview](../../images/ob-8.png)
 
-### Actions Buttons
+### Action Buttons
 
-- Action Buttons offer shortcuts for common storage object tasks.
-- For quick actions, click the buttons on the right side of the storage instance. You can use these action buttons for quicker tasks.
+The store card shows the project, location, size, all-time consumption, usage and creation date. The action buttons are on the right.
 
-![Action Buttons](../../images/ob-9.png)
+![Action buttons](../../images/ob-9.png)
 
-- **Refresh**: Refreshes the storage object status and page information.
-- **Auto-scaling**: Auto-scale the storage object.
-- **Credentials**: Shows the credentials of the storage object.
-- **Resize**: Resizes the storage object.
-- **Delete**: Deletes the storage object permanently.
-
-### Auto Scale Storage Bucket
-
-- To auto-scale a storage bucket, click the auto-scaling icon. Toggle the **Auto Scaling** button to enable or disable auto-scaling and click **Submit** to confirm changes.
-
-![Auto Scaling](../../images/ob-19.png)
+- **Refresh** — reloads the store status and data.
+- **Sync Buckets** — synchronizes the list of buckets with the storage.
+- **Credentials** — shows the S3 endpoint and access keys.
+- **Upgrade/Downgrade Store** — changes the store size.
+- **Delete Object Storage** — permanently deletes the store.
 
 ### View Credentials
 
-- To view credentials, click the credentials icon. The **S3 Object Store Credentials** menu will show up. You can view the **Secret Key** and **Password** associated with the storage object.
+- Click **Credentials**. The **S3 Object Storage Credentials** window shows the **Region**, the S3 endpoint **URL** (`https://s3.uzcstorage.uz`) and your **Access Keys**.
 
-![View Credentials](../../images/ob-17.png)
+![Credentials](../../images/ob-17.png)
+
+- Access key rules:
+  - You can have up to 2 active keys. Create a second key for rotation; a third key is blocked until you revoke one.
+  - At least 1 active key must always remain. Deleting the last key is blocked.
+  - After you click **Create Key**, copy the secret key within 5 minutes. After that, the secret is hidden; the key stays active.
+  - Revoking a key removes it from use.
+- Typical rotation: create key #2 → update your applications to use it → revoke key #1.
 
 ### Resize Object Storage
 
-- To upgrade/downgrade storage size, click the resize icon. The **Resize Object Store** menu will show up. You can customize the object size by increasing or decreasing the size as required.
-- Choose the desired **Billing Cycle** for your object storage. You can choose either Hourly or Monthly.
-- Verify all the configuration details and review the price summary. Click on **Resize** to resize the object.
+- Click **Upgrade/Downgrade Store**. In the **Resize Object Storage** window, enter the new size in GB.
+- Choose the **Billing Cycle**, check the **Payable Amount** and click **Resize**.
 
 ![Resize Object Storage](../../images/ob-18.png)
 
-### Create Storage Bucket
+### Create a Bucket
 
-- Click on **Create Bucket** to create a new bucket.
+- In the **Buckets** section, click **+ Create Bucket**.
+- Enter a **Bucket Name**.
+- Turn on **Bucket Versioning** if needed: you can then retrieve and restore any previous version of an object in the bucket.
+- Turn on **Object Locking** to store objects using a write-once-read-many (WORM) model. Objects then cannot be deleted or overwritten for a fixed period or indefinitely.
+- Optionally, set a **Bucket Policy** in JSON format (see **Policy Examples** and **Policy Generator**) and the **ACL** permissions.
+- Click **Create**.
 
-![Create Bucket](../../images/ob-10.png)
-
-- Enter a **Bucket Name** and enable **Bucket Versioning** if needed. Bucket versioning allows you to retrieve and store previous versions of an object.
-
-> [!NOTE]
-> - Note that object locking requires bucket versioning to be enabled.
-> - Versions of objects are added to your total data storage costs.
-
-- Optionally, enable **Object Locking** to protect objects from deletion or overwriting for a fixed period.
-- Store objects using a write-once-read-many (WORM) model to prevent objects from being deleted or overwritten for a fixed amount of time or indefinitely.
-- Click **Create** to finalize the bucket creation.
+![Create a bucket](../../images/ob-11.png)
 
 > [!NOTE]
 > - Object Locking works only in versioned buckets.
+> - Object Lock is a permanent setting: once enabled for a bucket, it cannot be disabled, and versioning can no longer be turned off.
+> - Object versions are added to your total data storage costs.
 
-![Bucket Creation](../../images/ob-11.png)
+### Bucket Public Access
 
-### Storage Bucket Overview
+- The buckets table shows the name, bucket URL, total files, total usage, access (**Public** or **Private**) and creation date.
+- To change public access, click the share icon in the bucket row (or **Share Bucket** on the bucket page), turn **Update Public Access** on or off and click **Update**.
 
-- To view bucket details, click on the bucket name to see total files, bucket URL, usage, creation date, and public access settings.
+![Update public access](../../images/ob-14.png)
 
-![Bucket Overview](../../images/ob-12.png)
+> [!WARNING]
+> When public access is enabled, anyone with an object's link can access it without any permissions. Updating public access may change the bucket's ACL configuration.
 
-- Utilize the Quick Actions to share, update, or delete a bucket. To share a bucket, click on the share icon. You can enable public sharing.
+### Bucket Overview
 
-![Share Bucket](../../images/ob-13.png)
+- Click a bucket name to open the **Bucket Overview** page. It shows the total files, bucket URL, usage, creation date and access type.
+- The action buttons let you **Refresh** the data, **Share Bucket**, **Update Bucket** and delete the bucket.
 
-- When public sharing is enabled, anybody with the object's link can access it without requiring specific permissions. This configuration may be applied to individual files or the entire bucket, providing access via conventional HTTP or HTTPS queries. Click on **Update** to save changes.
+![Bucket overview](../../images/ob-12.png)
 
-![Public Sharing](../../images/ob-14.png)
+- In the file manager, you can browse folders, **Upload Files** and **Create Folder**. The menu (three dots) next to each file opens the actions for it. Each file shows its creation date, size and public access status.
 
-- Within each bucket, you can create folders or upload files using the **Upload Files** or **Create Folder** icons.
-
-![Upload Files or Create Folder](../../images/ob-15.png)
+![File manager](../../images/ob-15.png)
 
 ### Conclusion
 
-By following this guide, you can effectively manage your Ceph Object Storage, including auto-scaling, resizing, creating buckets, and monitoring usage. These features ensure optimal performance, scalability, and security for your storage needs. For further assistance, refer to the UzCloud documentation or reach out to support.
+By following this guide, you can manage your object storage: get access keys, resize the store, create buckets and control their access. For further assistance, refer to the UzCloud documentation or reach out to support.

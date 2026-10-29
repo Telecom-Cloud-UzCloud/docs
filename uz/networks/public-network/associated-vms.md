@@ -2,10 +2,10 @@
 
 ## Bogʻlangan VM’lar
 
-**Associated VMs** yorligʻida ommaviy tarmoqqa ulangan barcha ishlayotgan virtual mashinalar roʻyxati keltirilgan.
+Tarmoq sahifasining **Associated VMs** yorligʻida tarmoqqa ulangan VM’lar keltirilgan: holat, joylashuv, loyiha, operatsion tizim, IP manzil va konfiguratsiya. Kerakli VM’ni topish uchun qidiruvdan foydalaning.
 
 ![Bogʻlangan VM’lar](../../../images/pub-net-5.png)
 
 ### Xulosa
 
-Associated VMs yorligʻi ommaviy tarmoqqa ulangan barcha virtual mashinalarni koʻrgazmali koʻrsatadi va faol resurslarni kuzatish, tartibga solish va boshqarishni osonlashtiradi.
+**Associated VMs** yorligʻi tarmoq bilan bogʻlangan barcha VM’larni yaqqol koʻrsatadi va ulangan resurslarni kuzatish hamda boshqarishga yordam beradi.

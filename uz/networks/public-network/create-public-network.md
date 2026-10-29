@@ -2,50 +2,47 @@
 
 ## Ommaviy tarmoq yaratish
 
-UzCloud’dagi **ommaviy tarmoq** bulutli resurslarga internetdan kirishni taʼminlaydi. U virtual mashinalar, ilovalar va boshqa bulutli xizmatlarga tashqi tizimlar bilan internet orqali aloqa qilish imkonini beradi. Ommaviy tarmoqlar hamma joydan foydalanish mumkin boʻlishi kerak boʻlgan veb-ilovalar, API va boshqa xizmatlarni joylashtirish uchun zarur.
+UzCloud’dagi **ommaviy tarmoq** — oʻrnatilgan bulutli xavfsizlik devoriga ega izolyatsiya qilingan mehmon tarmogʻi. U VM’larga ommaviy IP manzil orqali internetga chiqish imkonini beradi, trafik qoidalari, portlarni yoʻnaltirish va masofaviy kirish VPN’i esa murakkab sozlashlarsiz belgilanadi.
 
-- Chap menyuda **Networks** yorligʻini oching.
-- **Networks** sahifasi ochiladi. **Public Network** yorligʻiga oʻting.
+- Chap menyuning **NETWORKING** boʻlimida **Networks** ni bosing va **Public Network** yorligʻini oching.
+- Yuqori oʻng burchakdagi **+ Create New** tugmasini bosing. **Create Isolated Network** sahifasi ochiladi.
 
 ![Public Network yorligʻi](../../../images/public-networks-1.png)
 
-- Ommaviy tarmoq yaratish uchun sahifaning oʻng tomonidagi **plyus (+)** belgisini bosing.
+### Loyihani tanlang
 
-### Joylashuvni tanlash
+- Resurslarni tartibga solish uchun tarmoqni loyihalaringizdan biriga biriktiring.
 
-- Tarmoq jismoniy joylashadigan maʼlumotlar markazini tanlang.
-- Mavjud joylashuvlardan birini tanlang.
+![Loyihani tanlash](../../../images/public-networks-3.png)
+
+### Joylashuvni tanlang
+
+- Tarmoq joylashadigan maʼlumotlar markazini tanlang: **TASHKENT** yoki **FERGANA**.
 
 ![Joylashuvni tanlash](../../../images/public-networks-2.png)
 
-### Loyihaga biriktirish
+### Tarmoq maʼlumotlari
 
-- Resurslarni qulay tartibga solish va boshqarish uchun tarmoqni loyihalaringizdan biriga biriktiring.
+- **Network Name** maydoniga noyob nom va xohishga koʻra **Network Description** maydoniga tavsif kiriting.
 
-![Loyihaga biriktirish](../../../images/public-networks-3.png)
+![Tarmoq maʼlumotlari](../../../images/public-networks-4.png)
 
-### Tarmoq sozlamalari
+### Tarmoq konfiguratsiyasi
 
-- Marshrutlash va IP manzillar tuzilmasini belgilash uchun shlyuz va tarmoq niqobini kiriting.
+- Kerak boʻlsa, tarmoq shlyuzini (**Gateway**, masalan `10.0.0.1`) va niqobini (**Netmask**, masalan `255.255.255.0`) belgilang. Maydonlar boʻsh qoldirilsa, standart qiymatlar ishlatiladi.
 
-![Tarmoq sozlamalari](../../../images/public-networks-5.png)
+![Tarmoq konfiguratsiyasi](../../../images/public-networks-5.png)
 
-### Ommaviy tarmoq nomi
+### Tarmoqni yarating
 
-- Ommaviy tarmoqni oson topish uchun noyob nom kiriting va xohlasangiz, uning maqsadi haqida tavsif qoʻshing.
+- Sahifaning pastki qismida **Billing Cycle** (toʻlov davri) ni tanlang: **Monthly** (oylik) yoki **Yearly** (yillik). **Price Summary** da narx koʻrsatiladi.
+- Konfiguratsiyani tekshiring va **Create Network** tugmasini bosing.
 
-![Ommaviy tarmoq nomi](../../../images/public-networks-4.png)
-
-### Ommaviy tarmoqni yaratish
-
-- Kerakli **Billing Cycle** ni tanlang: soatlik yoki oylik.
-- Barcha parametrlarni va umumiy narxni tekshiring. Ommaviy tarmoqni yaratish uchun **Create** tugmasini bosing.
-
-![Ommaviy tarmoqni yaratish](../../../images/public-networks-6.png)
+![Tarmoqni yaratish](../../../images/public-networks-6.png)
 
 ### Xulosa
 
-Ommaviy tarmoq bulutli resurslarni internetga ulaydi va ularni hamma joydan foydalanish mumkin qiladi. Joylashuv, loyiha va tarmoq parametrlarini sozlab, siz moslashuvchan toʻlov variantlariga ega ishonchli va boshqariladigan tarmoqqa ega boʻlasiz.
+Ommaviy tarmoq VM’larni internetga ulaydi va ularni oʻrnatilgan xavfsizlik devori bilan himoya qiladi. Tarmoq yaratilgach, chiquvchi trafik qoidalarini va uning ommaviy IP manzilini sozlang.
 
 > [!TIP]
 > **Shuningdek qarang:**

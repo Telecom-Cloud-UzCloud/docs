@@ -21,12 +21,6 @@ UzCloud yordamida tashkilotlar bulutli infratuzilmadan foydalanishni soddalashti
 
 **UzCloud** operatsiyalarni markazlashtiradi va bulut administratorlariga resurslarni samaraliroq boshqarish, muhim infratuzilmani real vaqtda kuzatish hamda bulutli muhitning masshtablanuvchanligi va iqtisodiy samaradorligini oldindan oshirish imkonini beradi.
 
-## Akkauntni sozlash
-
-- **[Akkauntni roʻyxatdan oʻtkazish](account-signup.md)** — shaxsiy maʼlumotlaringizni kiritib roʻyxatdan oʻting.
-- **[Emailni tasdiqlash](account-signup.md)** — xavfsizlik uchun elektron pochta manzilingizni tasdiqlang.
-- **[Billingni sozlash](account-signup.md)** — toʻlov usulini tanlang va toʻlov maʼlumotlarini kiriting.
-
 ## Profilni sozlash
 
 - **[Profilni sozlash](profile-setup.md)** — ismingiz, aloqa maʼlumotlaringiz va manzilingizni boshqaring.

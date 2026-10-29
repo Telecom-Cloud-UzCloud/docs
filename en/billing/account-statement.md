@@ -2,10 +2,17 @@
 
 ## Account Statement
 
-The **Account Statement** tab provides a financial document that offers a comprehensive summary of all transactions, payments, and usage details associated with an account over a specific period. It serves as a record of account activity, helping users track expenses, verify charges, and maintain transparency in billing.
+The **Account Statement** tab contains the financial documents of your account. It has the following sections:
 
-- **Invoices**: Represent billing documents for services used.
-- **Usage Details**: Provide a breakdown of resource consumption.
-- **Free Trials**: Indicate trial-based services that may convert into paid subscriptions.
+- **Invoices** — the invoices for the services you used.
+- **Usage Details** — a breakdown of resource consumption.
+- **Free Credits** — the free credits granted to your account.
+- **Free Trials** — the trial services.
 
 ![Account Statement](../../images/billing-13.png)
+
+The **Invoices** section shows the **Due Amount** and the number of invoices by status: **Paid**, **Unpaid**, **Overdue**, **Cancelled** and **Frozen**. For each invoice, the table shows the number, amount, taxes, total, invoice date, due date, payment date and status. Use **Pick a date** to filter invoices by period, and the menu (three dots) in the **Action** column to see the actions for an invoice.
+
+### Conclusion
+
+The **Account Statement** tab helps you keep track of your invoices, usage and credits.

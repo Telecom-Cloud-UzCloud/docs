@@ -2,6 +2,10 @@
 
 ## Transactions
 
-The **Transactions** tab displays a complete history of all transactions made within the account. Users can view transaction history, amounts spent, and associated details, making it easier to track payments and identify discrepancies if any.
+The **Transactions** tab shows the history of all payment transactions on your account: amounts, dates and statuses. Use it to track your payments.
 
 ![Transactions](../../images/billing-14.png)
+
+### Conclusion
+
+The **Transactions** tab gives you a complete history of your payments.

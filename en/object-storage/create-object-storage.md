@@ -1,53 +1,44 @@
 # Create Object Storage
 
-## Ceph Object Storage
+## S3 Object Storage
 
-**Ceph** is a robust and scalable object storage solution designed to provide reliable data storage and management. **UzCloud** offers seamless integration, empowering users to create and manage storage objects efficiently. Here is a step-by-step guide on how you can configure **Ceph Object Storage** within your UzCloud dashboard.
+**Object Storage** in UzCloud is an S3-compatible storage built on **Ceph**. It is designed for files, backups, media and other unstructured data, and works with any S3 client or SDK. Here is how to create an object store in the UzCloud console.
 
 ---
 
-### Creating Ceph Object Storage
+### Open the Object Storage Page
 
-- From the left-hand side menu, click on the **Object Storage** tab.
-- To create an object storage, click the **Create Object Storage** or **Create New** icon located on the right side of the page. This will open the object creation menu.
+- In the left-hand menu, under **STORAGE**, click **Object Storage**. The page lists your object stores with their project, location, size, all-time consumption, usage and creation date.
+- Click **+ Create New** in the upper-right corner. The **Create Object Storage** page opens.
 
-![Create Object Storage](../../images/ob-1.png)
+![Object Storage page](../../images/ob-1.png)
 
-### Assign to a Project
+### Choose a Project
 
-- Assign the object storage to one of your projects to organize and manage resources effectively.
+- Assign the object store to one of your projects to keep resources organized.
 
-![Assign to Project](../../images/ob-2.png)
+![Choose a project](../../images/ob-2.png)
 
-### Choose a Location
+### Select a Location
 
-- Select the data center location where your server will be physically hosted.
-- Choose from the available locations listed.
+- Select the location where the object store will be hosted.
 
-![Choose Location](../../images/ob-3.png)
+![Select a location](../../images/ob-3.png)
 
-### Object Storage Size
+### Select the Size and Name
 
-- Choose a plan based on your requirements like storage type and size. You can also create a custom plan if needed.
-- The cost will adjust according to the resources you select.
+- Under **Select Object Storage size**, enter the storage size in GB. The monthly and hourly prices are calculated automatically.
+- Enter a **Name** for the object store.
 
-![Object Storage Size](../../images/ob-4.png)
+![Size and name](../../images/ob-4.png)
 
-### Choose Storage Object Name
+### Create the Object Store
 
-- Provide a unique **Object Name** for your storage object to identify it easily in your dashboard.
+- At the bottom of the page, choose the **Billing Cycle**: **Monthly** or **Yearly**. **Price Summary** shows the cost of the selected configuration.
+- Check the configuration and click **Review & Create**.
 
-![Choose Storage Object Name](../../images/create-object-storage-inline-649a275b.png)
-
-### Create Storage Object
-
-- Choose the desired **Billing Cycle** for your storage object. Ceph Object supports Hourly, Monthly, Quarterly, Semiannually, Yearly, Bi-annually, and Tri-annually billing cycles.
-- It uses Date to Date, Fixed Calendar Month, Unfixed Calendar Month, Fixed Prorata, and Unfixed Prorata billing rules.
-- Multiple configuration options are available. This service provides flexible, scalable object storage for various cloud-native use cases.
-- Verify all the configuration details and review the price summary. Click on **Review and Create** to create the storage object.
-
-![Create Storage Object](../../images/ob-7.png)
+![Create the object store](../../images/ob-7.png)
 
 ### Conclusion
 
-By following this guide, you can easily configure and manage **Ceph Object Storage** in UzCloud. This feature provides a scalable and reliable solution for storing and managing your data efficiently. For further assistance, refer to the UzCloud documentation or reach out to support.
+By following this guide, you can create an S3-compatible object store in UzCloud. Next, create buckets and get access keys — see **[Manage Object Storage](manage-object-storage.md)**. For further assistance, refer to the UzCloud documentation or reach out to support.

@@ -2,10 +2,10 @@
 
 ## Bogʻlangan VM’lar
 
-**Associated VMs** yorligʻida VPC tarmogʻiga ulangan barcha ishlayotgan virtual mashinalar roʻyxati keltirilgan.
+VPC sahifasining **Associated VMs** yorligʻida VPC tarmoqlariga ulangan VM’lar keltirilgan. Kerakli VM’ni topish uchun qidiruv va filtrlardan foydalaning.
 
 ![Bogʻlangan VM’lar](../../../images/vpc-net-12.png)
 
 ### Xulosa
 
-**Associated VMs** yorligʻi VPC tarmogʻiga ulangan barcha virtual mashinalarni koʻrgazmali koʻrsatadi va bogʻlangan resurslarni samarali kuzatish va boshqarishga yordam beradi.
+**Associated VMs** yorligʻi VPC bilan bogʻlangan barcha VM’larni yaqqol koʻrsatadi va ulangan resurslarni kuzatish hamda boshqarishga yordam beradi.

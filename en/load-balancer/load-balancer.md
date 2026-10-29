@@ -2,95 +2,87 @@
 
 ## Load Balancer
 
-A **Load Balancer** helps distribute incoming traffic across multiple servers to ensure high availability, reliability, and improved performance. In UzCloud, you can set up a Load Balancer to handle web applications, databases, and other services efficiently. This guide will walk you through the steps to configure a Load Balancer in UzCloud.
+A **Load Balancer** distributes incoming traffic across multiple servers to ensure high availability, reliability, and improved performance. In UzCloud, you can set up a load balancer for web applications, databases, and other services. This guide walks you through creating and managing a load balancer.
 
 ---
 
-### Creating a Load Balancer
+### Open the Load Balancer Page
 
-- From the left-hand side menu, click on the **Load Balancer** tab.
-- To create a load balancer, click the **Load Balancer** or **plus (+)** icon located on the right side of the page. This will open the load balancer creation menu.
+- In the left-hand menu, under **NETWORKING**, click **Load Balancer**. The page lists your load balancers with their project, IP address, creation date, location and number of policies.
+- Click **+ Create New** in the upper-right corner. The **Create Load Balancer** page opens.
 
-![Load Balancer Page](../../images/ldb-1.png)
+![Load Balancer page](../../images/ldb-1.png)
 
-### Choose a Location
+### Choose a Project
 
-- Select the data center location where your server will be physically hosted.
-- Choose from the available locations listed.
+- Assign the load balancer to one of your projects to keep resources organized.
 
-![Choose Location](../../images/ldb-2.png)
+![Choose a project](../../images/ldb-3.png)
 
-### Assign to a Project
+### Select a Location
 
-- Assign the load balancer to one of your projects to organize and manage resources effectively.
+- Select the data center where the load balancer will be hosted: **TASHKENT** or **FERGANA**.
 
-![Assign to Project](../../images/ldb-3.png)
+![Select a location](../../images/ldb-2.png)
 
-### Choose Network
+### Select a Network
 
-- Select the network where your load balancer will operate. This will define the traffic flow and connections to your servers.
+- Select the network where the load balancer will operate (a VPC or public network). The network defines which VM instances the load balancer can route traffic to.
 
-![Choose Network](../../images/ldb-4.png)
+![Select a network](../../images/ldb-4.png)
 
-### Choose IP
+### Select an IP Address
 
-- Choose the network IP for your load balancer by selecting from **Existing IP Address** or **Acquire New IP Address**.
-- **Note**: By choosing **Acquire New IP**, it will create a default isolated IP under the selected zone.
+- **Acquire New IP Address** — the console acquires a new public IP address for the load balancer (if needed, a default isolated network is created in the selected zone).
+- **Choose IP Address** — select one of your existing IP addresses.
 
-![Choose IP](../../images/ldb-5.png)
+![Select an IP address](../../images/ldb-5.png)
 
 ### Set Forwarding Rules
 
-- Configure forwarding rules to define how traffic should be distributed across your servers.
+Forwarding rules define how traffic is routed from the load balancer to your VM instances. At least one rule is required.
 
-- Provide a unique **Rule Name** for the forwarding rule. Choose the appropriate **Protocol** (e.g., TCP, UDP, HTTP, HTTPS). Specify the port range for incoming traffic.
+- Enter a **Rule Name** (at least 5 characters).
+- Select the **Protocol**: **TCP** or **TCP Proxy**.
+- Enter the **Public Port** (the port the load balancer listens on) and the **Private Port** (the port on the VM instances).
+- Select the **Algorithm** for distributing requests:
+  - **Source** — sends requests from the same client IP to the same instance.
+  - **Roundrobin** — distributes requests evenly across all instances in turn.
+  - **Least Connections** — sends requests to the instance with the fewest active connections.
+- Select the **Sticky Session** method (for example, **SourceBased** — binds a client's session to one instance based on the client IP). Click **Compare** to compare the available methods.
+- Under **Select Instances**, select the VM instances that will receive traffic.
+- To add another rule, click **+ Add New Rule**.
 
-- Select an algorithm to distribute incoming requests among instances:
+![Set forwarding rules](../../images/ldb-6.png)
 
-  - **Source** – Directs traffic to the same instance based on the client’s source IP.
-  - **Round Robin** – Distributes traffic evenly across all available instances.
-  - **Least Connections** – Sends traffic to the instance with the fewest active connections.
+### Name the Load Balancer
 
-- You can enable **Sticky sessions** to ensure that a user’s requests are consistently routed to the same backend instance.
+- Enter a **Load Balancer Name**. The name must be unique and contain only alphanumeric characters, dashes and periods.
 
-  - **LB Cookie** – Uses a load balancer-generated cookie to maintain session persistence.
-  - **App Cookie** – Uses application-defined cookies for session persistence.
-  - **Source-Based** – Binds sessions to a backend instance based on the client’s source IP.
-  - **None** – No session persistence; requests are distributed normally.
+![Load balancer name](../../images/ldb-7.png)
 
-- Choose the VM instances that will handle incoming traffic.
+### Create the Load Balancer
 
-![Set Forwarding Rules](../../images/ldb-6.png)
+- At the bottom of the page, choose the **Billing Cycle**: **Monthly** or **Yearly**. **Price Summary** shows the cost of the load balancer.
+- Check the configuration and click **Create Load Balancer**.
 
-### Name Load Balancer
+![Create the load balancer](../../images/ldb-8.png)
 
-- Provide a unique name for your load balancer to easily identify it. The name can only include alphanumeric characters, dashes, and periods.
+### View a Load Balancer
 
-![Name Load Balancer](../../images/ldb-7.png)
+- Click a load balancer name to open its page. It shows the project, location, IP address, network and creation date. Click **Refresh** in the upper-right corner to reload the data.
+- The **Policies** tab lists the forwarding rules: protocol, algorithm, sticky method, public and private ports, creation date and the number of attached instances. To add a rule, click **+ Add New Policies**; to delete one, click the delete icon on its card.
+- The **Firewall Rules** tab lists the firewall rules for the load balancer IP address: source CIDR, protocol, ICMP type and code, and port range. To add a rule, click **+ Add A Firewall Rule**.
 
-### Create Load Balancer
+![Load balancer page](../../images/ldb-9.png)
 
-- Choose the desired **Billing Cycle** for your load balancer. Load Balancer supports Hourly, Monthly, Quarterly, Semiannually, Yearly, Bi-annually, and Tri-annually billing cycles.
-- The billing rules it supports include Date to Date, Fixed Calendar Month, Unfixed Calendar Month, Fixed Prorata, and Unfixed Prorata.
-- Only one load balancer package is available per zone. This simplifies configuration and ensures consistent behavior within each deployment zone.
-- Verify all the configuration details and review the price summary. Click on **Create Load Balancer** to create the load balancer for your network.
+- To see the instances attached to a policy, click the eye icon next to **Attached Instances**. To attach another VM, click **+ Add VM**; to detach a VM, click the unlink icon on its card.
 
-![Create Load Balancer](../../images/ldb-8.png)
-
-### View Load Balancer
-
-- To view more about load balancer in detail, click on the Load Balancer.
-
-![View Load Balancer](../../images/ldb-9.png)
-
-- You can view the policies associated with this load balancer.
-- If you want to attach a VM instance to your load balancer you can go to **Add VM** and select the VM instance to attach.
-
-![View Load Balancer](../../images/ldb-10.png)
+![Attached instances](../../images/ldb-10.png)
 
 ### Conclusion
 
-By following this guide, you can easily configure and manage a Load Balancer on UzCloud. Load Balancers ensure high availability, reliability, and improved performance by distributing incoming traffic across multiple servers. For further assistance, refer to the UzCloud documentation or reach out to support.
+By following this guide, you can create and manage a load balancer on UzCloud. Load balancers ensure high availability, reliability, and improved performance by distributing incoming traffic across multiple servers. For further assistance, refer to the UzCloud documentation or reach out to support.
 
 > [!TIP]
 > **See also:**

@@ -2,21 +2,22 @@
 
 ## VPN Connections
 
-A VPN connection allows secure communication between your VPC and external networks, such as on-premises data centers or other cloud networks.
+A site-to-site VPN connection links your VPC with a remote network through a VPN customer gateway.
 
-- Navigate to the **VPN Connections** tab to manage VPN connections.
-- You can create a Site-to-Site VPN, which connects two networks securely.
-- Click on **Create Site To Site VPN**
+- On the VPC page, open the **VPN Connections** tab. It lists the VPN connections of the VPC.
+- Click **+ Create Site To Site VPN**.
 
 ![VPN Connections](../../../images/vpc-net-10.png)
 
-- Select or create the **VPN Customer Gateway**, check if you want **Passive** connection and then click on **Submit**.
+- In the **Create VPN Connection** window, select the **VPN Customer Gateway** or create a new one with **+ Create Customer Gateway**.
+- Select **Passive** if the connection should wait for the remote side to initiate it.
+- Click **Submit**.
 
-![VPN Connections](../../../images/vpc-net-11.png)
+![Create VPN Connection](../../../images/vpc-net-11.png)
 
 ### Conclusion
 
-The **VPN Connections** feature enables you to set up and manage secure Site-to-Site VPNs, ensuring reliable connectivity between your VPC and external networks such as data centers or other clouds.
+The **VPN Connections** tab lets you set up and manage secure site-to-site VPNs between your VPC and external networks.
 
 > [!TIP]
 > **See also:**

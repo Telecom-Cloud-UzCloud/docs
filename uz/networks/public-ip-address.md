@@ -2,60 +2,63 @@
 
 ## Ommaviy IP manzil
 
-UzCloud’dagi **ommaviy IP manzil** — bulutli resurslarga tayinlanadigan va ularga xususiy tarmoqdan tashqaridan murojaat qilish imkonini beradigan, internetdan foydalanish mumkin boʻlgan IP manzil. Ommaviy IP manzillar veb-serverlar, API va internetga bevosita kirish kerak boʻlgan boshqa xizmatlar uchun zarur.
+UzCloud’dagi **ommaviy IP manzil** — internetdan foydalanish mumkin boʻlgan manzil boʻlib, u orqali bulut resurslariga tashqaridan murojaat qilish mumkin. Har bir manzil uchun xavfsizlik devori qoidalari, portlarni yoʻnaltirish va masofaviy kirish VPN’ini sozlash mumkin.
 
 ---
 
 ### Ommaviy IP manzillarni koʻrish
 
-- Chap menyuda **Networks** yorligʻini oching.
-- **Networks** sahifasi ochiladi. **Public IP Address** yorligʻiga oʻting — bu yerda ommaviy IP manzillar roʻyxati keltirilgan.
+- Chap menyuning **NETWORKING** boʻlimida **Networks** ni bosing va **Public IP Address** yorligʻini oching. Unda manzillaringiz keltirilgan: tarmoq yoki VPC, VM’lar, loyiha va yaratilgan sana. **SOURCE-NAT** belgisi tarmoq yoki VPC chiquvchi trafik uchun ishlatadigan manzilni bildiradi.
 
 ![Ommaviy IP manzillar roʻyxati](../../images/public-ip-1.png)
 
-### Ommaviy IP manzil tafsilotlari
+### IP manzil maʼlumotlari
 
-- Batafsil maʼlumot uchun ommaviy IP manzil ustiga bosing.
-- **Details** yorligʻida IP manzil, tarmoq nomi, akkaunt maʼlumotlari va zona koʻrsatiladi.
+- Manzil sahifasini ochish uchun uni bosing. Kartochkada yaratilgan sana, joylashuv, VM’lar va bogʻlangan tarmoq koʻrsatiladi. **Details** yorligʻida IP manzil, yaratilgan sana, u **SOURCE-NAT** yoki **Static NAT** manzilimi, tarmoq nomi, hisob va mamlakat koʻrsatiladi.
 
-![Ommaviy IP manzil tafsilotlari](../../images/public-ip-2.png)
+![IP manzil maʼlumotlari](../../images/public-ip-2.png)
 
-### Tarmoqlararo ekran qoidasini qoʻshish
+### Xavfsizlik devori qoidalari
 
-- **Firewall** yorligʻiga oʻting — bu yerda avval belgilangan tarmoqlararo ekran qoidalari koʻrsatiladi.
-- Qoida qoʻshish uchun **Add Firewall Rule** tugmasini bosing.
+Xavfsizlik devori qoidalari manzilga qaysi kiruvchi trafik yetib borishi mumkinligini belgilaydi.
+
+- **Firewall** yorligʻini oching. Unda qoidalar keltirilgan: manba CIDR, protokol, ICMP turi va kodi, portlar oraligʻi. Qoidani oʻchirish uchun uning qatoridagi oʻchirish belgisini bosing.
+- **+ Add A Firewall Rule** ni bosing.
 
 ![Firewall yorligʻi](../../images/public-ip-3.png)
 
-- Source CIDR (manba) ni kiriting va protokolni tanlang: TCP, UDP yoki ICMP.
-- Boshlangʻich va oxirgi portlarni (Start va End) kiriting va **Add Firewall Rule** tugmasini bosing.
+- **Source CIDR** maydoniga manba oraligʻini kiriting (masalan, `0.0.0.0/0` — istalgan manzil), protokolni tanlang (**TCP**, **UDP** yoki **ICMP**), **Start port** va **End port** ni kiriting va **Add Firewall Rule** tugmasini bosing.
 
-![Tarmoqlararo ekran qoidasini qoʻshish shakli](../../images/public-ip-4.png)
+![Xavfsizlik devori qoidasini qoʻshish](../../images/public-ip-4.png)
 
-### Portlarni yoʻnaltirish qoidasini qoʻshish
+### Portlarni yoʻnaltirish qoidalari
 
-- **Port Forwarding** yorligʻiga oʻting — bu yerda avval belgilangan portlarni yoʻnaltirish qoidalari koʻrsatiladi.
-- Qoida qoʻshish uchun **Add Rule** tugmasini bosing.
+Portlarni yoʻnaltirish ommaviy portga kelgan trafikni tarmoqdagi VM portiga yuboradi.
+
+- **Port Forwarding** yorligʻini oching. Unda qoidalar keltirilgan: ommaviy va ichki portlar, protokol, VM nomi, VM’ning ichki IP manzili va holat.
+- **+ Add Rule** ni bosing.
 
 ![Port Forwarding yorligʻi](../../images/public-ip-5.png)
 
-- **Private Port Range (Start - End)** — trafik yoʻnaltiriladigan ichki (xususiy) tarmoqdagi portlar diapazoni.
-- **Public Port Range (Start - End)** — internetdan foydalanish mumkin boʻlgan tashqi (ommaviy) portlar.
-- **Protocol** — xizmat talablariga qarab TCP, UDP yoki Both (ikkalasi).
-- **Instance** — yoʻnaltirilgan trafikni qabul qiladigan virtual mashina.
-- Qoidani saqlash va yaratish uchun **Submit** tugmasini bosing.
+- **Private Port** — VM’dagi portlar oraligʻi (boshi va oxiri).
+- **Public Port** — ommaviy IP manzildagi portlar oraligʻi (boshi va oxiri).
+- **Select Protocol** — **TCP** yoki **UDP**.
+- **Select Instances** — trafikni qabul qiladigan VM.
+- **Submit** tugmasini bosing.
 
 ![Portlarni yoʻnaltirish qoidasini qoʻshish](../../images/public-ip-6.png)
 
-### Masofaviy kirish VPN’ini yoqish
+> [!NOTE]
+> Port internetdan ochiq boʻlishi uchun unga xavfsizlik devori qoidasi ham kerak.
 
-- **Remote Access VPNs** yorligʻiga oʻting — bu yerda masofaviy kirish VPN’i sozlanadi.
-- Agar xususiy tarmoqqa himoyalangan masofaviy kirish kerak boʻlsa, VPN ulanishini yoqish uchun **Enable Remote Access VPN** tugmasini bosing.
+### Masofaviy kirish VPN’i
 
-![Masofaviy kirish VPN’ini yoqish](../../images/public-ip-7.png)
+- **Remote Access VPNs** yorligʻini oching. Xususiy tarmoqqa xavfsiz masofaviy kirish uchun **Enable Remote Access** ni bosing. Soʻng **Networks** sahifasining **[VPN Users](vpn-users.md)** yorligʻida foydalanuvchilarni qoʻshing.
+
+![Masofaviy kirish VPN’i](../../images/public-ip-7.png)
 
 ---
 
 ### Xulosa
 
-Ushbu qoʻllanmaga amal qilib, siz UzCloud’da ommaviy IP manzillarni samarali boshqarishingiz mumkin: IP manzillarni tayinlash, tarmoqlararo ekran qoidalarini qoʻllash, portlarni yoʻnaltirishni sozlash va VPN kirishini yoqish. Bu imkoniyatlar virtual infratuzilmaning mavjudligi va xavfsizligini taʼminlaydi.
+Ushbu qoʻllanmaga amal qilib, siz UzCloud’da ommaviy IP manzillarni boshqarishingiz mumkin: ular haqidagi maʼlumotlarni koʻrish, xavfsizlik devori qoidalarini belgilash, portlarni yoʻnaltirishni sozlash va VPN orqali kirishni yoqish.

@@ -2,28 +2,57 @@
 
 ## VPC tarmogʻi sharhi
 
-Virtual Private Cloud (VPC) — bulut muhitidagi mantiqiy izolyatsiya qilingan tarmoq. U tarmoq parametrlarini boshqarish imkonini beradi: IP manzillash, quyi tarmoqlar, marshrutlash va xavfsizlik.
+VPC’ni ochish uchun **Networks** sahifasining **VPC Network** yorligʻida uning nomini bosing. VPC sahifasida yaratilgan va uzaytirilgan sanalar, loyiha va joylashuv koʻrsatiladi. Chap tomondagi yorliqlar VPC sozlamalarini ochadi.
 
-- Tarmoqni koʻrish uchun **Networks** ni oching va **VPC Networks** boʻlimiga oʻting — bu yerda VPC tarmoqlari va ularning hajmi koʻrsatiladi.
+![VPC sahifasi](../../../images/vpc-net-1.png)
 
-![VPC tarmoqlari roʻyxati](../../../images/vpc-net-1.png)
+### Amal tugmalari
 
-- **Details** yorligʻida VPC tarmogʻi haqida batafsil maʼlumot koʻrsatiladi.
+Amal tugmalari VPC kartochkasining yuqori oʻng burchagida joylashgan:
 
-![VPC tarmogʻi tafsilotlari](../../../images/vpc-net-2.png)
+- **Update vpc** — VPC nomi va tavsifini oʻzgartiradi.
+- **Restart** — VPC tarmogʻini qayta ishga tushiradi.
+- **Refresh** — VPC maʼlumotlarini yangilaydi.
+- **Delete** — VPC’ni oʻchiradi.
 
-- **VPC ID** — VPC identifikatori.
-- **Description** — VPC maqsadining qisqacha tavsifi.
-- **Restart Network** — tarmoqni qayta ishga tushirish mumkinmi (True/False).
-- **Account Name** — VPC egasi boʻlgan akkaunt.
-- **Domain Name** — VPC bogʻlangan domen.
-- **Redundant VPC** — zaxiralash (yuqori mavjudlik) yoqilganmi (True/False).
-- **Network Domain** — VPC ichidagi ichki aloqa uchun domen.
-- **CIDR (Classless Inter-Domain Routing)** — VPC’da mavjud IP manzillar diapazoni.
+### Maʼlumotlar
+
+**Details** yorligʻida VPC’ning asosiy parametrlari koʻrsatiladi.
+
+![VPC maʼlumotlari](../../../images/vpc-net-2.png)
+
+- **ID** — VPC identifikatori.
+- **Joylashuv** — VPC maʼlumotlar markazi.
+- **Description** — VPC tavsifi.
+- **Restart Network** — oʻzgarishlarni qoʻllash uchun tarmoqni qayta ishga tushirish kerakmi (true/false).
+- **Account** va **Domain** — VPC tegishli boʻlgan hisob va domen.
+- **Network Domain** — VPC ichidagi oʻzaro aloqa uchun DNS domeni.
+- **CIDR** — VPC manzillar maydoni.
+
+### VPC yorliqlari
+
+- **[Network](add-network.md)** — VPC ichida yaratilgan tarmoqlar (qatlamlar).
+- **[Public IP Addresses](public-ip-address.md)** — VPC’ning ommaviy IP manzillari.
+- **[Network ACL List](network-acl-list.md)** — VPC tarmoqlari uchun kirishni boshqarish roʻyxatlari.
+- **[VPN Gateway](vpn-gateway.md)** — «tarmoq — tarmoq» ulanishlari uchun VPC’ning VPN shlyuzi.
+- **[VPN Connections](vpn-connections.md)** — «tarmoq — tarmoq» VPN ulanishlari.
+- **[Associated VMs](associated-vms.md)** — VPC’ga ulangan VM’lar.
+- **Static Routes** — VPC’ning statik marshrutlari (quyida qarang).
+
+### Statik marshrutlar
+
+Statik marshrutlar belgilangan manzillar oraligʻi uchun trafikni koʻrsatilgan keyingi tugunga yoʻnaltiradi.
+
+![Statik marshrutlar](../../../images/vpc-net-13.png)
+
+- **Static Routes** yorligʻida **+ Add Static Route** ni bosing.
+- **CIDR** maydoniga manzil oraligʻini va **Next Hop** maydoniga keyingi tugun manzilini kiriting, soʻng **Add** tugmasini bosing.
+
+![Statik marshrut qoʻshish](../../../images/vpc-net-14.png)
 
 ### Xulosa
 
-**VPC tarmogʻi sharhi** virtual xususiy bulut haqidagi asosiy maʼlumotlarni oʻz ichiga oladi: identifikator, domen, IP manzillar diapazoni va zaxiralash sozlamalari. Bu maʼlumotlar tarmoqni xavfsiz va samarali ishlashi uchun kuzatish, boshqarish va optimallashtirishga yordam beradi.
+VPC sahifasi virtual xususiy bulut haqidagi asosiy maʼlumotlarni koʻrsatadi va uning barcha sozlamalariga kirish imkonini beradi: tarmoqlar, IP manzillar, ACL, VPN va marshrutlar.
 
 > [!TIP]
 > **Shuningdek qarang:**

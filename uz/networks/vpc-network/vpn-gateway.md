@@ -2,16 +2,16 @@
 
 ## VPN shlyuzi
 
-**VPN shlyuzi** VPC va tashqi tarmoqlar, masalan mahalliy maʼlumotlar markazlari yoki boshqa bulutli tarmoqlar oʻrtasida himoyalangan aloqani taʼminlaydi.
+**VPN shlyuzi** VPC va tashqi tarmoqlar, masalan mahalliy maʼlumotlar markazi yoki boshqa bulut oʻrtasida xavfsiz aloqani taʼminlaydi.
 
-- VPN shlyuzini boshqarish uchun **VPN Gateway** yorligʻiga oʻting.
-- Bu yerda ikkita tarmoqni xavfsiz bogʻlaydigan site-to-site VPN ulanishini boshqarish mumkin.
+- VPC sahifasida **VPN Gateway** yorligʻini oching. Unda «tarmoq — tarmoq» ulanishlari uchun VPC’ning VPN shlyuzi koʻrsatiladi.
+- Agar shlyuz hali boʻlmasa, **+ Create Site To Site VPN** ni bosing.
 
 ![VPN shlyuzi](../../../images/vpc-net-9.png)
 
 ### Xulosa
 
-**VPN shlyuzi** — VPC va tashqi tarmoqlar oʻrtasidagi himoyalangan koʻprik boʻlib, maʼlumotlarni xavfsiz uzatish va mahalliy infratuzilma yoki boshqa bulutlar bilan integratsiyani taʼminlaydi.
+**VPN shlyuzi** — VPC va tashqi tarmoqlar oʻrtasidagi xavfsiz koʻprik. U yaratilgach, ulanishlarni **[VPN Connections](vpn-connections.md)** yorligʻida sozlang.
 
 > [!TIP]
 > **Shuningdek qarang:**

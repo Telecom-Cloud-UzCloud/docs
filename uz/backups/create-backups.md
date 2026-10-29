@@ -2,57 +2,43 @@
 
 ## Virtual mashinalarning zaxira nusxalari
 
-**Zaxira nusxalar** virtual mashina maʼlumotlarini saqlaydi va tasodifiy oʻchirish, dasturiy nosozliklar va xavfsizlik tahdidlaridan himoya qiladi. Zaxiralashni yoqib, siz har doim tiklash mumkin boʻlgan VM versiyasiga ega boʻlasiz.
+**Zaxira nusxalar** virtual mashina maʼlumotlarini saqlaydi va ularni tasodifiy oʻchirish, dasturiy nosozliklar va xavfsizlik tahdidlaridan himoya qiladi.
 
-**UzCloud** har kuni, har hafta yoki oʻz jadvalingiz boʻyicha avtomatik zaxiralashni qoʻllab-quvvatlaydi — maʼlumotlarni qoʻlda ishlamasdan tiklash mumkin. Zaxiralash maʼlumotlarni himoya qilish va kutilmagan muammolarda ishlamay qolish vaqtini qisqartirish uchun juda muhim.
+Zaxira nusxani istalgan vaqtda qoʻlda yaratish yoki **Schedules** boʻlimida jadval boʻyicha avtomatik yaratishni sozlash mumkin.
 
 ---
 
-### VM zaxira nusxasini yaratish
+### Zaxira nusxalarni koʻrish
 
-- Chap menyuda **Backups** yorligʻini oching.
-- Zaxira nusxa yaratish uchun sahifaning oʻng tomonidagi **Create Backups** yoki **plyus (+)** belgisini bosing. Zaxira nusxa yaratish menyusi ochiladi.
+- Chap menyuda **Backups** ni bosing. Sahifada barcha zaxira nusxalar — qoʻlda va jadval boʻyicha yaratilganlari koʻrsatiladi: VM, nusxa turi (masalan, **Manual**), loyiha, joylashuv, hajm va holat.
+- Zaxira nusxa yaratish uchun **+ Create New** tugmasini bosing.
 
-![Zaxira nusxalar sahifasi](../../images/backups-1.png)
+![Zaxira nusxalar](../../images/backups-1.png)
 
-### Joylashuvni tanlash
+### Zaxira nusxani qoʻlda yaratish
 
-- Resurs jismoniy joylashadigan maʼlumotlar markazini tanlang.
-- Mavjud joylashuvlardan birini tanlang.
-
-![Joylashuvni tanlash](../../images/backups-2.png)
-
-### Loyihaga biriktirish
+> [!NOTE]
+> Alohida zaxira nusxalar qoʻlda yaratiladi va zaxiralash jadvallariga bogʻlanmagan.
 
 - Virtual mashina joylashgan loyihani tanlang.
 
-![Loyihaga biriktirish](../../images/backups-3.png)
+![Loyihani tanlash](../../images/backups-2.png)
 
-### Virtual mashinani tanlash
+- VM joylashuvini tanlang.
 
-- **Instances** roʻyxatidan zaxira nusxasi yaratiladigan virtual mashinani tanlang.
+![Joylashuvni tanlash](../../images/backups-3.png)
 
-![VM’ni tanlash](../../images/backups-4.png)
+- **Select Instance to Create Backup** blokida virtual mashinani tanlang.
+- **Price Summary** ni tekshiring (narx diskning har bir GB uchun soatiga hisoblanadi) va **Review & Create** tugmasini bosing.
 
-### Zaxiralash jadvali
-
-- Zaxiralash davriyligini belgilang: intervallar va nusxalar yaratilish vaqti.
-
-> [!NOTE]
-> Avtomatik zaxiralash virtual mashina narxining 20% ini tashkil qiladi.
-
-- Jadval yaratish bilan birga darhol zaxira nusxa olish uchun **Take One Immediate** ni tanlang.
-
-![Zaxiralash jadvali](../../images/backups-5.png)
-
-### Zaxira nusxani yaratish
-
-- Kerakli **Billing Cycle** ni tanlang. Snapshotlar va zaxira nusxalar uchun faqat soatlik toʻlov va yagona billing qoidasi — Fixed Prorata qoʻllab-quvvatlanadi.
-- VM snapshotlari, blokli xotira snapshotlari va VM zaxira nusxalari uchun har bir zonada faqat bitta paket qoʻllab-quvvatlanadi. Avtomatik VM zaxira nusxalari administrator tomonidan yoqilgan boʻlsa, virtual mashina narxining 20% ini tashkil qiladi.
-- Barcha parametrlarni va umumiy narxni tekshiring. Virtual mashinaning zaxira nusxasini yaratish uchun **Create Backup** tugmasini bosing.
-
-![Zaxira nusxani yaratish](../../images/backups-6.png)
+![Zaxira nusxa yaratish](../../images/backups-4.png)
 
 ### Xulosa
 
-Ushbu qoʻllanmaga amal qilib, siz UzCloud’da zaxira nusxalarni osongina yaratishingiz va boshqarishingiz mumkin. Zaxira nusxalar maʼlumotlarni himoya qilish va tasodifiy oʻchirish, dasturiy nosozliklar yoki xavfsizlik tahdidlaridan keyin tez tiklashning ishonchli usulidir. Yordam kerak boʻlsa, UzCloud hujjatlarini oʻrganing yoki qoʻllab-quvvatlash xizmatiga murojaat qiling.
+Zaxira nusxalar maʼlumotlarni himoya qilish va nosozliklardan keyin tez tiklashning ishonchli usulidir. Yordam kerak boʻlsa, UzCloud hujjatlarini oʻrganing yoki qoʻllab-quvvatlash xizmatiga murojaat qiling.
+
+> [!TIP]
+> **Shuningdek qarang:**
+>
+> - **[VM zaxira nusxalari](../compute/instance-backups.md)**
+> - **[VM snapshoti](../vm-snapshots/create-instance-snapshot.md)**

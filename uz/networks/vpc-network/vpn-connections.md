@@ -2,21 +2,22 @@
 
 ## VPN ulanishlari
 
-VPN ulanishi VPC va tashqi tarmoqlar, masalan mahalliy maʼlumotlar markazlari yoki boshqa bulutli tarmoqlar oʻrtasida himoyalangan aloqani taʼminlaydi.
+«Tarmoq — tarmoq» VPN ulanishi VPC’ni mijoz VPN shlyuzi orqali masofaviy tarmoq bilan bogʻlaydi.
 
-- VPN ulanishlarini boshqarish uchun **VPN Connections** yorligʻiga oʻting.
-- Bu yerda ikkita tarmoqni xavfsiz bogʻlaydigan site-to-site VPN ulanishini yaratish mumkin.
-- **Create Site To Site VPN** tugmasini bosing.
+- VPC sahifasida **VPN Connections** yorligʻini oching. Unda VPC’ning VPN ulanishlari keltirilgan.
+- **+ Create Site To Site VPN** ni bosing.
 
 ![VPN ulanishlari](../../../images/vpc-net-10.png)
 
-- **VPN Customer Gateway** ni tanlang yoki yarating, kerak boʻlsa **Passive** (passiv ulanish) ni belgilang va **Submit** tugmasini bosing.
+- **Create VPN Connection** oynasida **VPN Customer Gateway** maydonida mijoz shlyuzini tanlang yoki **+ Create Customer Gateway** yordamida yangisini yarating.
+- Agar ulanishni masofaviy tomon boshlashi kerak boʻlsa, **Passive** ni belgilang.
+- **Submit** tugmasini bosing.
 
-![Site-to-site VPN ulanishini yaratish](../../../images/vpc-net-11.png)
+![VPN ulanishini yaratish](../../../images/vpc-net-11.png)
 
 ### Xulosa
 
-**VPN ulanishlari** himoyalangan site-to-site VPN’larni sozlash va boshqarish imkonini beradi hamda VPC va tashqi tarmoqlar — maʼlumotlar markazlari yoki boshqa bulutlar oʻrtasida ishonchli aloqani taʼminlaydi.
+**VPN Connections** yorligʻi VPC va tashqi tarmoqlar oʻrtasida xavfsiz «tarmoq — tarmoq» VPN ulanishlarini sozlash va boshqarish imkonini beradi.
 
 > [!TIP]
 > **Shuningdek qarang:**

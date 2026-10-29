@@ -10,15 +10,16 @@
 
 Утилита командной строки `kubectl` использует файлы kubeconfig, чтобы определить кластер и подключиться к его API-серверу.
 
-- Откройте кластер на странице **Kubernetes** и нажмите **Download Config**, чтобы скачать файл kubeconfig.
+- Откройте кластер на странице **Kubernetes** и нажмите кнопку **Download config file** в строке статуса или перейдите на вкладку **Access** и нажмите **Download Kubernetes cluster config**.
+- На вкладке **Access** также приведена эта инструкция со ссылками и командами для версии Kubernetes вашего кластера.
 
 ### Загрузка kubectl
 
-Скачайте `kubectl` той же версии, что и Kubernetes в вашем кластере (ссылки ниже — для v1.27.3; если версия кластера другая, замените ее в URL):
+Скачайте `kubectl` той же версии, что и Kubernetes в вашем кластере (ссылки ниже — для v1.36.0; если версия кластера другая, замените ее в URL):
 
-- **Linux**: [Скачать](https://storage.googleapis.com/kubernetes-release/release/v1.27.3/bin/linux/amd64/kubectl)
-- **macOS**: [Скачать](https://storage.googleapis.com/kubernetes-release/release/v1.27.3/bin/darwin/amd64/kubectl)
-- **Windows**: [Скачать](https://storage.googleapis.com/kubernetes-release/release/v1.27.3/bin/windows/amd64/kubectl.exe)
+- **Linux**: [Скачать](https://dl.k8s.io/release/v1.36.0/bin/linux/amd64/kubectl)
+- **macOS**: [Скачать](https://dl.k8s.io/release/v1.36.0/bin/darwin/amd64/kubectl)
+- **Windows**: [Скачать](https://dl.k8s.io/release/v1.36.0/bin/windows/amd64/kubectl.exe)
 
 ### Использование kubectl с файлом kubeconfig
 

@@ -9,7 +9,6 @@
 ### Начало работы
 
 - [Введение](getting-started/introduction.md)
-- [Регистрация аккаунта](getting-started/account-signup.md)
 - [Настройка профиля](getting-started/profile-setup.md)
 
 ### Проекты
@@ -54,6 +53,10 @@
 ### Резервные копии
 
 - [Создание резервных копий](backups/create-backups.md)
+
+### Расписания
+
+- [Расписания](schedules/schedules.md)
 
 ### Шаблоны
 
@@ -108,7 +111,6 @@
 
 - [Сводка по биллингу](billing/billing-summary.md)
 - [Подписки](billing/subscriptions.md)
-- [Способы оплаты](billing/payment-methods.md)
 - [Транзакции](billing/transactions.md)
 - [Выписка по аккаунту](billing/account-statement.md)
 

@@ -11,17 +11,17 @@ In **UzCloud**, Affinity Groups are used to control the placement of virtual mac
 ### Creating an Affinity Group
 
 - From the left-hand side menu, click on the **Affinity Groups** tab.
-- To create an affinity group, click the **Create Affinity Groups** or **plus (+)** icon located on the right side of the page. This will open the affinity group creation form.
+- To create an affinity group, click **+ Create New** in the top-right corner of the page. The **Add New Affinity Group** window opens.
 
 ![Affinity Groups Page](../../images/create-ag.png)
 
 ### Add Affinity Group
 
-- To create a new affinity group, choose the project and select the appropriate availability zone.
+- Select the project in **Select Project** and the zone in **Select Zone**.
 
-- Enter a unique name for the **Affinity Group** and add a brief description to help identify its purpose.
+- Enter a unique **Name** and, optionally, a **Description**.
 
-- Select the affinity group type from the following options based on your deployment needs:
+- In **Select Type**, select the affinity group type:
 
   - **Host Affinity (Strict)**: Ensures that a specified set of instances must always run on the same hypervisor host. Ideal for workloads that require low-latency communication and shared resources. If the requirement cannot be met, the instances will not be deployed.
   - **Host Anti-Affinity (Strict)**: Ensures that instances must always be deployed on different hypervisor hosts. This helps improve fault tolerance by preventing a single point of failure. If there are no separate hosts available, instances will not be deployed.

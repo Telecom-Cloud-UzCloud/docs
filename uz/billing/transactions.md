@@ -2,6 +2,10 @@
 
 ## Tranzaksiyalar
 
-**Transactions** yorligʻida akkaunt boʻyicha barcha tranzaksiyalarning toʻliq tarixi keltirilgan: summalar, sanalar va tegishli maʼlumotlar. Bu toʻlovlarni kuzatish va mumkin boʻlgan nomuvofiqliklarni aniqlashni osonlashtiradi.
+**Transactions** yorligʻida hisobingizdagi barcha toʻlov tranzaksiyalari tarixi koʻrsatiladi: summalar, sanalar va holatlar. Toʻlovlaringizni kuzatish uchun undan foydalaning.
 
 ![Tranzaksiyalar](../../images/billing-14.png)
+
+### Xulosa
+
+**Transactions** yorligʻida toʻlovlaringizning toʻliq tarixi jamlangan.

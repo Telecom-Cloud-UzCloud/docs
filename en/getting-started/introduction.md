@@ -21,12 +21,6 @@ With UzCloud, organizations can simplify the operation of their cloud infrastruc
 
 **UzCloud** centralizes operations and empowers cloud administrators to manage resources more efficiently, monitor critical infrastructure in real time, and take proactive steps toward improving the scalability and cost-efficiency of their cloud environments.
 
-## Account Setup
-
-- **[Register Account](account-signup.md#register-account)** — sign up with your personal details to get started.
-- **[Verify Your Email](account-signup.md#verify-your-email)** — confirm your email address for security.
-- **[Set Up Billing](account-signup.md#set-up-billing-method)** — choose a payment option and set up your billing details.
-
 ## Profile Setup
 
 - **[Set Up Your Profile](profile-setup.md#update-your-personal-information)** — manage your name, contact details, and address.

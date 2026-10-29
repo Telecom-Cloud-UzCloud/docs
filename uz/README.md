@@ -9,7 +9,6 @@ Boshqa tillar: [English](../en/README.md) · [Русский](../ru/README.md)
 ### Ishni boshlash
 
 - [Kirish](getting-started/introduction.md)
-- [Akkauntni roʻyxatdan oʻtkazish](getting-started/account-signup.md)
 - [Profilni sozlash](getting-started/profile-setup.md)
 
 ### Loyihalar
@@ -54,6 +53,10 @@ Boshqa tillar: [English](../en/README.md) · [Русский](../ru/README.md)
 ### Zaxira nusxalar
 
 - [Zaxira nusxalar yaratish](backups/create-backups.md)
+
+### Jadvallar
+
+- [Jadvallar](schedules/schedules.md)
 
 ### Shablonlar
 
@@ -108,7 +111,6 @@ Boshqa tillar: [English](../en/README.md) · [Русский](../ru/README.md)
 
 - [Billing xulosasi](billing/billing-summary.md)
 - [Obunalar](billing/subscriptions.md)
-- [Toʻlov usullari](billing/payment-methods.md)
 - [Tranzaksiyalar](billing/transactions.md)
 - [Akkaunt boʻyicha koʻchirma](billing/account-statement.md)
 

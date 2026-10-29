@@ -9,7 +9,6 @@ Other languages: [Русский](../ru/README.md) · [Oʻzbekcha](../uz/README.
 ### Getting Started
 
 - [Introduction](getting-started/introduction.md)
-- [Account Signup](getting-started/account-signup.md)
 - [Profile Setup](getting-started/profile-setup.md)
 
 ### Projects
@@ -54,6 +53,10 @@ Other languages: [Русский](../ru/README.md) · [Oʻzbekcha](../uz/README.
 ### Backups
 
 - [Create Backups](backups/create-backups.md)
+
+### Schedules
+
+- [Schedules](schedules/schedules.md)
 
 ### Templates
 
@@ -108,7 +111,6 @@ Other languages: [Русский](../ru/README.md) · [Oʻzbekcha](../uz/README.
 
 - [Billing Summary](billing/billing-summary.md)
 - [Subscriptions](billing/subscriptions.md)
-- [Payment Methods](billing/payment-methods.md)
 - [Transactions](billing/transactions.md)
 - [Account Statement](billing/account-statement.md)
 

@@ -2,83 +2,67 @@
 
 ## Kubernetes klasteri
 
-**Kubernetes** klasteri — konteynerlashtirilgan ilovalarni avtomatik va masshtablanuvchi tarzda birgalikda ishga tushiradigan oldindan sozlangan mashinalar (tugunlar) toʻplami. Kubernetes bir nechta tugunlarda ilova konteynerlarini joylashtirish, masshtablash va ishlashini boshqaradi.
+**Kubernetes** klasteri — bu konteynerlashtirilgan ilovalarni avtomatik va masshtablanuvchan tarzda birgalikda ishga tushiradigan oldindan sozlangan mashinalar (tugunlar) toʻplami. Kubernetes bir nechta tugunlarda ilova konteynerlarini joylashtirish, masshtablash va ishlatishni boshqaradi.
 
-**UzCloud**’da ilovalarni boshqarish, resurslarni masshtablash va yuqori mavjudlikni taʼminlash uchun Kubernetes klasterini osongina yaratish mumkin.
+**UzCloud**’da boshqariladigan Kubernetes klasteri bir necha qadamda yaratiladi: konsol boshqaruv va ishchi tugunlarni, klaster tarmogʻini hamda API uchun yuklama muvozanatlagichni oʻzi yaratadi.
 
 ---
 
-### Kubernetes klasterini yaratish
+### Kubernetes sahifasini oching
 
-- Chap menyuda **Kubernetes** yorligʻini oching.
-- **Kubernetes** sahifasi ochiladi.
+- Chap menyuning **CONTAINERS** boʻlimida **Kubernetes** ni bosing. Sahifada klasterlaringiz koʻrsatiladi: loyiha, IP manzil, yaratilgan sana, joylashuv, toʻlov davri va holat.
+- Yuqori oʻng burchakdagi **+ Create New** tugmasini bosing. **Create Kubernetes** sahifasi ochiladi.
 
 ![Kubernetes sahifasi](../../images/kb-1.png)
 
-- Klaster yaratish uchun sahifaning oʻng tomonidagi **Create Cluster** yoki **Create New** tugmasini bosing.
+### Loyihani tanlang
 
-### Joylashuvni tanlash
+- Resurslarni tartibga solish uchun klasterni loyihalaringizdan biriga biriktiring.
 
-- Kubernetes klasteri joylashtiriladigan maʼlumotlar markazini tanlang.
-- Mavjud joylashuvlardan birini tanlang.
+![Loyihani tanlash](../../images/kb-2.png)
 
-![Joylashuvni tanlash](../../images/kb-7.png)
+### Joylashuv va versiyani tanlang
 
-### Loyihaga biriktirish
+- Klaster joylashadigan maʼlumotlar markazini tanlang: **TASHKENT** yoki **FERGANA**.
+- **Select Version** blokida Kubernetes versiyasini tanlang.
 
-- Resurslarni qulay tartibga solish va boshqarish uchun klasterni loyihalaringizdan biriga biriktiring.
+![Joylashuv va versiya](../../images/kb-7.png)
 
-![Loyihaga biriktirish](../../images/kb-2.png)
+### Tugun guruhlarini sozlang
 
-### Tarmoqni tanlash
+- **Master Group** — boshqaruv tugunlari uchun **Node Plan** ni tanlang. Bitta oʻrniga bir nechta boshqaruv tugunini ishga tushirish uchun **Enable High Availability** ni yoqing (standart holatda **Control Nodes: 1**).
+- **Worker Group** — ishchi tugunlar uchun **Node Plan** ni tanlang va **Node Count** maydonida ularning sonini belgilang (standart holatda 2). Yuklamalaringiz ishchi tugunlarda bajariladi.
 
-- Klaster uchun tarmoqni sozlang yoki tanlang. Bu izolyatsiya qilingan xususiy tarmoq boʻlishi mumkin; bir nechta hududlarni bogʻlash uchun elastik tarmoq ham yaratish mumkin.
-- Yangi tarmoqni **Create New Network** ni tanlab yaratish mumkin.
+![Tugun guruhlari](../../images/kb-3.png)
 
-![Tarmoqni tanlash](../../images/kb-8.png)
+### Diskni tanlang
 
-### Klaster quvvati
+- **Select Disk Offering** blokida disk turini (**SSD**, **HDD** yoki **NVMe**) va tugunlar uchun diskni tanlang. Har bir variant uchun oylik va soatlik narx koʻrsatilgan.
 
-- CPU, xotira va disk parametrlari belgilangan tayyor **Node Plan** ni tanlang.
-- Aniqroq sozlash uchun CPU, xotira, disk va tugunlar sonini koʻrsatib **Custom Plan** yarating. Tugunlar qancha koʻp boʻlsa, masshtablanuvchanlik shuncha yuqori va yuklama shuncha tekis taqsimlanadi.
+![Diskni tanlash](../../images/kb-4.png)
 
-![Klaster quvvati](../../images/kb-3.png)
+### SSH kalit, xotira va klaster nomi
 
-### Kengaytirilgan sozlamalar (ixtiyoriy)
-
-- Zaxiralash uchun **Enable High Availability** ni yoqishingiz va nosozliklarda barqaror ishlash uchun **Control Nodes** (boshqaruv tugunlari) qoʻshishingiz mumkin.
-
-![Kengaytirilgan sozlamalar](../../images/kb-4.png)
-
-- Qoʻshimcha parametrlarni sozlang:
-
-  - Xavfsiz kirish uchun **SSH kalit qoʻshing**. SSH kalit qoʻshish uchun **Add Now** tugmasini bosing.
-  - **Eslatma**: baʼzi OT obrazlari, masalan Arch Linux uchun SSH kalit majburiy, chunki parol orqali kirish qoʻllab-quvvatlanmaydi.
-
-![SSH kalit qoʻshish](../../images/kb-9.png)
-
-- SSH kalit nomi va qiymatini kiriting, soʻng **Add SSH Key** tugmasini bosing.
+- SSH kalit majburiy. **Add SSH Key To Your Instance** yonidagi **Add now** ni bosing, mavjud kalitni tanlang yoki nom kiriting va ommaviy kalitni joylashtiring, soʻng **Add SSH Key** tugmasini bosing.
 
 ![SSH kalit maʼlumotlari](../../images/kb-10.png)
 
-### Klaster nomi
+- CSI (Container Storage Interface) drayverini avtomatik sozlash uchun **Enable Cloud Storage Integration** ni yoqing. Shunda Kubernetes yuklamalari doimiy tomlarni dinamik yaratishi va boshqarishi mumkin boʻladi.
+- **Cluster Name** maydoniga klasterning noyob nomini kiriting.
 
-- Klasterni boshqaruv panelida oson topish uchun noyob **Cluster Name** ni kiriting.
+### Klasterni yarating
 
-![Klaster nomi](../../images/create-kubernetes-cluster-inline-e0a45aae.png)
-
-### Klasterni yaratish
-
-- Kerakli **Billing Cycle** ni tanlang. Kubernetes uchun quyidagi davrlar qoʻllab-quvvatlanadi: soatlik, oylik, choraklik, yarim yillik, yillik, ikki yillik va uch yillik.
-- Qoʻllab-quvvatlanadigan billing qoidalari: Date to Date, Fixed Calendar Month, Unfixed Calendar Month, Fixed Prorata va Unfixed Prorata.
-- Resurslarga boʻlgan ehtiyojga (tugunlar soni, disk hajmi) qarab turli klaster paketlari mavjud — bu turli konteyner yuklamalari uchun mos.
-- Barcha parametrlarni va umumiy narxni tekshiring. Klasterni yaratish uchun **Create Cluster** tugmasini bosing.
+- Sahifaning pastki qismida **Billing Cycle** (toʻlov davri) ni tanlang: **Monthly** (oylik) yoki **Yearly** (yillik). **Price Summary** da tanlangan konfiguratsiya narxi koʻrsatiladi.
+- Konfiguratsiyani tekshiring va **Review & Create Cluster** tugmasini bosing.
 
 ![Klasterni yaratish](../../images/kb-6.png)
 
+> [!NOTE]
+> Tarmoqni tanlash shart emas: UzCloud klaster uchun alohida tarmoq (masalan, `k8s-test-network`) va Kubernetes API uchun yuklama muvozanatlagich yaratadi.
+
 ### Xulosa
 
-Ushbu qoʻllanmaga amal qilib, siz UzCloud’da Kubernetes klasterini osongina yaratishingiz va boshqarishingiz mumkin. Kubernetes klasterlari konteynerlashtirilgan ilovalarni yuqori mavjudlik va samaradorlik bilan joylashtirish, masshtablash va boshqarishning kuchli vositasidir. Yordam kerak boʻlsa, UzCloud hujjatlarini oʻrganing yoki qoʻllab-quvvatlash xizmatiga murojaat qiling.
+Ushbu qoʻllanmaga amal qilib, siz UzCloud’da Kubernetes klasterini bir necha daqiqada yaratishingiz mumkin. Kubernetes klasterlari konteynerlashtirilgan ilovalarni yuqori mavjudlik bilan joylashtirish, masshtablash va boshqarishning kuchli vositasidir. Yordam kerak boʻlsa, UzCloud hujjatlarini oʻrganing yoki qoʻllab-quvvatlash xizmatiga murojaat qiling.
 
 > [!TIP]
 > **Shuningdek qarang:**

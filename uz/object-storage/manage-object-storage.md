@@ -1,83 +1,80 @@
 # Obyektli xotirani boshqarish
 
-## Ceph obyektli xotirasini boshqarish
+## Obyektli xotirani boshqarish
 
-Ceph obyektli xotirasi faollashtirilgach, unumdorlik, bandlik va obyektlar sonini kuzatish uchun boshqaruv panelidan foydalaning.
+Xotirani ochish uchun **Object Storage** sahifasida uning nomini bosing. **Object Storage Overview** sahifasida xotira haqidagi maʼlumotlar va uning bucketlari koʻrsatiladi.
 
-![Ceph obyektli xotirasi paneli](../../images/ob-8.png)
+![Object Storage Overview](../../images/ob-8.png)
 
 ### Amal tugmalari
 
-- Amal tugmalari — xotira bilan bajariladigan odatiy amallarga tezkor kirish.
-- Tezkor amallar uchun xotiraning oʻng tomonidagi tugmalardan foydalaning.
+Xotira kartochkasida loyiha, joylashuv, hajm, butun davrdagi isteʼmol, foydalanilgan hajm va yaratilgan sana koʻrsatiladi. Amal tugmalari oʻng tomonda joylashgan.
 
 ![Amal tugmalari](../../images/ob-9.png)
 
-- **Refresh** — xotira holati va sahifadagi maʼlumotlarni yangilaydi.
-- **Auto-scaling** — xotirani avtomatik masshtablashni yoqadi.
-- **Credentials** — xotiraning hisob maʼlumotlarini koʻrsatadi.
-- **Resize** — xotira hajmini oʻzgartiradi.
-- **Delete** — xotirani butunlay oʻchirib tashlaydi.
+- **Refresh** — xotira holati va maʼlumotlarini yangilaydi.
+- **Sync Buckets** — bucketlar roʻyxatini xotira bilan sinxronlaydi.
+- **Credentials** — S3 manzili va kirish kalitlarini koʻrsatadi.
+- **Upgrade/Downgrade Store** — xotira hajmini oʻzgartiradi.
+- **Delete Object Storage** — xotirani butunlay oʻchirib tashlaydi.
 
-### Xotirani avtomatik masshtablash
+### Kirish maʼlumotlarini koʻrish
 
-- Avtomatik masshtablashni yoqish uchun avtomatik masshtablash belgisini bosing. **Auto Scaling** oʻtkazgichini yoqing yoki oʻchiring va oʻzgarishlarni tasdiqlash uchun **Submit** tugmasini bosing.
+- **Credentials** ni bosing. **S3 Object Storage Credentials** oynasida mintaqa (**Region**), S3 manzili (**URL**, `https://s3.uzcstorage.uz`) va kirish kalitlaringiz (**Access Keys**) koʻrsatiladi.
 
-![Avtomatik masshtablash](../../images/ob-19.png)
+![Kirish maʼlumotlari](../../images/ob-17.png)
 
-### Hisob maʼlumotlarini koʻrish
-
-- Hisob maʼlumotlarini koʻrish uchun tegishli belgini bosing. **S3 Object Store Credentials** menyusi ochiladi, unda xotiraning **Secret Key** va **Password** koʻrsatiladi.
-
-![Hisob maʼlumotlari](../../images/ob-17.png)
+- Kirish kalitlari qoidalari:
+  - 2 tagacha faol kalitga ega boʻlish mumkin. Rotatsiya uchun ikkinchi kalitni yarating; mavjudlaridan birini bekor qilmaguningizcha uchinchi kalitni yaratib boʻlmaydi.
+  - Har doim kamida 1 ta faol kalit qolishi kerak. Oxirgi kalitni oʻchirib boʻlmaydi.
+  - **Create Key** ni bosgandan soʻng maxfiy kalitni 5 daqiqa ichida nusxalab oling. Shundan keyin maxfiy kalit yashiriladi, kalitning oʻzi esa faol qoladi.
+  - Kalitni bekor qilish uni foydalanishdan chiqaradi.
+- Odatiy rotatsiya: 2-kalitni yarating → ilovalarni unga oʻtkazing → 1-kalitni bekor qiling.
 
 ### Xotira hajmini oʻzgartirish
 
-- Xotira hajmini oshirish yoki kamaytirish uchun hajmni oʻzgartirish belgisini bosing. **Resize Object Store** menyusi ochiladi, unda kerakli hajmni belgilash mumkin.
-- Kerakli **Billing Cycle** ni tanlang: soatlik (Hourly) yoki oylik (Monthly).
-- Barcha parametrlarni va umumiy narxni tekshiring. Hajmni oʻzgartirish uchun **Resize** tugmasini bosing.
+- **Upgrade/Downgrade Store** ni bosing. **Resize Object Storage** oynasida yangi hajmni GB’da kiriting.
+- **Billing Cycle** ni tanlang, toʻlanadigan summani (**Payable Amount**) tekshiring va **Resize** tugmasini bosing.
 
-![Xotira hajmini oʻzgartirish](../../images/ob-18.png)
+![Hajmni oʻzgartirish](../../images/ob-18.png)
 
 ### Bucket yaratish
 
-- Yangi bucket yaratish uchun **Create Bucket** tugmasini bosing.
-
-![Bucket yaratish](../../images/ob-10.png)
-
-- **Bucket Name** ni kiriting va kerak boʻlsa **Bucket Versioning** ni yoqing. Versiyalash obyektlarning oldingi versiyalarini saqlash va tiklash imkonini beradi.
-
-> [!NOTE]
-> - Obyektlarni bloklash uchun bucket versiyalashini yoqish kerak.
-> - Obyekt versiyalari maʼlumotlarni saqlashning umumiy narxiga qoʻshiladi.
-
-- Kerak boʻlsa, obyektlarni belgilangan muddat davomida oʻchirish yoki qayta yozishdan himoya qilish uchun **Object Locking** ni yoqing.
-- Obyektlar WORM (write-once-read-many — bir marta yozish, koʻp marta oʻqish) modeli boʻyicha saqlanadi: ularni belgilangan vaqt davomida yoki muddatsiz oʻchirib yoki qayta yozib boʻlmaydi.
-- Bucket yaratishni yakunlash uchun **Create** tugmasini bosing.
-
-> [!NOTE]
-> - Obyektlarni bloklash faqat versiyalash yoqilgan bucketlarda ishlaydi.
+- **Buckets** boʻlimida **+ Create Bucket** ni bosing.
+- **Bucket Name** maydoniga bucket nomini kiriting.
+- Kerak boʻlsa, **Bucket Versioning** ni yoqing: shunda bucketdagi obyektning istalgan oldingi versiyasini olish va tiklash mumkin boʻladi.
+- Obyektlarni WORM (write-once-read-many — «bir marta yozish, koʻp marta oʻqish») modeli boʻyicha saqlash uchun **Object Locking** ni yoqing. Shunda obyektlarni belgilangan muddat davomida yoki muddatsiz oʻchirib yoki qayta yozib boʻlmaydi.
+- Xohishga koʻra, **Bucket Policy** maydonida JSON formatidagi bucket siyosatini (**Policy Examples** va **Policy Generator** ga qarang) va **ACL** blokida ruxsatlarni belgilang.
+- **Create** tugmasini bosing.
 
 ![Bucket yaratish](../../images/ob-11.png)
 
+> [!NOTE]
+> - Object Locking faqat versiyalash yoqilgan bucketlarda ishlaydi.
+> - Object Lock — doimiy sozlama: bucket uchun yoqilgandan soʻng uni oʻchirib boʻlmaydi, versiyalashni ham endi oʻchirib boʻlmaydi.
+> - Obyekt versiyalari maʼlumotlarni saqlashning umumiy qiymatiga qoʻshiladi.
+
+### Bucketga ommaviy kirish
+
+- Bucketlar jadvalida nom, bucket URL’i, fayllar soni, umumiy hajm, kirish turi (**Public** yoki **Private**) va yaratilgan sana koʻrsatiladi.
+- Ommaviy kirishni oʻzgartirish uchun bucket qatoridagi ulashish belgisini (yoki bucket sahifasidagi **Share Bucket** ni) bosing, **Update Public Access** ni yoqing yoki oʻchiring va **Update** tugmasini bosing.
+
+![Ommaviy kirishni oʻzgartirish](../../images/ob-14.png)
+
+> [!WARNING]
+> Ommaviy kirish yoqilganda obyekt havolasiga ega boʻlgan har kim unga hech qanday ruxsatsiz kira oladi. Ommaviy kirishni oʻzgartirish bucketning ACL sozlamalarini oʻzgartirishi mumkin.
+
 ### Bucket sharhi
 
-- Bucket haqidagi maʼlumotlarni koʻrish uchun uning nomini bosing: fayllar soni, bucket URL manzili, foydalanish, yaratilgan sana va ommaviy kirish sozlamalari.
+- **Bucket Overview** sahifasini ochish uchun bucket nomini bosing. Unda fayllar soni, bucket URL’i, foydalanilgan hajm, yaratilgan sana va kirish turi koʻrsatiladi.
+- Amal tugmalari yordamida maʼlumotlarni yangilash (**Refresh**), bucketni ulashish (**Share Bucket**), uni oʻzgartirish (**Update Bucket**) va oʻchirish mumkin.
 
 ![Bucket sharhi](../../images/ob-12.png)
 
-- Bucketni ulashish, oʻzgartirish yoki oʻchirish uchun tezkor amallardan foydalaning. Bucketni ulashish uchun ulashish belgisini bosing — ommaviy kirishni yoqish mumkin.
+- Fayl menejerida papkalarni koʻrish, fayllarni yuklash (**Upload Files**) va papka yaratish (**Create Folder**) mumkin. Fayl yonidagi menyu (uch nuqta) u bilan bajariladigan amallarni ochadi. Har bir fayl uchun yaratilgan sana, hajm va ommaviy kirish holati koʻrsatiladi.
 
-![Bucketni ulashish](../../images/ob-13.png)
-
-- Ommaviy kirish yoqilganda obyekt havolasiga ega har qanday kishi uni maxsus huquqlarsiz ochishi mumkin. Sozlamani alohida fayllarga yoki butun bucketga qoʻllash mumkin; kirish oddiy HTTP yoki HTTPS soʻrovlari orqali amalga oshiriladi. Oʻzgarishlarni saqlash uchun **Update** tugmasini bosing.
-
-![Ommaviy kirish](../../images/ob-14.png)
-
-- Bucket ichida **Upload Files** yoki **Create Folder** belgilari yordamida papkalar yaratish yoki fayllarni yuklash mumkin.
-
-![Fayllarni yuklash va papka yaratish](../../images/ob-15.png)
+![Fayl menejeri](../../images/ob-15.png)
 
 ### Xulosa
 
-Ushbu qoʻllanmaga amal qilib, siz Ceph obyektli xotirasini samarali boshqarishingiz mumkin: avtomatik masshtablashni sozlash, hajmni oʻzgartirish, bucketlar yaratish va foydalanishni kuzatish. Bu imkoniyatlar maʼlumotlarni saqlashda optimal unumdorlik, masshtablanuvchanlik va xavfsizlikni taʼminlaydi. Yordam kerak boʻlsa, UzCloud hujjatlarini oʻrganing yoki qoʻllab-quvvatlash xizmatiga murojaat qiling.
+Ushbu qoʻllanmaga amal qilib, siz obyektli xotirani boshqarishingiz mumkin: kirish kalitlarini olish, xotira hajmini oʻzgartirish, bucketlar yaratish va ularga kirishni boshqarish. Yordam kerak boʻlsa, UzCloud hujjatlarini oʻrganing yoki qoʻllab-quvvatlash xizmatiga murojaat qiling.

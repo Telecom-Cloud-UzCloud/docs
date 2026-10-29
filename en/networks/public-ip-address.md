@@ -2,60 +2,63 @@
 
 ## Public IP Address
 
-A **Public IP** in UzCloud is an internet-facing IP address assigned to cloud resources, allowing them to be accessible from outside the private network. Public IPs are essential for web servers, APIs, and other services requiring direct internet access.
+A **public IP address** in UzCloud is an internet-facing address that makes your cloud resources reachable from outside. For each address, you can configure firewall rules, port forwarding and remote access VPN.
 
 ---
 
 ### View Public IPs
 
-- From the left-hand menu, click on the **Networks** tab.
-- You will be redirected to the **Networks** page. Go to the **Public IP Address** tab where you will see the Public IPs listed.
+- In the left-hand menu, under **NETWORKING**, click **Networks**, then open the **Public IP Address** tab. It lists your addresses with their network or VPC, instances, project and creation date. The **SOURCE-NAT** label marks the address that a network or VPC uses for outgoing traffic.
 
-![Public IP List](../../images/public-ip-1.png)
+![Public IP list](../../images/public-ip-1.png)
 
 ### Public IP Details
 
-- To view more detail, click on the public IP instance.
-- From the **Details** tab you can view the details like IP address, network name, account details, and country zone.
+- Click an address to open its page. The card shows the creation date, location, instances and associated network. The **Details** tab shows the IP address, creation date, whether it is the **SOURCE-NAT** or **Static NAT** address, the network name, the account and the country.
 
-![Public IP Details](../../images/public-ip-2.png)
+![Public IP details](../../images/public-ip-2.png)
 
-### Add Firewall Rule
+### Firewall Rules
 
-- Go to the **Firewall** tab where you will see firewall rules which have been set before.
-- To add firewall rule click on **Add Firewall Rule**.
+Firewall rules define which inbound traffic is allowed to reach the address.
 
-![Firewall Rules Tab](../../images/public-ip-3.png)
+- Open the **Firewall** tab. It lists the rules: source CIDR, protocol, ICMP type and code, and port range. To delete a rule, click the delete icon in its row.
+- Click **+ Add A Firewall Rule**.
 
-- Add source CIDR, and select protocol from TCP, UDP, ICMP.
-- Add the Start and End port and click on **Add Firewall Rule**.
+![Firewall tab](../../images/public-ip-3.png)
 
-![Add Firewall Rule Form](../../images/public-ip-4.png)
+- Enter the **Source CIDR** (for example, `0.0.0.0/0` for any address), select the protocol (**TCP**, **UDP** or **ICMP**), enter the **Start port** and **End port** and click **Add Firewall Rule**.
 
-### Add Port Forwarding Rule
+![Add a firewall rule](../../images/public-ip-4.png)
 
-- Go to the **Port Forwarding** tab where you will see port forwarding rules which have been set before.
-- To add port forwarding rule click on **Add Rule**.
+### Port Forwarding Rules
 
-![Port Forwarding Tab](../../images/public-ip-5.png)
+Port forwarding sends traffic arriving at a public port to a port on a VM in the network.
 
-- **Private Port Range (Start - End)**: This defines the port range on your internal (private) network where traffic will be forwarded.
-- **Public Port Range (Start - End)**: This defines the external (public) ports that will be accessible from the internet.
-- **Protocol**: Choose TCP, UDP, or Both depending on the service requirements.
-- **Instance**: Select the VM instance device that will receive the forwarded traffic.
-- Click on **Submit** to save and create the rule.
+- Open the **Port Forwarding** tab. It lists the rules: public and private ports, protocol, VM name, VM guest IP and status.
+- Click **+ Add Rule**.
 
-![Add Port Forwarding Rule](../../images/public-ip-6.png)
+![Port Forwarding tab](../../images/public-ip-5.png)
 
-### Enable Remote Access VPN
+- **Private Port** — the port range (start and end) on the VM.
+- **Public Port** — the port range (start and end) on the public IP address.
+- **Select Protocol** — **TCP** or **UDP**.
+- **Select Instances** — the VM that will receive the traffic.
+- Click **Submit**.
 
-- Go to the **Remote Access VPNs** tab where you will see option to set remote access VPN.
-- If you need secure remote access to the private network, click on **Enable Remote Access VPN** to activate a VPN connection.
+![Add a port forwarding rule](../../images/public-ip-6.png)
 
-![Enable Remote Access VPN](../../images/public-ip-7.png)
+> [!NOTE]
+> For a port to be reachable from the internet, a firewall rule for it is also required.
+
+### Remote Access VPN
+
+- Open the **Remote Access VPNs** tab. To get secure remote access to the private network, click **Enable Remote Access**. Then add users on the **[VPN Users](vpn-users.md)** tab of the **Networks** page.
+
+![Remote Access VPN](../../images/public-ip-7.png)
 
 ---
 
 ### Conclusion
 
-By following this guide, you can effectively manage Public IPs in UzCloud — whether it’s assigning IPs, applying firewall rules, configuring port forwarding, or enabling VPN access. These options help ensure your virtual infrastructure is accessible and secure.
+By following this guide, you can manage public IP addresses in UzCloud: view their details, apply firewall rules, configure port forwarding and enable VPN access.

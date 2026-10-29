@@ -2,46 +2,50 @@
 
 ## Billing Summary Guide
 
-This guide provides a step-by-step process for navigating the **Billing Summary** in UzCloud. It covers various billing-related tabs, including Active Services, Cost Analysis, Billing Wallet, Monthly Threshold Limit, Invoices, and more.
+The **Billing** section of the UzCloud console shows your spending, active services, invoices and payments. It has the following tabs: **Summary**, **[Subscriptions](subscriptions.md)**, **[Transactions](transactions.md)** and **[Account Statement](account-statement.md)**.
 
-- From the left-hand side menu, navigate to **Billing**.
-- Click on the **Summary** to access an overview of billing details.
+- In the left-hand menu, click **Billing** (the current balance is shown next to it). The **Billing Summary** page opens.
 
 ![Billing Summary](../../images/billing-1.png)
 
 ### Active Services
 
-- The **Active Services** section provides a comprehensive summary of active services. It lists the count of Virtual Machines, IP Addresses, Networks, and more.
-- The **Cost Per Service** tab displays service-related costs.
+- The **Active Services** tab shows the number of your resources by type: instances, IP addresses, instance snapshots, networks, VPCs, load balancers, block storage and backups.
+- The **Cost Per Service** tab shows the costs by service type.
 
 ![Active Services](../../images/billing-4.png)
 
+### Cost Analysis
+
+- The **Cost Analysis** chart shows your spending by month. Switch between the table and chart views with the icons above the chart, or expand the chart to full screen.
+
+![Cost Analysis](../../images/billing-6.png)
+
 ### Cost Reports
 
-- Use the **Cost Reports** section to review expenses for each resource in detail.
+- The **Cost Reports** chart shows the spending for each resource type over the selected period (for example, **Last Month**).
 
 ![Cost Reports](../../images/billing-5.png)
 
-### Monthly Threshold Limit
+### Billing Type and Balance
 
-- The **Monthly Threshold Limit** shows the set threshold amount for the month. It helps monitor spending against predefined limits.
-- The **Billing Alert** feature helps users monitor and control their spending by sending notifications based on predefined criteria. Users can select **Setup Alert** to receive notifications when the usage threshold is reached or an upcoming payment is due.
+On the right side of the page:
 
-![Monthly Threshold Limit](../../images/billing-6.png)
+- **Billing Type** — the billing type of your account.
+- **Month To Date Usage** — the usage since the beginning of the month.
+- **Available Credits** — the credits available on your account.
+- **Free Credits** — the free (bonus) credits.
+- **Due Amount** — the amount to be paid.
 
-### Billing Type and Usage
+![Billing type and balance](../../images/billing-7.png)
 
-- On the right side of the page, you can check the **Billing Type**, which can be Prepaid or Postpaid.
-- You can also check all-time consumption, monthly usage, and projected monthly spending.
+### Invoices and Recent Transactions
 
-![Billing Type and Usage](../../images/billing-7.png)
+- The **Invoices** section lists your latest invoices with their number, date and amount. Use the menu (three dots) next to an invoice to see its actions. Click **View All** to open all invoices on the **Account Statement** tab.
+- The **Recent Transactions** section lists your latest payments. Click **View All** to open the **Transactions** tab.
 
-### Invoices
+![Invoices and recent transactions](../../images/billing-12.png)
 
-- The **Invoices** section allows users to view all invoices related to their account. This includes past invoices, current pending invoices, and details regarding payment due dates. Reviewing invoices regularly ensures that users remain aware of their financial obligations and avoid late payments.
+### Conclusion
 
-### Recent Transactions
-
-- The **Recent Transactions** section provides a detailed record of all recent financial transactions associated with the account. By reviewing this section, users can maintain transparency in their billing history and track all payments made recently.
-
-![Recent Transactions](../../images/billing-12.png)
+The **Billing Summary** page gives you an overview of your spending and balance and quick access to invoices and payments.

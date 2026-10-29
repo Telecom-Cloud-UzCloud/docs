@@ -2,30 +2,34 @@
 
 ## Public Network Overview
 
-A **Public Network** is a logically isolated network within a cloud environment. It allows you to control network settings such as IP addressing, subnets, routing, and security.
+To open a public network, click its name on the **Public Network** tab of the **Networks** page. The network page shows its creation date and location. The action buttons in the upper-right corner let you edit the network, refresh the data and delete the network.
 
-- To view a network instance, go to the **Networks** and navigate to the **Public Networks** section, where you can view the Public network and its size.
+![Public network page](../../../images/pub-net-1.png)
 
-![Public Network Overview](../../../images/pub-net-1.png)
+### Details
 
-- From **Details** tab you can view the detailed overview of your Public network.
+The **Details** tab shows the main network parameters.
 
-![Public Network Overview](../../../images/pub-net-2.png)
+![Network details](../../../images/pub-net-2.png)
 
-- **Public ID**: The ID assigned to the public network.
-- **Network Type:** Isolated (no external access) or Cached (temporary storage optimization).
-- **Traffic Types:** The Guest user-facing traffic or Public internet access traffic.
-- **Required Files:** Essential for network operation.
-- **Redundant Router Files:** Backup router configurations.
-- **Persistent Files:** Configuration files retained across reboots.
-- **Gateway:** Access point between networks.
-- **Netmask:** Defines the subnet IP range.
-- **CIDR:** Specifies the network’s IP range.
-- **Account:** Represents the network’s name or identifier.
+- **Name** — the network name.
+- **Type** — the network type (**Isolated**).
+- **Traffic Type** — the traffic type (**Guest** — VM traffic).
+- **Restart Required** — whether the network needs to be restarted to apply changes.
+- **Redundant Router** — whether a redundant (backup) virtual router is used.
+- **Persistant** — whether the network is kept active even without running VMs.
+- **Gateway**, **Netmask** and **CIDR** — the network gateway, mask and address range.
+- **Account** — the account that owns the network.
+
+### Network Tabs
+
+- **[Egress rules](egress-rules.md)** — the rules for outbound traffic.
+- **[Public IP Addresses](public-ip-addresses.md)** — the public IP addresses of the network.
+- **[Associated VMs](associated-vms.md)** — the VMs connected to the network.
 
 ### Conclusion
 
-The **Public Network Overview** provides key details about your network’s configuration, including its type, traffic handling, and essential parameters like gateway, netmask, and CIDR. This helps in monitoring, managing, and ensuring efficient operation of your public network.
+The network page provides key details about the network configuration: its type, gateway, netmask and CIDR, as well as access to egress rules and IP addresses.
 
 > [!TIP]
 > **See also:**

@@ -2,46 +2,50 @@
 
 ## Billing xulosasi boʻyicha qoʻllanma
 
-Ushbu qoʻllanmada UzCloud’dagi **Billing Summary** boʻlimi bilan ishlash bosqichma-bosqich tushuntiriladi: faol xizmatlar, xarajatlar tahlili, hamyon, oylik limit, hisob-fakturalar va toʻlov bilan bogʻliq boshqa yorliqlar.
+UzCloud konsolining **Billing** boʻlimi xarajatlaringiz, faol xizmatlar, hisob-fakturalar va toʻlovlarni koʻrsatadi. Unda **Summary**, **[Subscriptions](subscriptions.md)**, **[Transactions](transactions.md)** va **[Account Statement](account-statement.md)** yorliqlari bor.
 
-- Chap menyuda **Billing** ni oching.
-- Billing xulosasini ochish uchun **Summary** ni bosing.
+- Chap menyuda **Billing** ni bosing (uning yonida joriy balans koʻrsatiladi). **Billing Summary** sahifasi ochiladi.
 
 ![Billing xulosasi](../../images/billing-1.png)
 
 ### Faol xizmatlar
 
-- **Active Services** boʻlimida faol xizmatlar boʻyicha xulosa keltirilgan: virtual mashinalar, IP manzillar, tarmoqlar soni va hokazo.
-- **Cost Per Service** yorligʻida har bir xizmat boʻyicha xarajatlar koʻrsatiladi.
+- **Active Services** yorligʻida resurslaringiz soni turlar boʻyicha koʻrsatiladi: VM’lar, IP manzillar, VM snapshotlari, tarmoqlar, VPC’lar, yuklama muvozanatlagichlar, blokli xotiralar va zaxira nusxalar.
+- **Cost Per Service** yorligʻida xizmat turlari boʻyicha xarajatlar koʻrsatiladi.
 
 ![Faol xizmatlar](../../images/billing-4.png)
 
+### Xarajatlar tahlili
+
+- **Cost Analysis** grafigi xarajatlarni oylar boʻyicha koʻrsatadi. Grafik ustidagi belgilar koʻrinishni (jadval yoki grafik) almashtiradi va grafikni butun ekranga kengaytiradi.
+
+![Xarajatlar tahlili](../../images/billing-6.png)
+
 ### Xarajatlar hisobotlari
 
-- Har bir resurs boʻyicha xarajatlarni batafsil oʻrganish uchun **Cost Reports** boʻlimidan foydalaning.
+- **Cost Reports** grafigi tanlangan davr (masalan, **Last Month**) uchun har bir resurs turi boʻyicha xarajatlarni koʻrsatadi.
 
 ![Xarajatlar hisobotlari](../../images/billing-5.png)
 
-### Oylik limit
+### Billing turi va balans
 
-- **Monthly Threshold Limit** oy uchun belgilangan xarajatlar limitini koʻrsatadi va xarajatlarni nazorat qilishga yordam beradi.
-- **Billing Alert** funksiyasi belgilangan shartlar boʻyicha bildirishnomalar orqali xarajatlarni nazorat qilishga yordam beradi. Xarajatlar chegarasiga yetganda yoki toʻlov muddati yaqinlashganda bildirishnoma olish uchun **Setup Alert** ni bosing.
+Sahifaning oʻng tomonida:
 
-![Oylik limit](../../images/billing-6.png)
+- **Billing Type** — hisobingizning billing turi.
+- **Month To Date Usage** — oy boshidan beri sarflangan summa.
+- **Available Credits** — hisobdagi mavjud mablagʻ.
+- **Free Credits** — bepul (bonus) mablagʻ.
+- **Due Amount** — toʻlanishi kerak boʻlgan summa.
 
-### Billing turi va foydalanish
+![Billing turi va balans](../../images/billing-7.png)
 
-- Sahifaning oʻng tomonida **Billing Type** koʻrsatilgan — Prepaid (oldindan toʻlov) yoki Postpaid (keyin toʻlash).
-- Shu yerda butun davr mobaynidagi xarajatlar, oylik foydalanish va oylik xarajatlar prognozi ham koʻrsatiladi.
+### Hisob-fakturalar va soʻnggi tranzaksiyalar
 
-![Billing turi va foydalanish](../../images/billing-7.png)
+- **Invoices** boʻlimida soʻnggi hisob-fakturalar keltirilgan: raqam, sana va summa. Hisob-faktura yonidagi menyu (uch nuqta) u bilan bajariladigan amallarni ochadi. Barcha hisob-fakturalarni **Account Statement** yorligʻida ochish uchun **View All** ni bosing.
+- **Recent Transactions** boʻlimida soʻnggi toʻlovlar keltirilgan. **Transactions** yorligʻini ochish uchun **View All** ni bosing.
 
-### Hisob-fakturalar
+![Hisob-fakturalar va soʻnggi tranzaksiyalar](../../images/billing-12.png)
 
-- **Invoices** boʻlimida akkauntning barcha hisob-fakturalari koʻrsatiladi: oʻtgan, joriy toʻlanmagan va toʻlov muddatlari. Majburiyatlaringizdan xabardor boʻlish va kechikishlarga yoʻl qoʻymaslik uchun hisob-fakturalarni muntazam koʻrib chiqing.
+### Xulosa
 
-### Soʻnggi tranzaksiyalar
-
-- **Recent Transactions** boʻlimida akkaunt boʻyicha soʻnggi moliyaviy operatsiyalarning batafsil roʻyxati keltirilgan. U toʻlovlar tarixining shaffofligini saqlash va yaqinda amalga oshirilgan toʻlovlarni kuzatishga yordam beradi.
-
-![Soʻnggi tranzaksiyalar](../../images/billing-12.png)
+**Billing Summary** sahifasi xarajatlar va balans haqida umumiy tasavvur beradi hamda hisob-fakturalar va toʻlovlarga tezkor kirish imkonini beradi.

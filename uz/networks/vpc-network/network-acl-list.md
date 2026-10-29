@@ -2,17 +2,21 @@
 
 ## Tarmoq ACL roʻyxati
 
-**Tarmoq ACL**’i (Access Control List) VPC ichidagi quyi tarmoqlarning kiruvchi va chiquvchi trafigini boshqaradigan tarmoqlararo ekran vazifasini bajaradi.
+**Tarmoq ACL**’i — VPC tarmoqlarining kiruvchi va chiquvchi trafigini boshqaradigan qoidalar toʻplami.
 
-- Network ACL List yorligʻida VPC’da sozlangan barcha ACL’lar koʻrsatiladi.
-- Yangi ACL yaratish uchun **Add New List** tugmasini bosing. **Name** va qoidalarning qisqacha tavsifi bilan **Description** ni kiriting.
-- ACL yaratish uchun **Submit** tugmasini bosing.
+- VPC sahifasida **Network ACL List** yorligʻini oching. Unda VPC’ning barcha ACL’lari keltirilgan. Standart holatda ikkita roʻyxat yaratiladi: **default_allow** (barcha trafikka ruxsat beradi) va **default_deny** (barcha trafikni taqiqlaydi).
 
 ![Tarmoq ACL roʻyxati](../../../images/vpc-net-7.png)
 
+- ACL qoidalarini (**ACL Rules**) koʻrish uchun ACL kartochkasidagi strelkani bosing: raqam, yoʻnalish (**Ingress** yoki **Egress**), manba, manzil, protokol, portlar oraligʻi, amal (**Allow** yoki **Deny**) va tavsif. **Manage Order** tugmasi qoidalar tartibini oʻzgartirish imkonini beradi.
+
+![ACL qoidalari](../../../images/vpc-net-8.png)
+
+- Oʻz roʻyxatingizni yaratish uchun **+ Add New List** ni bosing, nom (**Name**) va tavsif (**Description**) kiriting va **Submit** tugmasini bosing.
+
 ### Xulosa
 
-**Tarmoq ACL roʻyxati** VPC quyi tarmoqlarining kiruvchi va chiquvchi trafik qoidalarini markazlashgan holda boshqarish usulidir. ACL’larni yaratib va tartibga solib, siz xavfsizlikni oshirasiz va tarmoq aloqasini yaxshiroq nazorat qilasiz.
+**Tarmoq ACL roʻyxati** VPC tarmoqlari uchun kiruvchi va chiquvchi trafik qoidalarini markazlashgan tarzda boshqarish imkonini beradi.
 
 > [!TIP]
 > **Shuningdek qarang:**
