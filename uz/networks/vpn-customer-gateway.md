@@ -2,54 +2,50 @@
 
 ## Mijoz VPN shlyuzi (VPN Customer Gateway)
 
-**Mijoz VPN shlyuzi** — mahalliy tarmogʻingiz va bulut oʻrtasida himoyalangan VPN ulanishini oʻrnatish uchun asosiy komponent. UzCloud’da u xususiy tarmogʻingiz va virtual xususiy bulut (VPC) oʻrtasida himoyalangan aloqani taʼminlaydi. Quyida UzCloud’da mijoz VPN shlyuzini sozlash va qoʻshish bosqichma-bosqich tushuntiriladi.
+**Mijoz VPN shlyuzi** «tarmoq — tarmoq» VPN ulanishining sizning tomoningizni tavsiflaydi: mahalliy VPN qurilmasi va uning IPsec sozlamalari. U UzCloud’dagi VPC’ni xususiy tarmogʻingiz bilan ulash uchun kerak.
 
-- Chap menyuda **Networks** yorligʻini oching.
-- **Networks** sahifasi ochiladi. **VPN Customer Gateway** yorligʻiga oʻting.
-- Mijoz VPN shlyuzini qoʻshish uchun **plyus (+)** belgisini bosing. Parametrlarni kiritish shakli ochiladi.
+- Chap menyuning **NETWORKING** boʻlimida **Networks** ni bosing va **VPN Customer Gateway** yorligʻini oching.
+- **+ Create New** ni bosing. **Add VPN Customer Gateway** shakli ochiladi.
 
 ![VPN Customer Gateway yorligʻi](../../images/vpn-gate-1.png)
 
-- **Select Project** — shlyuz yaratiladigan loyiha.
-- **Select Zone** — VPN shlyuzi uchun zona yoki hudud.
-- **Name** — shlyuzning noyob va tushunarli nomi.
-- **CIDR List** — tarmogʻingiz va bulut oʻrtasida almashish uchun ruxsat etilgan IP manzillar diapazoni (CIDR formatida).
-- **Gateway** — mahalliy VPN qurilmangizning (marshrutizator yoki tarmoqlararo ekran) ommaviy IP manzili.
+### Asosiy sozlamalar
 
-![Shlyuz parametrlari](../../images/vpn-gate-2.png)
+- **Select Project** — shlyuz uchun loyiha.
+- **Select Zone** — shlyuz zonasi (joylashuvi).
+- **Name** — shlyuzning noyob nomi.
+- **CIDR List** — mahalliy tarmogʻingizning CIDR formatidagi manzillar oraliqlari.
+- **Gateway** — VPN qurilmangizning (marshrutizator yoki xavfsizlik devori) ommaviy IP manzili.
+- **IPsec Preshared Key** — VPN qurilmalarini autentifikatsiya qilish uchun umumiy maxfiy kalit.
+- **IKE Lifetime** — IKE seansining amal qilish muddati, soniyalarda (standart holatda 86400).
+- **ESP Lifetime** — ESP seansining amal qilish muddati, soniyalarda (standart holatda 3600).
 
-### Shlyuz sozlamalari
+![Asosiy sozlamalar](../../images/vpn-gate-2.png)
 
-Himoyalangan ulanishni oʻrnatish uchun IPsec va IKE (Internet Key Exchange) parametrlarini belgilang:
+### Shifrlash sozlamalari
 
-- **IPsec Pre-Shared Key** — VPN qurilmalari oʻrtasida autentifikatsiya uchun umumiy maxfiy kalit.
-- **IKE Lifetime** — IKE sessiyasining soniyalardagi amal qilish muddati (masalan, 28800).
-- **ESP Lifetime** — ESP (Encapsulating Security Payload) sessiyasining amal qilish muddati.
-- **IKE Encryption Algorithm** — IKE bosqichi uchun shifrlash algoritmi (masalan, AES-256, AES-128).
-- **IKE Hash Algorithm** — yaxlitlikni nazorat qilish uchun xeshlash algoritmi (masalan, SHA-256, SHA-512).
-- **IKE Version** — IKEv1 yoki IKEv2 (xavfsizroq boʻlgani uchun IKEv2 tavsiya etiladi).
-- **IKE DH (Diffie-Hellman Group)** — kalit almashinuvini himoyalash uchun Diffi — Xellman guruhi (masalan, Group 14, Group 19).
-- **Perfect Forward Secrecy (PFS)** — har bir kalit almashinuvi mustaqil boʻlishi uchun PFS’ni yoqing.
-- **ESP Encryption Algorithm** — ESP uchun shifrlash algoritmi (masalan, AES-256).
-- **ESP Hash Algorithm** — ESP yaxlitligini tekshirish uchun xeshlash algoritmi (masalan, SHA-256).
+Qiymatlar VPN qurilmangiz sozlamalariga mos kelishi kerak.
 
-![IPsec va IKE sozlamalari](../../images/vpn-gate-3.png)
+- **IKE Encryption** va **IKE Hash** — IKE bosqichi uchun shifrlash va xeshlash algoritmlari (standart holatda AES 128 va SHA-1).
+- **IKE Version** — IKE protokoli versiyasi.
+- **IKE DH** — kalit almashish uchun Diffi — Xellman guruhi (standart holatda MODP 1024).
+- **Perfect Forward Secrecy** — PFS uchun DH guruhi (standart holatda Group 5 (modp 1536)).
+- **ESP Encryption** va **ESP Hash** — ESP uchun shifrlash va xeshlash algoritmlari (standart holatda AES 128 va SHA-1).
+- **Dead Peer Detection** — ulanish uzilganini aniqlaydi va uni tiklaydi.
+- **Force Encapsulation** — VPN NAT orqali ishlashi uchun ESP paketlarini majburiy ravishda UDP’ga inkapsulyatsiya qiladi.
+- **Split Connections** — roʻyxatdagi har bir CIDR uchun alohida tunnel yaratadi.
+- **Submit** tugmasini bosing.
 
-### Qoʻshimcha imkoniyatlar (ixtiyoriy)
+![Shifrlash sozlamalari](../../images/vpn-gate-3.png)
 
-UzCloud kengaytirilgan sozlamalarda yoqiladigan qoʻshimcha xavfsizlik va unumdorlik funksiyalarini qoʻllab-quvvatlaydi:
+> [!TIP]
+> Agar VPN qurilmangiz qoʻllab-quvvatlasa, kuchliroq algoritmlardan (masalan, AES 256 va SHA-256) foydalaning.
 
-- **Dead Peer Detection (DPD)** — uzilgan VPN ulanishlarini kuzatadi va avtomatik tiklaydi.
-- **Force Encapsulation** — VPN trafigining tarmoqlararo ekranlar va NAT orqali oʻtishini taʼminlaydi.
-- **Split Connections** — zaxiralash va unumdorlik uchun bir nechta VPN tunnellaridan foydalanish imkonini beradi.
-
-![Qoʻshimcha imkoniyatlar](../../images/vpn-gate-4.png)
-
-- **Submit** tugmasini bosing — mijoz VPN shlyuzi yaratiladi.
+Shlyuz yaratilgach, VPC sahifasida VPN ulanishini yaratishda uni tanlang — **[VPN ulanishlari](vpc-network/vpn-connections.md)** ga qarang.
 
 ### Xulosa
 
-**Mijoz VPN shlyuzi** mahalliy infratuzilma va bulutdagi VPC oʻrtasida himoyalangan ulanishni taʼminlaydi. Sozlanadigan shifrlash, autentifikatsiya va qoʻshimcha funksiyalar gibrid muhitlarda ishonchli, maxfiy va yuqori unumli aloqani kafolatlaydi.
+**Mijoz VPN shlyuzi** mahalliy infratuzilmangiz va UzCloud’dagi VPC oʻrtasida xavfsiz ulanishni taʼminlaydi.
 
 > [!TIP]
 > **Shuningdek qarang:**

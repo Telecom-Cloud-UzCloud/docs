@@ -2,22 +2,25 @@
 
 ## VPN Users
 
-A **VPN User** in UzCloud refers to an authenticated individual who connects to the cloud environment via a Virtual Private Network (VPN). This ensures secure remote access to private cloud resources.
+A **VPN user** is an account used to connect to your private networks in UzCloud through remote access VPN.
 
-- From the left-hand menu, click on the **Networks** tab.
-- You will be redirected to the **Networks** page. Go to the **VPN Users** tab.
+- In the left-hand menu, under **NETWORKING**, click **Networks**, then open the **VPN Users** tab.
+- Click **+ Create New**.
 
 ![VPN Users](../../images/vpn-1.png)
 
-- Click on the **plus (+)** icon to add a new VPN User. A form will appear where you need to enter the configuration details.
-- Enter a **Username** and **Password** for the VPN user, then select the **Project** and **Zone**.
-- Click on **Add User** to add the VPN user.
+- Enter a **Username** and **Password**. The password must be 8–32 characters long, start with a letter or digit and contain only letters, digits and the characters `@ . - _`.
+- Select the **Zone** and **Project**.
+- Click **Add User**.
 
-![VPN Users](../../images/vpn-2.png)
+![Add a VPN user](../../images/vpn-2.png)
+
+> [!NOTE]
+> To connect, remote access VPN must be enabled on the public IP address of the network. See **[Public IP Address](public-ip-address.md)**.
 
 ### Conclusion
 
-The **VPN Users** feature allows you to securely add and manage authenticated users for remote access to cloud resources, ensuring safe connectivity and controlled access within your projects.
+The **VPN Users** tab lets you add and manage users for secure remote access to your cloud resources.
 
 > [!TIP]
 > **See also:**

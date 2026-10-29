@@ -2,22 +2,25 @@
 
 ## VPN foydalanuvchilari
 
-UzCloud’dagi **VPN foydalanuvchisi** — bulut muhitiga virtual xususiy tarmoq (VPN) orqali ulanadigan autentifikatsiyadan oʻtgan foydalanuvchi. Bu xususiy bulutli resurslarga himoyalangan masofaviy kirishni taʼminlaydi.
+**VPN foydalanuvchisi** — masofaviy kirish VPN’i orqali UzCloud’dagi xususiy tarmoqlarga ulanish uchun hisob.
 
-- Chap menyuda **Networks** yorligʻini oching.
-- **Networks** sahifasi ochiladi. **VPN Users** yorligʻiga oʻting.
+- Chap menyuning **NETWORKING** boʻlimida **Networks** ni bosing va **VPN Users** yorligʻini oching.
+- **+ Create New** ni bosing.
 
-![VPN Users yorligʻi](../../images/vpn-1.png)
+![VPN foydalanuvchilari](../../images/vpn-1.png)
 
-- VPN foydalanuvchisini qoʻshish uchun **plyus (+)** belgisini bosing. Parametrlarni kiritish shakli ochiladi.
-- VPN foydalanuvchisi uchun **Username** va **Password** ni kiriting, soʻng **Project** (loyiha) va **Zone** (zona) ni tanlang.
-- VPN foydalanuvchisini qoʻshish uchun **Add User** tugmasini bosing.
+- Foydalanuvchi nomini (**Username**) va parolni (**Password**) kiriting. Parol 8 dan 32 tagacha belgidan iborat boʻlishi, harf yoki raqam bilan boshlanishi va faqat harflar, raqamlar hamda `@ . - _` belgilaridan iborat boʻlishi kerak.
+- Zonani (**Zone**) va loyihani (**Project**) tanlang.
+- **Add User** tugmasini bosing.
 
 ![VPN foydalanuvchisini qoʻshish](../../images/vpn-2.png)
 
+> [!NOTE]
+> Ulanish uchun tarmoqning ommaviy IP manzilida masofaviy kirish VPN’i yoqilgan boʻlishi kerak. **[Ommaviy IP manzil](public-ip-address.md)** ga qarang.
+
 ### Xulosa
 
-**VPN Users** boʻlimi bulutli resurslarga masofaviy kirish uchun autentifikatsiyadan oʻtgan foydalanuvchilarni xavfsiz qoʻshish va boshqarish imkonini beradi hamda loyihalar doirasida himoyalangan ulanish va nazorat qilinadigan kirishni taʼminlaydi.
+**VPN Users** yorligʻi bulut resurslariga xavfsiz masofaviy kirish uchun foydalanuvchilarni qoʻshish va boshqarish imkonini beradi.
 
 > [!TIP]
 > **Shuningdek qarang:**
