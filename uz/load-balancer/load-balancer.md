@@ -2,95 +2,87 @@
 
 ## Yuklama muvozanatlagich
 
-**Yuklama muvozanatlagich** (Load Balancer) kiruvchi trafikni bir nechta serverlar oʻrtasida taqsimlab, yuqori mavjudlik, ishonchlilik va unumdorlikni taʼminlaydi. UzCloud’da muvozanatlagichni veb-ilovalar, maʼlumotlar bazalari va boshqa xizmatlar uchun sozlash mumkin. Ushbu qoʻllanmada UzCloud’da yuklama muvozanatlagichni sozlash bosqichma-bosqich tushuntiriladi.
+**Yuklama muvozanatlagich** (Load Balancer) kiruvchi trafikni bir nechta serverlar oʻrtasida taqsimlab, yuqori mavjudlik, ishonchlilik va unumdorlikni taʼminlaydi. UzCloud’da muvozanatlagichni veb-ilovalar, maʼlumotlar bazalari va boshqa xizmatlar uchun sozlash mumkin. Ushbu qoʻllanmada yuklama muvozanatlagichni yaratish va boshqarish tushuntiriladi.
 
 ---
 
-### Yuklama muvozanatlagichni yaratish
+### Load Balancer sahifasini oching
 
-- Chap menyuda **Load Balancer** yorligʻini oching.
-- Muvozanatlagich yaratish uchun sahifaning oʻng tomonidagi **Load Balancer** yoki **plyus (+)** belgisini bosing. Yaratish menyusi ochiladi.
+- Chap menyuning **NETWORKING** boʻlimida **Load Balancer** ni bosing. Sahifada muvozanatlagichlaringiz koʻrsatiladi: loyiha, IP manzil, yaratilgan sana, joylashuv va siyosatlar soni.
+- Yuqori oʻng burchakdagi **+ Create New** tugmasini bosing. **Create Load Balancer** sahifasi ochiladi.
 
 ![Load Balancer sahifasi](../../images/ldb-1.png)
 
-### Joylashuvni tanlash
+### Loyihani tanlang
 
-- Muvozanatlagich jismoniy joylashadigan maʼlumotlar markazini tanlang.
-- Mavjud joylashuvlardan birini tanlang.
+- Resurslarni tartibga solish uchun muvozanatlagichni loyihalaringizdan biriga biriktiring.
+
+![Loyihani tanlash](../../images/ldb-3.png)
+
+### Joylashuvni tanlang
+
+- Muvozanatlagich joylashadigan maʼlumotlar markazini tanlang: **TASHKENT** yoki **FERGANA**.
 
 ![Joylashuvni tanlash](../../images/ldb-2.png)
 
-### Loyihaga biriktirish
+### Tarmoqni tanlang
 
-- Resurslarni qulay tartibga solish va boshqarish uchun muvozanatlagichni loyihalaringizdan biriga biriktiring.
-
-![Loyihaga biriktirish](../../images/ldb-3.png)
-
-### Tarmoqni tanlash
-
-- Muvozanatlagich ishlaydigan tarmoqni tanlang. U trafik yoʻnalishi va serverlarga ulanishlarni belgilaydi.
+- Muvozanatlagich ishlaydigan tarmoqni tanlang (VPC yoki ommaviy tarmoq). Muvozanatlagich trafikni qaysi VM’larga yoʻnaltira olishi tarmoqqa bogʻliq.
 
 ![Tarmoqni tanlash](../../images/ldb-4.png)
 
-### IP manzilni tanlash
+### IP manzilni tanlang
 
-- Muvozanatlagich IP manzilini tanlang: **Existing IP Address** (mavjud) yoki **Acquire New IP Address** (yangi).
-- **Eslatma**: **Acquire New IP** tanlanganda tanlangan zonada standart izolyatsiya qilingan IP manzil yaratiladi.
+- **Acquire New IP Address** — konsol muvozanatlagich uchun yangi ommaviy IP manzil oladi (kerak boʻlsa, tanlangan zonada standart izolyatsiya qilingan tarmoq yaratiladi).
+- **Choose IP Address** — mavjud IP manzillaringizdan birini tanlang.
 
 ![IP manzilni tanlash](../../images/ldb-5.png)
 
-### Yoʻnaltirish qoidalari
+### Yoʻnaltirish qoidalarini sozlang
 
-- Trafik serverlar oʻrtasida qanday taqsimlanishini belgilovchi yoʻnaltirish qoidalarini sozlang.
+Yoʻnaltirish qoidalari trafik muvozanatlagichdan VM’larga qanday yoʻnaltirilishini belgilaydi. Kamida bitta qoida talab qilinadi.
 
-- Noyob **Rule Name** (qoida nomi) ni kiriting. **Protocol** ni tanlang (masalan, TCP, UDP, HTTP, HTTPS). Kiruvchi trafik uchun portlar diapazonini belgilang.
-
-- Soʻrovlarni VM’lar oʻrtasida taqsimlash algoritmini tanlang:
-
-  - **Source** — mijozning IP manziliga qarab trafikni bitta VM’ga yoʻnaltiradi.
-  - **Round Robin** — trafikni barcha mavjud VM’lar oʻrtasida teng taqsimlaydi.
-  - **Least Connections** — trafikni faol ulanishlari eng kam boʻlgan VM’ga yoʻnaltiradi.
-
-- Foydalanuvchi soʻrovlari har doim bitta VM’ga yoʻnaltirilishi uchun **Sticky sessions** (sessiyalarni bogʻlash) ni yoqish mumkin:
-
-  - **LB Cookie** — muvozanatlagich yaratgan cookie yordamida sessiyani bogʻlash.
-  - **App Cookie** — ilova cookie’si yordamida sessiyani bogʻlash.
-  - **Source-Based** — sessiyani mijozning IP manziliga qarab VM’ga bogʻlash.
-  - **None** — sessiyalar bogʻlanmaydi; soʻrovlar odatdagidek taqsimlanadi.
-
-- Kiruvchi trafikni qayta ishlaydigan virtual mashinalarni tanlang.
+- **Rule Name** maydoniga qoida nomini kiriting (kamida 5 ta belgi).
+- Protokolni (**Protocol**) tanlang: **TCP** yoki **TCP Proxy**.
+- Muvozanatlagich trafikni qabul qiladigan ommaviy portni (**Public Port**) va VM’dagi ichki portni (**Private Port**) kiriting.
+- Soʻrovlarni taqsimlash algoritmini (**Algorithm**) tanlang:
+  - **Source** — bitta mijoz IP manzilidan kelgan soʻrovlarni bitta VM’ga yoʻnaltiradi.
+  - **Roundrobin** — soʻrovlarni barcha VM’lar oʻrtasida navbat bilan teng taqsimlaydi.
+  - **Least Connections** — soʻrovlarni faol ulanishlari eng kam boʻlgan VM’ga yoʻnaltiradi.
+- Seanslarni biriktirish usulini (**Sticky Session**) tanlang, masalan **SourceBased** — mijoz seansi uning IP manzili boʻyicha bitta VM’ga biriktiriladi. Mavjud usullarni solishtirish uchun **Compare** ni bosing.
+- **Select Instances** blokida trafikni qabul qiladigan VM’larni tanlang.
+- Yana bitta qoida qoʻshish uchun **+ Add New Rule** ni bosing.
 
 ![Yoʻnaltirish qoidalari](../../images/ldb-6.png)
 
-### Muvozanatlagich nomi
+### Muvozanatlagich nomini kiriting
 
-- Muvozanatlagichning noyob nomini kiriting. Nom faqat harflar va raqamlar, defislar va nuqtalardan iborat boʻlishi mumkin.
+- **Load Balancer Name** maydoniga nom kiriting. Nom noyob boʻlishi va faqat lotin harflari, raqamlar, chiziqcha va nuqtalardan iborat boʻlishi kerak.
 
 ![Muvozanatlagich nomi](../../images/ldb-7.png)
 
-### Yuklama muvozanatlagichni yaratish
+### Muvozanatlagichni yarating
 
-- Kerakli **Billing Cycle** ni tanlang. Muvozanatlagich uchun quyidagi davrlar qoʻllab-quvvatlanadi: soatlik, oylik, choraklik, yarim yillik, yillik, ikki yillik va uch yillik.
-- Qoʻllab-quvvatlanadigan billing qoidalari: Date to Date, Fixed Calendar Month, Unfixed Calendar Month, Fixed Prorata va Unfixed Prorata.
-- Har bir zonada faqat bitta muvozanatlagich paketi mavjud — bu sozlashni soddalashtiradi va zonada bir xil ishlashni taʼminlaydi.
-- Barcha parametrlarni va umumiy narxni tekshiring. Tarmoq uchun muvozanatlagich yaratish maqsadida **Create Load Balancer** tugmasini bosing.
+- Sahifaning pastki qismida **Billing Cycle** (toʻlov davri) ni tanlang: **Monthly** (oylik) yoki **Yearly** (yillik). **Price Summary** da muvozanatlagich narxi koʻrsatiladi.
+- Konfiguratsiyani tekshiring va **Create Load Balancer** tugmasini bosing.
 
 ![Muvozanatlagichni yaratish](../../images/ldb-8.png)
 
 ### Muvozanatlagichni koʻrish
 
-- Batafsil maʼlumot uchun muvozanatlagich ustiga bosing.
+- Muvozanatlagich sahifasini ochish uchun uning nomini bosing. Unda loyiha, joylashuv, IP manzil, tarmoq va yaratilgan sana koʻrsatiladi. Maʼlumotlarni yangilash uchun yuqori oʻng burchakdagi **Refresh** ni bosing.
+- **Policies** yorligʻida yoʻnaltirish qoidalari keltirilgan: protokol, algoritm, seanslarni biriktirish usuli, ommaviy va ichki portlar, yaratilgan sana va ulangan VM’lar soni. Qoida qoʻshish uchun **+ Add New Policies** ni bosing; oʻchirish uchun uning kartochkasidagi oʻchirish belgisini bosing.
+- **Firewall Rules** yorligʻida muvozanatlagich IP manzili uchun xavfsizlik devori qoidalari keltirilgan: manba CIDR, protokol, ICMP turi va kodi, portlar oraligʻi. Qoida qoʻshish uchun **+ Add A Firewall Rule** ni bosing.
 
-![Muvozanatlagichni koʻrish](../../images/ldb-9.png)
+![Muvozanatlagich sahifasi](../../images/ldb-9.png)
 
-- Bu yerda muvozanatlagich bilan bogʻliq siyosatlar koʻrsatiladi.
-- Muvozanatlagichga virtual mashina ulash uchun **Add VM** ni oching va kerakli VM’ni tanlang.
+- Siyosatga ulangan VM’larni koʻrish uchun **Attached Instances** yonidagi koʻz belgisini bosing. Yana bitta VM ulash uchun **+ Add VM** ni bosing; VM’ni uzish uchun uning kartochkasidagi uzish belgisini bosing.
 
-![VM ulash](../../images/ldb-10.png)
+![Ulangan VM’lar](../../images/ldb-10.png)
 
 ### Xulosa
 
-Ushbu qoʻllanmaga amal qilib, siz UzCloud’da yuklama muvozanatlagichni osongina sozlashingiz va boshqarishingiz mumkin. Muvozanatlagichlar kiruvchi trafikni bir nechta serverlar oʻrtasida taqsimlab, yuqori mavjudlik, ishonchlilik va unumdorlikni taʼminlaydi. Yordam kerak boʻlsa, UzCloud hujjatlarini oʻrganing yoki qoʻllab-quvvatlash xizmatiga murojaat qiling.
+Ushbu qoʻllanmaga amal qilib, siz UzCloud’da yuklama muvozanatlagichni yaratishingiz va boshqarishingiz mumkin. Muvozanatlagichlar kiruvchi trafikni bir nechta serverlar oʻrtasida taqsimlab, yuqori mavjudlik, ishonchlilik va unumdorlikni taʼminlaydi. Yordam kerak boʻlsa, UzCloud hujjatlarini oʻrganing yoki qoʻllab-quvvatlash xizmatiga murojaat qiling.
 
 > [!TIP]
 > **Shuningdek qarang:**
