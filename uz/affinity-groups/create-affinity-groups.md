@@ -11,17 +11,17 @@
 ### Affinity guruhini yaratish
 
 - Chap menyuda **Affinity Groups** yorligʻini oching.
-- Guruh yaratish uchun sahifaning oʻng tomonidagi **Create Affinity Groups** yoki **plyus (+)** belgisini bosing. Guruh yaratish shakli ochiladi.
+- Guruh yaratish uchun sahifaning yuqori oʻng burchagidagi **+ Create New** tugmasini bosing. **Add New Affinity Group** oynasi ochiladi.
 
 ![Affinity guruhlari sahifasi](../../images/create-ag.png)
 
 ### Affinity guruhini qoʻshish
 
-- Loyihani va kerakli mavjudlik zonasini tanlang.
+- **Select Project** maydonida loyihani va **Select Zone** maydonida zonani tanlang.
 
-- Guruhning noyob nomini (**Affinity Group**) va uning maqsadi haqida qisqacha tavsifni kiriting.
+- Noyob **Name** (nom) va xohlasangiz **Description** (tavsif) ni kiriting.
 
-- Joylashtirish talablariga qarab guruh turini tanlang:
+- **Select Type** maydonida guruh turini tanlang:
 
   - **Host Affinity (Strict)** — guruhdagi VM’lar har doim bitta gipervizor xostida ishlashi kerak. Past kechikishli aloqa va umumiy resurslar talab qilinadigan yuklamalar uchun mos. Agar talab bajarilmasa, VM’lar joylashtirilmaydi.
   - **Host Anti-Affinity (Strict)** — VM’lar har doim turli gipervizor xostlarida joylashtirilishi kerak. Bu yagona nosozlik nuqtasini istisno qilib, nosozlikka chidamlilikni oshiradi. Alohida xostlar boʻlmasa, VM’lar joylashtirilmaydi.
