@@ -2,69 +2,53 @@
 
 ## Virtual mashina shablonlari
 
-**Shablon** — virtual mashinalar (VM) yoki konteynerlarni tez joylashtirish uchun oldindan sozlangan disk obrazi. Shablon oldindan belgilangan sozlamalar, dasturlar va parametrlarga ega oʻrnatilgan operatsion tizimni oʻz ichiga oladi, shuning uchun yangi VM’larni har safar OT’ni qoʻlda oʻrnatmasdan va sozlamasdan yaratish mumkin.
+**Shablon** — virtual mashinalarni tez joylashtirish uchun oldindan sozlangan disk obrazi. U belgilangan sozlamalar va dasturlarga ega oʻrnatilgan operatsion tizimni oʻz ichiga oladi, shuning uchun har safar OT’ni oʻrnatish va sozlash shart emas.
 
 ---
 
-### Virtual mashina shablonini yaratish
+### Shablonni import qilish
 
-- Chap menyuda **Templates** yorligʻini oching.
-- Shablon yaratish uchun sahifaning oʻng tomonidagi **Templates** yoki **plyus (+)** belgisini bosing. Shablon yaratish menyusi ochiladi.
+- Chap menyuda **Templates** ni bosing. Sahifada shablonlaringiz koʻrsatiladi.
+- **Create Template** tugmasini bosing. **Import Template** sahifasi ochiladi.
 
-![Shablonlar sahifasi](../../images/create-temp.png)
+![Shablonlar](../../images/create-temp.png)
 
-### Joylashuvni tanlash
+- Shablon tegishli boʻladigan loyihani tanlang.
 
-- Shablon saqlanadigan maʼlumotlar markazini tanlang.
-- Mavjud joylashuvlardan birini tanlang.
+![Loyihani tanlash](../../images/create-temp-projects.png)
+
+- Shablon saqlanadigan joylashuvni tanlang.
 
 ![Joylashuvni tanlash](../../images/create-temp-location.png)
 
-### Loyihaga biriktirish
-
-- Resurslarni qulay tartibga solish va boshqarish uchun shablonni loyihalaringizdan biriga biriktiring.
-
-![Loyihaga biriktirish](../../images/create-temp-projects.png)
-
 ### Shablon parametrlari
 
-Shablon yaratishda bir nechta majburiy maydonlarni toʻldirish kerak:
+Majburiy maydonlarni toʻldiring:
 
-- **Template Name** — shablonni aniqlash uchun nom.
-- **Description** — shablonning maqsadi va tarkibi tavsifi.
-- **URL** — shablon joylashgan manzilga havola (agar mavjud boʻlsa).
-- **Format** — shablon formati, masalan RAW yoki boshqa qoʻllab-quvvatlanadigan format.
-- **Root Disk Controller** — shablonni yuklash uchun ishlatiladigan asosiy disk kontrolleri (tizim arxitekturasiga bogʻliq).
-- **Template Type** — shablon toifasi (masalan, VNF).
-- **Image** — shablon bilan bogʻliq obraz fayli.
-- **Operating System** — shablon OT’si (masalan, Linux, Windows).
-- **OS Version** — OT’ning aniq versiyasi.
+- **Template Name** va **Description** — shablon nomi va qisqacha tavsifi.
+- **URL** — import qilinadigan obraz fayliga havola.
+- **Format** — obraz formati.
+- **Root Disk Controller** — asosiy diskdan yuklash uchun kontroller.
+- **Template Type** — shablon toifasi.
+- **Select Image** va **Select OS** — obraz turi va shablon operatsion tizimi.
+
+Qoʻshimcha parametrlar:
+
+- **Password Enabled** — shablon yangi VM’lar uchun parol oʻrnatishni qoʻllab-quvvatlaydi.
+- **Featured** — shablonni tavsiya etilgan deb belgilash.
+- **Dynamically Scalable** — shablondan yaratilgan VM’lar resurslarni toʻxtatmasdan oʻzgartirishni qoʻllab-quvvatlaydi.
+- **Requires HVM** — shablon apparat virtuallashtirishni (HVM) talab qiladi.
+
+**Price Summary** ni tekshiring (narx har bir GB uchun soatiga hisoblanadi) va **Review & Create** tugmasini bosing.
 
 ![Shablon parametrlari](../../images/create-temp-details.png)
 
-### Qoʻshimcha parametrlar
-
-Shablon uchun qoʻshimcha parametrlarni ham tanlash mumkin:
-
-- **Password Enabled** — shablonga kirish yoki undan foydalanish uchun parol talab qilinadi, bu qoʻshimcha himoya qatlamini qoʻshadi.
-- **Featured** — shablonni tavsiya etilgan sifatida belgilaydi, bu uni topishni osonlashtiradi.
-- **Dynamically Scalable** — yuklamaga qarab resurslarni dinamik masshtablash imkonini beradi; bulutli joylashtirishlar uchun foydali.
-- **Requires VM** — shablon jismoniy uskunada emas, balki virtual mashina muhitida ishlatilishi kerakligini bildiradi.
-
-![Qoʻshimcha parametrlar](../../images/create-templates-inline-3ffaf779.png)
-
-### Shablonni yaratish
-
-- Kerakli **Billing Cycle** ni tanlang. Shablonlar uchun soatlik toʻlov qoʻllab-quvvatlanadi.
-- Qoʻllab-quvvatlanadigan billing qoidalari: Date to Date, Fixed Calendar Month, Unfixed Calendar Month, Fixed Prorata va Unfixed Prorata.
-- Shablonlar uchun har bir zonada faqat bitta paket qoʻllab-quvvatlanadi — bu turli muhitlarda joylashtirishlarni standartlashtirishga yordam beradi.
-- Barcha parametrlarni va umumiy narxni tekshiring. Loyiha uchun shablon yaratish maqsadida **Create** tugmasini bosing.
-
-![Shablonni yaratish](../../images/create-templates-inline-e20b927f.png)
+> [!TIP]
+> Shablonni mavjud diskdan ham yaratish mumkin: VM sahifasini oching, **VM Settings** → **Volumes** ga oʻting va disk kartochkasidagi **Create Template** ni bosing.
 
 ### Xulosa
 
-Ushbu qoʻllanmaga amal qilib, siz UzCloud’da shablonlarni osongina yaratishingiz va boshqarishingiz mumkin. Shablonlar oldindan sozlangan parametrlarga ega virtual mashinalar yoki konteynerlarni tez joylashtirish, vaqtni tejash va bir xillikni taʼminlash imkonini beradi. Yordam kerak boʻlsa, UzCloud hujjatlarini oʻrganing yoki qoʻllab-quvvatlash xizmatiga murojaat qiling.
+Shablonlar bir xil konfiguratsiyaga ega virtual mashinalarni tez va bir xilda joylashtirish imkonini beradi. Yordam kerak boʻlsa, UzCloud hujjatlarini oʻrganing yoki qoʻllab-quvvatlash xizmatiga murojaat qiling.
 
 > [!TIP]
 > **Shuningdek qarang:**
