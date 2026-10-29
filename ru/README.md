@@ -9,7 +9,6 @@
 ### Начало работы
 
 - [Введение](getting-started/introduction.md)
-- [Регистрация аккаунта](getting-started/account-signup.md)
 - [Настройка профиля](getting-started/profile-setup.md)
 
 ### Проекты
@@ -112,7 +111,6 @@
 
 - [Сводка по биллингу](billing/billing-summary.md)
 - [Подписки](billing/subscriptions.md)
-- [Способы оплаты](billing/payment-methods.md)
 - [Транзакции](billing/transactions.md)
 - [Выписка по аккаунту](billing/account-statement.md)
 
