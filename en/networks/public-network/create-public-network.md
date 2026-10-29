@@ -2,50 +2,47 @@
 
 ## Create Public Network
 
-**Public Network** in UzCloud is used to provide internet-facing access to cloud resources. It allows virtual machines, applications, and other cloud services to communicate with external systems over the internet. Public networks are essential for hosting web applications, APIs, and other services that require global accessibility.
+A **public network** in UzCloud is an isolated guest network with a built-in cloud firewall. It gives VMs internet access through a public IP address, and you can define traffic rules, port forwarding and remote access VPN without complex configuration.
 
-- From the left-hand menu, click on the **Networks** tab.
-- You will be redirected to the **Networks** page. Go to the **Public Network** tab.
+- In the left-hand menu, under **NETWORKING**, click **Networks**, then open the **Public Network** tab.
+- Click **+ Create New** in the upper-right corner. The **Create Isolated Network** page opens.
 
-![Create Public Network](../../../images/public-networks-1.png)
+![Public Network tab](../../../images/public-networks-1.png)
 
-- To create public network click the **plus (+)** icon located on the right side of the networks page.
+### Choose a Project
 
-### Choose a Location
+- Assign the network to one of your projects to keep resources organized.
 
-- Select the data center location where your server will be physically hosted.
-- Choose from the available locations listed.
+![Choose a project](../../../images/public-networks-3.png)
 
-![Choose a Location](../../../images/public-networks-2.png)
+### Select a Location
 
-### Assign to a Project
+- Select the data center where the network will be hosted: **TASHKENT** or **FERGANA**.
 
-- You can choose projects to assign the server to one of your projects to organize and manage resources effectively.
+![Select a location](../../../images/public-networks-2.png)
 
-![Assign to a Project](../../../images/public-networks-3.png)
+### Network Details
 
-### Network Configurations
+- Enter a unique **Network Name** and, optionally, a **Network Description**.
 
-- Configure the gateway and network mask to define the routing and IP address structure for your network.
+![Network details](../../../images/public-networks-4.png)
 
-![Network Configurations](../../../images/public-networks-5.png)
+### Network Configuration
 
-### Choose Public Network Name
+- Optionally, set the **Gateway** (for example, `10.0.0.1`) and **Netmask** (for example, `255.255.255.0`) of the network. If you leave the fields empty, the default values are used.
 
-- Provide a unique name for your Public Network to easily identify it, and optionally, add a description to clarify its purpose.
+![Network configuration](../../../images/public-networks-5.png)
 
-![Choose Public Network Name](../../../images/public-networks-4.png)
+### Create the Network
 
-### Create Public Network
+- At the bottom of the page, choose the **Billing Cycle**: **Monthly** or **Yearly**. **Price Summary** shows the cost.
+- Check the configuration and click **Create Network**.
 
-- Choose the desired **Billing Cycle** for your public Network. You can choose either Hourly or Monthly cycle.
-- Verify all the configuration details and review the price summary. Click on **Create** to create the public network.
-
-![Create Public Network](../../../images/public-networks-6.png)
+![Create the network](../../../images/public-networks-6.png)
 
 ### Conclusion
 
-A Public Network allows cloud resources to connect with the internet for global accessibility. By configuring location, project, and network settings, you can create a reliable and manageable network with flexible billing options.
+A public network connects your VMs to the internet with a built-in firewall. After creating it, configure egress rules and the public IP address of the network.
 
 > [!TIP]
 > **See also:**

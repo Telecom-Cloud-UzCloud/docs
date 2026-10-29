@@ -2,20 +2,21 @@
 
 ## Chiquvchi trafik qoidalari (Egress Rules)
 
-- Chiquvchi trafik qoidasi (egress rule) protokollar va IP manzillar diapazonlari asosida manbadan belgilangan manzilga yoʻnaltirilgan trafikni boshqaradi.
-- **Egress Rules** yorligʻida barcha chiquvchi trafik qoidalari koʻrsatiladi.
-- Qoida qoʻshish uchun **Add Egress Rule** tugmasini bosing — qoidani sozlash shakli ochiladi.
+Chiquvchi trafik qoidasi protokol va manzillar oraligʻiga qarab tarmoqdan koʻrsatilgan manzilga qaysi trafik chiqishi mumkinligini belgilaydi.
+
+- Tarmoq sahifasida **Egress rules** yorligʻini oching. Unda tarmoqning chiquvchi trafik qoidalari keltirilgan.
+- **Add Egress Rule** ni bosing.
 
 ![Chiquvchi trafik qoidalari](../../../images/pub-net-3.png)
 
-### Chiquvchi trafik qoidasini qoʻshish
+### Qoida qoʻshish
 
-- **Source CIDR** (manba) va **Destination CIDR** (manzil) ni kiriting.
-- Trafik turiga qarab protokolni tanlang: TCP, UDP, ICMP yoki All.
-- Qoidani qoʻshish uchun **Add Egress Rule** tugmasini bosing.
+- Manba oraligʻini (**Source CIDR**) va manzil oraligʻini (**Destination CIDR**) kiriting.
+- Protokolni tanlang: **All**, **TCP**, **UDP** yoki **ICMP**.
+- **Add Egress Rule** tugmasini bosing.
 
 ![Qoida qoʻshish](../../../images/pub-net-6.png)
 
 ### Xulosa
 
-**Chiquvchi trafik qoidalari** ruxsat etilgan protokollar, manbalar va manzillarni belgilab, chiquvchi trafikni nazorat qilishga yordam beradi. Ular xavfsizlik va moslashuvchanlikni oshiradi hamda tarmoqdan faqat kerakli trafik chiqishini kafolatlaydi.
+**Chiquvchi trafik qoidalari** tarmoqdan qaysi trafik chiqishini nazorat qilish va xavfsizlikni oshirish imkonini beradi.
