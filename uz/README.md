@@ -55,6 +55,10 @@ Boshqa tillar: [English](../en/README.md) · [Русский](../ru/README.md)
 
 - [Zaxira nusxalar yaratish](backups/create-backups.md)
 
+### Jadvallar
+
+- [Jadvallar](schedules/schedules.md)
+
 ### Shablonlar
 
 - [Shablonlar yaratish](templates/create-templates.md)

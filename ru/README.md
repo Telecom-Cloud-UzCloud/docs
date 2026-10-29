@@ -55,6 +55,10 @@
 
 - [Создание резервных копий](backups/create-backups.md)
 
+### Расписания
+
+- [Расписания](schedules/schedules.md)
+
 ### Шаблоны
 
 - [Создание шаблонов](templates/create-templates.md)

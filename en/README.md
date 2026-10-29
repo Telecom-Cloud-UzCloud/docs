@@ -55,6 +55,10 @@ Other languages: [Русский](../ru/README.md) · [Oʻzbekcha](../uz/README.
 
 - [Create Backups](backups/create-backups.md)
 
+### Schedules
+
+- [Schedules](schedules/schedules.md)
+
 ### Templates
 
 - [Create Templates](templates/create-templates.md)
