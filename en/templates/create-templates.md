@@ -69,6 +69,5 @@ By following this guide, you can easily create and manage templates on UzCloud. 
 > [!TIP]
 > **See also:**
 >
-> - **[VNF Appliances](../vnf-appliances/vnf-appliances.md)**
 > - **[Compute Instance](../compute/compute-instance.md)**
 > - **[ISOs](../isos/import-iso.md)**

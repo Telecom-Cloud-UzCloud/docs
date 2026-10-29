@@ -2,75 +2,67 @@
 
 ## Instance Overview for UzCloud
 
-The **Instance Overview** page provides a detailed summary and management options for your virtual machine (VM) instance. It includes information about the instance status, location, operating system, performance, and quick actions for managing the instance.
+The **Virtual Machine Overview** page provides a detailed summary of your virtual machine (VM) and quick actions for managing it.
 
 ---
 
+### Quick Actions in the Instance List
+
+- On the **Instances** page, click the three-dot button on the instance card to show the quick actions: console access, stop, reboot, and delete.
+
+![Quick Actions](../../images/instance-cloudstack.png)
+
 ### Action Buttons
 
-- Action Buttons offer shortcuts for common VM management tasks.
-- For quick actions, click on the three dots on the right side to open the actions menu. You can use these action buttons for quicker tasks.
+- Click the instance name to open the **Virtual Machine Overview** page. The action buttons are located on the right side of the status bar.
 
-![Action Buttons](../../images/instance-cloudstack.png)
+![Action Buttons](../../images/instance-overview-action-buttons.png)
 
-- To view more Action buttons in detail, click on the instance, which will redirect you to the **Virtual Machine Overview** page.
+- **Refresh** — refreshes the instance status and page information.
+- **Console Access** — opens a web console to interact with the VM directly.
+- **VM Volumes Snapshots** — shows the volume snapshots of the VM and lets you take a new one.
+- **VM Snapshot** — takes a snapshot of the whole VM.
+- **Stop** — shuts down the virtual machine (when the VM is stopped, the button starts it).
+- **Reboot** — restarts the instance.
+- **Attach ISO To This Virtual Machine** — mounts an ISO image to the VM for installation or recovery.
+- **Delete** — deletes the instance permanently.
 
-![Detailed Action Buttons](../../images/instance-overview-action-buttons.png)
-
-- **Refresh:** Refreshes the instance status and page information.
-- **Console Access:** Opens a console interface to interact with the VM directly.
-- **VM Volume Snapshots:** Displays a list of existing snapshots or allows you to take a snapshot of the current state of the VM for backup or future restoration.
-- **Power Off:** Shuts down the virtual machine.
-- **Reboot:** Restarts the instance.
-- **Attach ISO for VM:** Mounts an ISO file to the VM, allowing installation or recovery operations.
-- **Delete:** Deletes the instance permanently.
+The page also contains tabs: **Overview**, **Usage Graphics**, **VM Settings**, **VM Snapshot**, **Schedules**, **Backups**, **Addons** and **Activity logs**.
 
 ### Instance Information
 
 ![Instance Information](../../images/instance-overview-info.png)
 
-- **Instance Name:** Displays the name of the instance.
-- **Created on:** Shows the creation date and time.
-- **Status:** Indicates the current running status of the VM.
+- **Instance name** and **Created on** — the name of the instance and its creation date and time. Use the arrow next to the name to switch between instances.
+- **Status** — the current state of the VM (for example, Running).
 
 ### Instance Details
 
-![Instance Details](../../images/instance-overview-info-location.png)
+![Instance Details](../../images/instance-overview-details.png)
 
-- **Location:** Indicates the datacenter location of the instance.
-- **Operating System:** Displays the OS running on the VM.
-- **Cost:** Shows the all-time consumption cost for the VM.
-
-### Resource Specifications
-
-![Resource Specifications](../../images/instance-overview-details.png)
-
-- **Label:** Custom label associated with the VM.
-- **CPU:** Number of vCPUs allocated.
-- **RAM:** Amount of memory available to the instance.
-- **Disk Size:** Size of the storage disk.
-- **Public IP Address:** The public IP assigned to the instance.
-- **Private IP Address:** The internal IP used in the network.
-- **Network:** Displays the associated network.
-- **Username:** Default login username for the instance.
-- **Password:** VM instance password.
-- **Affinity Group:** Defines VM placement rules within a specific group for optimized performance.
-- **Tag:** Labels used for categorization and organization. To add a Tag, click **Add Tag**, enter a Key and Value, then click **Submit**.
+- **Location** — the data center of the instance.
+- **Operating System** — the OS installed on the VM.
+- **All Time Consumption** — the total cost of the VM since it was created.
+- **Label** — the name of the VM.
+- **CPU**, **RAM** and **SSD** — the number of vCores, the amount of memory and the disk size.
+- **Public IP** and **Private IP Address** — the public and internal IP addresses (use the copy icon to copy them).
+- **SSH Port** — the port for SSH connections.
+- **network 1**, **network 2**… — the networks the VM is connected to.
+- **Username** and **Provisioning Password** — the default login credentials. Click the eye icon to show the password.
+- **Affinity Groups** — the affinity group of the VM, if any.
+- **Tag** — tags for organizing resources. To add a tag, click **+ Add Tag**, enter a key and a value, and save.
 
 ### Resource Usage
 
-- Resource Usage helps monitor resource usage like CPU, RAM, disk, and network usage over time.
-
 ![Resource Usage](../../images/instance-overview-resource-details.png)
 
-- **Disk Size:** Shows the disk usage capacity.
-- **Network Traffic:** Provides metrics on network usage over a specified period (defaulted to the Last 24 Hours).
-- **CPU Usage:** Shows the percentage of CPU resources currently being used.
-- **RAM Usage:** Displays the amount of memory consumption by the instance.
+- **Disk Size** and **Disk Backups** — the disk size and the number of disk backups.
+- **Network Traffic** — sent and received traffic for the selected period (by default, the last hour).
+- **CPU** and **RAM** — current CPU and memory usage in percent.
 
 ### Conclusion
 
-The **Instance Overview** page provides a comprehensive yet straightforward view of the VM instance’s configuration and management options. Each action button allows quick control over the VM's status, while resource specifications help monitor the VM's performance and behavior. For further assistance, refer to the UzCloud documentation or reach out to support.
+The **Virtual Machine Overview** page gives a complete view of the VM configuration and lets you quickly manage its state. For further assistance, refer to the UzCloud documentation or reach out to support.
 
 > [!TIP]
 > **See also:**

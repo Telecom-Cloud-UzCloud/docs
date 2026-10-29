@@ -7,8 +7,9 @@ This guide provides a step-by-step tutorial to help you create a UzCloud account
 ### Register Account
 
 - Open the UzCloud console at [console.uzcloud.uz](https://console.uzcloud.uz) and navigate to the **Sign-In** or **Create Account** section.
-- Enter the necessary details, such as your name, email address, and password.
-- Click **Register** to proceed to the next step.
+- Fill in **Full Name**, **Email**, **Phone** (the +998 country code is preselected), **Password** and **Confirm Password**.
+- Select the **Accept Terms And Conditions** checkbox.
+- Click **Create Account** to proceed to the next step.
 
 ![Account Registration](../../images/account-setup-register.png)
 

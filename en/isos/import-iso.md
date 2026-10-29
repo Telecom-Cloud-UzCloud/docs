@@ -61,6 +61,5 @@ By following this guide, you can easily create and manage ISO images on UzCloud.
 > [!TIP]
 > **See also:**
 >
-> - **[VNF Appliances](../vnf-appliances/vnf-appliances.md)**
 > - **[Compute Instance](../compute/compute-instance.md)**
 > - **[Create Templates](../templates/create-templates.md)**

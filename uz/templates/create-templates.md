@@ -69,6 +69,5 @@ Ushbu qoʻllanmaga amal qilib, siz UzCloud’da shablonlarni osongina yaratishin
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[VNF qurilmalari](../vnf-appliances/vnf-appliances.md)**
 > - **[Virtual mashina](../compute/compute-instance.md)**
 > - **[ISO obrazlar](../isos/import-iso.md)**

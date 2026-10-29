@@ -2,12 +2,13 @@
 
 ## Network Configuration
 
-This setting allows you to manage the VM’s network interfaces, including configuring private and public network options. Private networks are used for communication between your virtual machines without exposing them to the internet, while public networks provide external IP addresses for internet access. You can also adjust bandwidth limits and assign or remove IP addresses.
+This setting shows the network interfaces of your VM and lets you connect it to additional networks.
 
 ---
 
-- To add or change your network configurations, go to the **VM settings** and navigate to the **Networks** section.
-- Click on **Add Network** to add network and click on the network to change the configurations for that network.
+- On the **VM Settings** tab, select **Networks**. For each network, the name, MAC address, IP address, netmask and type are shown. The default network is marked **Default**.
+- Click **+ Add Network** to connect the VM to another network.
+- Use the icons on the network card to **Make This Network as Default** or **Remove Network**.
 
 ![Network Configuration Settings](../../../images/vm-networks.png)
 
@@ -15,7 +16,7 @@ This setting allows you to manage the VM’s network interfaces, including confi
 
 ### Conclusion
 
-Managing network configurations is essential for ensuring both connectivity and security of your virtual machines. Whether you're setting up internal communication through private networks or exposing services via public networks, the flexibility to assign and configure interfaces helps tailor your infrastructure to specific use cases. Always review your bandwidth and access settings to avoid conflicts and ensure optimal performance.
+Managing networks lets you combine internal communication and public access for your VM.
 
 > [!TIP]
 > - **[Create VPC Networks](../../networks/vpc-network/create-vpc-network.md)**

@@ -85,5 +85,4 @@
 >
 > - **[Управление кластером Kubernetes](kubernetes-cluster-overview.md)**
 > - **[Балансировщик нагрузки](../load-balancer/load-balancer.md)**
-> - **[Автомасштабирование](../auto-scaling/create-auto-scaling.md)**
 > - **[Группы привязки](../affinity-groups/create-affinity-groups.md)**

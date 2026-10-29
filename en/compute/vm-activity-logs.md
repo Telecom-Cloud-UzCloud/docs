@@ -2,9 +2,9 @@
 
 ## Monitor Activity for VM in UzCloud
 
-The VM Instance Activity Log in UzCloud provides a detailed record of all actions and events related to a Virtual Machine Instance. This helps in monitoring and performance analysis for managing VM instances.
+The VM activity log records all actions and events related to the virtual machine.
 
-- To view activity logs for the instance, go to the **Activity logs** tab.
-- You can track when a VM instance was created, stopped, deleted, rebooted, and more.
+- On the **Virtual Machine Overview** page, open the **Activity logs** tab.
+- For each event, the user's email, description, action type, time and update time are shown. Use the search bar to find events, for example when the VM was created, stopped, or rebooted.
 
 ![VM Activity Logs](../../images/vm-activity-log.png)

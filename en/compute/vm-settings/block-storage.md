@@ -2,21 +2,25 @@
 
 ## Block Storage Overview
 
-Block Storage allows you to attach additional storage volumes to your virtual machine. These volumes act as independent, scalable disks that can be used for storing application data, backups, or other files. They are highly flexible and can be detached or re-attached to different instances without data loss. This is ideal for separating your operating system from application data to maintain modularity.
+Block Storage allows you to attach additional volumes to your virtual machine. Volumes act as independent, scalable disks for application data, backups, or other files, and can be detached and re-attached to other instances without data loss.
 
 ---
 
-- To view a volume instance, go to the **VM settings** and navigate to the **Volume** section, where you can view the instance volume and its size.
-- If you want to see previously created snapshots for the volume, click the right arrow icon to expand the list.
-- To create a new snapshot, simply click the camera icon on the rightmost side. This will capture the current state of the volume, allowing you to restore it if needed.
+- On the **Virtual Machine Overview** page, open the **VM Settings** tab and select **Volumes**. The list shows the volumes of the instance, their storage type and size.
+- Click **+ Create Volumes** to create a new volume for this instance, or **+ Attach Volumes** to attach an existing one.
+- Use the icons on the volume card:
+  - the arrow — show the snapshots of the volume;
+  - **Create Template** — create a template from the volume;
+  - **Resize Volumes** — change the size of the volume;
+  - **Create Snapshot** — take a snapshot of the current state of the volume.
 
-![View Volume Instance](../../../images/vm-usage-volume.png)
+![VM Volumes](../../../images/vm-usage-volume.png)
 
 ---
 
 ### Conclusion
 
-Block Storage provides a reliable and modular way to manage your data independently of your virtual machines. With the ability to create snapshots, scale volumes, and attach them across different instances, it ensures both flexibility and data protection. Use snapshots regularly to safeguard critical data, and manage storage efficiently through the VM settings panel.
+Block Storage provides a reliable and modular way to manage your data independently of your virtual machines. Take snapshots regularly to protect critical data.
 
 > [!TIP]
 > **See also:**

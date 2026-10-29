@@ -2,44 +2,36 @@
 
 ## Console Access for Virtual Machines
 
-The **Console Access** feature enables users to manage and interact with their Virtual Machine (VM) through a web-based interface. This functionality is particularly beneficial for tasks such as troubleshooting startup issues, handling system configurations, and engaging with the VM's operating system as if physically present at the machine.
+The **Console Access** feature lets you work with your virtual machine (VM) directly in the browser, as if you were sitting in front of it. It is useful for troubleshooting startup issues, configuring the system, or accessing the VM when SSH or RDP is unavailable.
 
-- Access your console by clicking on the console icon from the actions menu.
+- Click the **Console Access** icon in the quick actions of the instance card or on the **Virtual Machine Overview** page. The console opens in a new browser tab.
 
 ![Console Access](../../images/console-access.png)
 
-### Keyboard Shortcuts
+### Console Toolbar
 
-The Console Access interface is equipped with various tools to optimize control over the VM, including specialized keyboard actions, clipboard management, and full-screen mode. Below are the shortcuts available in the interface:
+To open the toolbar, click the handle on the left edge of the console window. The toolbar contains three buttons:
 
-![Console Shortcuts](../../images/console-access-shortcuts.png)
+- **Show extra keys** — opens a panel with special keys:
+  - **Toggle Ctrl**, **Toggle Shift**, **Toggle Alt** and **Toggle Windows** — press and hold the corresponding key in the VM;
+  - **Send Tab** and **Send Escape** — send the Tab or Esc key;
+  - **Send Ctrl-Alt-Del** — send the Ctrl+Alt+Delete combination.
 
-- **Toggle Control (Ctrl):** Simulates pressing the Control key, enabling control-based commands within the VM.
-- **Toggle Alt:** Simulates pressing the Alt key.
-- **Toggle Shift:** Simulates pressing the Shift key.
-- **Toggle Windows Key:** Simulates the Windows key, allowing users to open the start menu or execute system shortcuts in Windows operating systems.
-- **Send Tab:** Sends a Tab key input to the VM, often used for navigating between form fields and interface elements.
-- **Send Escape (Esc):** Sends an Escape key input.
-- **Send Ctrl+Alt+Delete:** Sends the Ctrl+Alt+Delete combination.
-- **Clipboard:** Facilitates seamless copying of text between the local machine and the VM, enabling efficient data transfer.
+![Extra Keys](../../images/console-access-shortcuts.png)
 
-![Clipboard Shortcuts](../../images/console-access-shortcuts-clipboard.png)
+- **Clipboard** — opens a field for transferring text to the VM: paste the text into the field and click **Send**. **Clear** clears the field.
 
-- **Full-Screen Mode:** Expands the VM console to full-screen mode, providing an immersive and uninterrupted user experience similar to working on a physical desktop.
+![Clipboard](../../images/console-access-shortcuts-clipboard.png)
+
+- **Full screen** — expands the console to full screen.
 
 ### Managing Your VM
 
-Console Access allows users to perform virtually any task requiring direct access to the machine, such as:
-
-- Software installation.
-- Configuration adjustments.
-- Operating system troubleshooting.
-
-This feature simplifies VM administration, making it especially valuable for system administrators who need to manage and maintain servers via the web interface without requiring external software like SSH or RDP.
+The console lets you perform any task that requires direct access to the machine, for example installing software, changing configuration, or troubleshooting the operating system — without external tools like SSH or RDP.
 
 ### Conclusion
 
-The **Console Access** feature provides a powerful and intuitive way to interact with your Virtual Machines directly through a web-based interface. Whether you're troubleshooting startup issues, configuring system settings, or performing administrative tasks, Console Access ensures seamless and efficient management of your VMs. For further assistance, refer to the UzCloud documentation or reach out to support.
+The **Console Access** feature provides a convenient way to work with your virtual machines directly in the browser. For further assistance, refer to the UzCloud documentation or reach out to support.
 
 > [!TIP]
 > **See also:**

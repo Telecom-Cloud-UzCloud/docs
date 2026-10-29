@@ -61,6 +61,5 @@
 > [!TIP]
 > **См. также:**
 >
-> - **[VNF-устройства](../vnf-appliances/vnf-appliances.md)**
 > - **[Виртуальная машина](../compute/compute-instance.md)**
 > - **[Создание шаблонов](../templates/create-templates.md)**

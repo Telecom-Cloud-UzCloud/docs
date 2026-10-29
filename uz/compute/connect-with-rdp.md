@@ -9,8 +9,8 @@
 ### Virtual mashina sharhini oching
 
 - Chap menyuda **Instances** ni bosing.
-- **Virtual Machine Instance** sahifasida kerakli VM’ni tanlang.
-- **VM Overview** yorligʻida **Username** va **Password** maydonlarini toping va ularning qiymatlarini nusxalang.
+- Kerakli VM nomini bosing.
+- **Overview** yorligʻida **Username** va **Provisioning Password** maydonlarini toping va ularning qiymatlarini nusxalang (parolni koʻrsatish uchun koʻz belgisini bosing).
 
 ![Virtual mashina sharhi](../../images/instance-overview-rdp.png)
 
@@ -36,8 +36,8 @@ VM’ga ulanish uchun kompyuteringizda RDP mijozini oching:
 ### Windows VM’ga ulaning
 
 - Kompyuteringizda RDP mijozini ishga tushiring.
-- UzCloud’dagi **Overview** yorligʻida VM’ning **Public IP Address** ini toping.
-- RDP mijozida **Public IP Address** ni kiriting.
+- UzCloud’dagi **Overview** yorligʻida VM’ning **Public IP** ini toping.
+- RDP mijozida ommaviy IP manzilni kiriting.
 - Soʻrov paydo boʻlganda UzCloud’dan nusxalangan **Username** va **Password** ni kiriting.
 - Agar masofaviy kompyuterning haqiqiyligi haqida xavfsizlik ogohlantirishi chiqsa, **«Don't ask me again for connections to this computer»** ni belgilang va **Yes** tugmasini bosing.
 - Masofaviy seansni oʻrnatish uchun **OK** yoki **Connect** tugmasini bosing.

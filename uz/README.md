@@ -26,11 +26,13 @@ Boshqa tillar: [English](../en/README.md) · [Русский](../ru/README.md)
   - [Tarif rejasini oʻzgartirish](compute/vm-settings/change-plan.md)
   - [Xost nomini oʻzgartirish](compute/vm-settings/change-hostname.md)
   - [OT’ni oʻzgartirish](compute/vm-settings/change-os.md)
+  - [Parolni tiklash](compute/vm-settings/reset-password.md)
   - [Ishga tushirish skriptini oʻzgartirish](compute/vm-settings/change-startup-script.md)
   - [Tarmoqlararo ekran](compute/vm-settings/firewall.md)
   - [Portlarni yoʻnaltirish](compute/vm-settings/port-forwarding.md)
   - [Tarmoqlar](compute/vm-settings/networks.md)
   - [SSH kalitlar](compute/vm-settings/ssh-keys.md)
+  - [VM parametrlari](compute/vm-settings/settings.md)
 - [Konsolga kirish](compute/console-access.md)
 - [VM zaxira nusxalari](compute/instance-backups.md)
 - [VM faoliyat jurnali](compute/vm-activity-logs.md)
@@ -65,21 +67,12 @@ Boshqa tillar: [English](../en/README.md) · [Русский](../ru/README.md)
 
 - [Affinity guruhlarini yaratish](affinity-groups/create-affinity-groups.md)
 
-### Veeam Backup
-
-- [Veeam Backup](veeam-backup/create-veeam-backup.md)
-- [Veeam Backup’ni boshqarish](veeam-backup/manage-veeam-backup.md)
-
 ### Kubernetes
 
 - [Kubernetes klasterini yaratish](kubernetes/create-kubernetes-cluster.md)
 - [Kubernetes klasteri sharhi](kubernetes/kubernetes-cluster-overview.md)
 - [CLI orqali Kubernetes klasteri](kubernetes/kubernetes-cluster-via-cli.md)
 - [Kubernetes Dashboard’ga kirish](kubernetes/kubernetes-dashboard-ui-access.md)
-
-### Avtomatik masshtablash
-
-- [Avtomatik masshtablashni yaratish](auto-scaling/create-auto-scaling.md)
 
 ### Obyektli xotira (Ceph)
 
@@ -110,15 +103,6 @@ Boshqa tillar: [English](../en/README.md) · [Русский](../ru/README.md)
 ### Yuklama muvozanatlagich
 
 - [Yuklama muvozanatlagich](load-balancer/load-balancer.md)
-
-### DNS
-
-- [DNS yaratish](dns/create-dns.md)
-- [DNS’ni boshqarish](dns/manage-dns.md)
-
-### VNF qurilmalari
-
-- [VNF qurilmalari](vnf-appliances/vnf-appliances.md)
 
 ### Billing
 

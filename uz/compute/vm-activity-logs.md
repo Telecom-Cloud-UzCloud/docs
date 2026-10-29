@@ -2,9 +2,9 @@
 
 ## UzCloud’da VM faoliyatini kuzatish
 
-UzCloud’dagi virtual mashina faoliyat jurnalida VM bilan bogʻliq barcha amallar va hodisalarning batafsil yozuvlari saqlanadi. U virtual mashinalarni boshqarishda monitoring va ish tahliliga yordam beradi.
+VM faoliyat jurnalida virtual mashina bilan bogʻliq barcha amallar va hodisalar yozib boriladi.
 
-- VM faoliyat jurnalini koʻrish uchun **Activity logs** yorligʻini oching.
-- Bu yerda VM qachon yaratilgani, toʻxtatilgani, oʻchirilgani, qayta ishga tushirilgani va hokazolarni kuzatish mumkin.
+- **Virtual Machine Overview** sahifasida **Activity logs** yorligʻini oching.
+- Har bir hodisa uchun foydalanuvchi emaili, tavsif, amal turi, vaqt va yangilanish vaqti koʻrsatiladi. Qidiruv satri yordamida kerakli hodisalarni topish mumkin, masalan VM qachon yaratilgani, toʻxtatilgani yoki qayta ishga tushirilgani.
 
 ![VM faoliyat jurnali](../../images/vm-activity-log.png)

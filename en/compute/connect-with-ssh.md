@@ -10,21 +10,21 @@ You can manage your instance using a terminal and SSH. This allows you to connec
 
 Before connecting to your instance, ensure you have the following information:
 
-- **IP Address**: Available on the instance card or Virtual Machine Overview.
+- **IP Address**: shown on the instance card and on the Virtual Machine Overview page (**Public IP**).
 
 - **Default Username**: Depending on the operating system (`root`, `ubuntu`, `ec2-user`).
 
 - **Authentication Method**:
 
   - **SSH Key (recommended)** — Ensure you have access to your private key file.
-  - **Default Password** — Found in the Virtual Machine Overview if not using an SSH key.
+  - **Password** — shown in the **Provisioning Password** field on the Virtual Machine Overview page if you do not use an SSH key.
 
 ![Resource Specifications](../../images/instance.png)
 
 ### Instance Information
 
-- The **IP Address** of your instance is displayed on the card of your instance after you have created it. You can hover over it to copy it.
-- More information about your instance can be found on the **Virtual Machine Overview**, which can be accessed by clicking on the name displayed on the Virtual Machine card.
+- The **IP address** of your instance is displayed on the instance card. Click the copy icon next to it to copy it.
+- Click the instance name to open the **Virtual Machine Overview** page, which shows the public IP, SSH port, username and password.
 
 ![Resource Specifications](../../images/instance-overview-details.png)
 

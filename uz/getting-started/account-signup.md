@@ -7,8 +7,9 @@ Ushbu qoʻllanmada UzCloud akkauntini yaratish, billingni sozlash va akkauntni t
 ### Akkauntni roʻyxatdan oʻtkazish
 
 - [console.uzcloud.uz](https://console.uzcloud.uz) manzilida UzCloud konsolini oching va **Sign-In** yoki **Create Account** boʻlimiga oʻting.
-- Kerakli maʼlumotlarni kiriting: ism, elektron pochta manzili va parol.
-- Keyingi bosqichga oʻtish uchun **Register** tugmasini bosing.
+- **Full Name** (ism va familiya), **Email**, **Phone** (+998 kodi standart holatda qoʻyilgan), **Password** va **Confirm Password** (parol va uni tasdiqlash) maydonlarini toʻldiring.
+- Foydalanish shartlarini qabul qilish uchun **Accept Terms And Conditions** ni belgilang.
+- Keyingi bosqichga oʻtish uchun **Create Account** tugmasini bosing.
 
 ![Akkauntni roʻyxatdan oʻtkazish](../../images/account-setup-register.png)
 

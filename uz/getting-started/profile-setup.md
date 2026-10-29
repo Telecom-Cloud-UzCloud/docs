@@ -2,125 +2,137 @@
 
 ## UzCloud’da foydalanuvchi profilini sozlash
 
-**UzCloud** foydalanuvchi profili boʻlimi shaxsiy maʼlumotlarni boshqarish, parolni oʻzgartirish, toʻlov parametrlarini sozlash, foydalanuvchilar va rollarni qoʻshish hamda akkauntdagi faoliyatni kuzatish imkonini beradi. Bu yerda akkaunt haqidagi batafsil maʼlumot va uning sozlamalari jamlangan.
+**UzCloud** profili shaxsiy va kompaniya maʼlumotlarini, interfeys va xavfsizlik sozlamalarini, API’ga kirishni, foydalanuvchilar va rollarni, kvotalarni hamda akkauntdagi faoliyatni boshqarish imkonini beradi. Profilni ochish uchun konsolning yuqori oʻng burchagidagi ismingizni bosing.
 
 ![Profil sahifasi](../../images/profile-page.png)
 
 ### Shaxsiy maʼlumotlarni yangilash
 
-Profilingizda toʻgʻri maʼlumotlar boʻlishi uchun shaxsiy maʼlumotlaringizni dolzarb holatda saqlang. Ushbu boʻlimda asosiy maydonlarni oʻzgartirish mumkin: ism, telefon raqami va manzil.
+Shaxsiy maʼlumotlaringizni dolzarb holatda saqlang.
 
-- Chap menyudan **Profile** boʻlimiga oʻting.
-- Shaxsiy maʼlumotlarni oʻzgartirish uchun **Personal Details** ni tanlang.
+- Profil menyusida **Personal Details** ni oching.
+- Tahrirlash uchun qalam belgisini bosing.
+- **Name** (ism), **Address Line 1** (manzil), **Country** (mamlakat), **State** (viloyat) va **City** (shahar) ni oʻzgartiring.
 - Oʻzgarishlarni saqlash uchun **Submit** tugmasini bosing.
 
 ![Shaxsiy maʼlumotlar](../../images/profile-personal-details.png)
 
-### Toʻlov maʼlumotlarini boshqarish
+- Email yoki telefon raqamini oʻzgartirish uchun **Profile Details** blokidagi maydon yonida **Change** tugmasini bosing. Yangi qiymatni tasdiqlash kerak boʻladi.
 
-Obunalar va toʻlovlarni boshqarish uchun toʻgʻri toʻlov maʼlumotlari zarur. Ushbu boʻlimda hisob-fakturalar uchun toʻlov manzili va telefon raqamini qoʻshish yoki oʻzgartirish mumkin.
+### Kompaniya va toʻlov maʼlumotlari
 
-- Chap menyudan **Profile** boʻlimiga oʻting.
-- **Personal Details** ni tanlang va **Billing Details** ga oʻting.
-- **Billing Address** va **Phone Number** ni qoʻshing yoki oʻzgartiring.
-- Oʻzgarishlarni saqlash uchun **Submit** tugmasini bosing.
+Hisob-fakturalar va toʻlovlar uchun toʻgʻri toʻlov maʼlumotlari zarur.
 
-![Toʻlov maʼlumotlari](../../images/profile-billing-details.png)
+- Profil menyusida **Company Details** ni oching.
+- Tahrirlash uchun qalam belgisini bosing.
+- **Organization Name** (tashkilot nomi) va **Billing Details** blokini toʻldiring: toʻlov manzili, veb-sayt, mamlakat, viloyat, shahar, INN (STIR), toʻlovchi nomi, toʻlov emaili va qoʻshimcha toʻlov emaili.
+- Oʻzgarishlarni saqlang.
+
+![Kompaniya va toʻlov maʼlumotlari](../../images/profile-billing-details.png)
 
 ### Akkaunt sozlamalari
 
-Boshqaruv panelining koʻrinishini oʻzingizga moslang: vizual rejimlar oʻrtasida almashing.
+- Profil menyusida **Account Preferences** ni oching.
+- **Theme mode** blokida **Light Mode** (yorugʻ mavzu) yoki **Dark Mode** (qorongʻi mavzu) ni tanlang. Oʻzgarish darhol qoʻllaniladi.
+- **App Language** blokida konsol tilini tanlang: **English**, **Russian** yoki **Uzbek**.
 
-- Chap menyudan **Profile** boʻlimiga oʻting.
-- **Account Preferences** ni tanlang.
-- **Light Mode** (yorugʻ mavzu) yoki **Dark Mode** (qorongʻi mavzu) ni tanlang.
-- Kerakli rejimni yoqing — oʻzgarishlar darhol qoʻllaniladi.
+> [!NOTE]
+> Ushbu hujjatlardagi skrinshotlar va interfeys elementlari nomlari konsolning inglizcha versiyasi uchun keltirilgan.
 
 ![Akkaunt sozlamalari](../../images/profile-account-preference.png)
 
 ### Sana va vaqt sozlamalari
 
-Sana va vaqt formatini sozlang, ayniqsa turli mintaqalar bilan ishlasangiz.
-
-- Chap menyudan **Profile** boʻlimiga oʻting.
-- **Date and Time Settings** ni tanlang.
-- **Preferred Time Zone** (vaqt mintaqasi) va **Date Time Format** (sana va vaqt formati) ni belgilang.
+- Profil menyusida **Date & Time** ni oching.
+- **Preferred Time Zone** (vaqt mintaqasi) va **Preferred Date Time Format** (sana va vaqt formati) ni belgilang.
 - Oʻzgarishlarni qoʻllash uchun **Submit** tugmasini bosing.
+
+> [!NOTE]
+> Tanlangan vaqt mintaqasi va format faqat koʻrsatish uchun ishlatiladi. Barcha amallar Asia/Samarkand vaqt mintaqasida qayta ishlanadi.
 
 ![Sana va vaqt sozlamalari](../../images/profile-date-and-time-settings.png)
 
 ### Ikki bosqichli autentifikatsiya
 
-Xavfsizlikni oshirish uchun **ikki bosqichli autentifikatsiyani (2FA)** yoqing — bu tizimga kirishda qoʻshimcha himoya qatlamini qoʻshadi.
+Xavfsizlikni oshirish uchun **ikki bosqichli autentifikatsiyani (2FA)** yoqing: har safar tizimga kirishda parol va emailga yuborilgan bir martalik kodni kiritish kerak boʻladi.
 
-- Chap menyudan **Profile** boʻlimiga oʻting.
-- **Authentication** ni tanlang va **Two-Factor Authentication (2FA)** ni toping.
-- **Email Authentication** blokida **Set Up** tugmasini bosing.
-- **Email ID** ni kiriting va **Send OTP** tugmasini bosing.
-- Pochtangizga yuborilgan OTP kodini kiriting.
-- Agar 2FA butun tashkilot uchun majburiy boʻlishi kerak boʻlsa, **Enable 2FA for All Users** ni yoqing.
+- Profil menyusida **Authentication** ni oching.
+- **Email Authentication** blokida **SET UP** tugmasini bosing.
+- Elektron pochta manzilingizni tasdiqlang va unga yuborilgan bir martalik kodni (OTP) kiriting.
+- 2FA’ni akkauntning barcha foydalanuvchilari uchun majburiy qilish uchun **2FA Enforcement Status** blokidagi **Enable** oʻtkazgichini yoqing.
 
 ![Ikki bosqichli autentifikatsiyani sozlash](../../images/profile-auth-two-factor-auth.png)
 
 ### Parolni oʻzgartirish
 
-Akkaunt xavfsizligi uchun parolni vaqti-vaqti bilan oʻzgartirib turish tavsiya etiladi.
-
-- Chap menyudan **Profile** boʻlimiga oʻting.
-- **Authentication** ni tanlang va **Change Password** tugmasini bosing.
-- **Current Password** (joriy parol) ni kiriting, soʻng **New Password** (yangi parol) ni kiriting va tasdiqlang, keyin oʻzgarishlarni saqlash uchun **Change Password** tugmasini bosing.
+- Profil menyusida **Authentication** ni oching va **Change Password** tugmasini bosing.
+- **Current Password** (joriy parol) ni kiriting, soʻng **New Password** (yangi parol) ni kiriting va tasdiqlang.
+- Oʻzgarishlarni saqlash uchun **Change Password** tugmasini bosing.
 
 ![Parolni oʻzgartirish](../../images/profile-change-password.png)
 
+### API’ga kirish
+
+**API** boʻlimi shaxsiy kirish tokeni yordamida UzCloud bilan API orqali ishlash imkonini beradi.
+
+- Profil menyusida **API** ni oching.
+- **Personal Access Token** yaratish uchun **Enable API** tugmasini bosing. Token ostida uning amal qilish muddati koʻrsatiladi; tokenni nusxalash belgisi yordamida nusxalash mumkin.
+- API’ga kirishni oʻchirish uchun **Disable API** tugmasini bosing.
+- API hujjatlariga havolalar sahifaning yuqori qismida keltirilgan.
+
+> [!WARNING]
+> Tokenni sir saqlang: unga ega boʻlgan har qanday kishi resurslaringizni boshqarishi mumkin.
+
+![API’ga kirish](../../images/profile-api.png)
+
 ### Yangi foydalanuvchi qoʻshish
 
-**Users** boʻlimi tashkilotga yangi foydalanuvchilarni qoʻshish va ularga rollar hamda huquqlarni tayinlash imkonini beradi.
+**Users** boʻlimi akkauntga foydalanuvchilarni qoʻshish va ularga rollar tayinlash imkonini beradi.
 
-- Chap menyudan **Profile** boʻlimiga oʻting.
-- Bu yerda foydalanuvchilarni koʻrish va amal tugmalari yordamida ularni boshqarish mumkin — tahrirlash va taklifnomani qayta yuborish. Foydalanuvchi qoʻshish uchun **Users** ni tanlang va **Add User** tugmasini bosing.
-- Foydalanuvchi maʼlumotlarini kiriting, uning **Role** (roli) ni tanlang va foydalanuvchini yaratish uchun **Submit** tugmasini bosing.
+- Profil menyusida **Users** ni oching. Roʻyxatda har bir foydalanuvchining ismi, emaili, roli, yaratilgan sanasi, oxirgi kirishi va holati koʻrsatiladi.
+- **+ Add New User** tugmasini bosing, foydalanuvchi maʼlumotlarini kiriting, rolni tanlang va saqlang.
+- **Actions** menyusida foydalanuvchini tahrirlash yoki taklifnomani qayta yuborish mumkin.
 
-![Foydalanuvchi qoʻshish](../../images/user.png)
+![Foydalanuvchilar](../../images/user.png)
 
 ### Foydalanuvchi rollari va huquqlari
 
-**Roles** boʻlimi tashkilotdagi har bir foydalanuvchi uchun rollar va kirish huquqlarini tayinlash hamda sozlash imkonini beradi.
+**Roles** boʻlimida mavjud rollar va ularning huquqlari koʻrsatiladi.
 
-- Chap menyudan **Profile** boʻlimiga oʻting.
-- Huquqlarni koʻrish va tayinlash uchun **Roles** ni tanlang.
-- Moslashtirilgan huquqlarga ega yangi rol yaratish uchun **Add New Role** tugmasini bosing.
+- Profil menyusida **Roles** ni oching.
+- Rolning tavsifi va huquqlarini koʻrish uchun uni tanlang. Oldindan belgilangan rollar: **Owner**, **Service Administrator** va **Service Viewer**.
+- Oʻz huquqlar toʻplamiga ega yangi rol yaratish uchun **+** tugmasini bosing.
 
-![Rollarni tayinlash](../../images/roles.png)
+![Rollar](../../images/roles.png)
 
-### Akkaunt limitlari
+### Kvotalar va ularni oshirish
 
-**Account Limits** boʻlimi resurslardan foydalanishni koʻrish va zarur boʻlganda limitlarni oshirishni soʻrash imkonini beradi.
+**Account Limit** boʻlimi (**Quota** sahifasi) har bir zonadagi resurslar limitlari va ulardan foydalanishni koʻrsatadi.
 
-- Chap menyudan **Profile** boʻlimiga oʻting.
-- Ajratilgan resurslar jadvalini koʻrish uchun **Account Limit** ni tanlang.
-- Qoʻshimcha resurslar uchun soʻrov yuborish maqsadida **Request To Increase** tugmasini bosing.
+- Profil menyusida **Account Limit** ni oching.
+- **Quota Limits** yorligʻida har bir resursning limiti, foydalanilgan va mavjud hajmini koʻrish uchun zonani tanlang.
+- Limitni oshirishni soʻrash uchun resurs yonidagi **Request To Increase** ni bosing. Soʻrov holati **Request Status** ustunida koʻrsatiladi.
+- **Quota Usages Report** yorligʻida kvotalardan foydalanish hisoboti mavjud.
 
-![Akkaunt limitlari](../../images/req.png)
+![Kvotalar](../../images/req.png)
 
 ### Faoliyat jurnali
 
-**Activity Logs** boʻlimida platformadagi foydalanuvchilar va tizim harakatlarining batafsil yozuvlari saqlanadi.
+**Activity Logs** boʻlimida akkauntdagi amallar yozuvlari saqlanadi: IP manzil, foydalanuvchi, loyiha, amal turi, tavsif, vaqt va holat.
 
-- Chap menyudan **Profile** boʻlimiga oʻting.
-- Tizimdagi harakatlar va oʻzgarishlarni kuzatish uchun **Activity Logs** ni tanlang.
+- Profil menyusida **Activity Logs** ni oching.
 - Yozuvlarni kalit soʻzlar boʻyicha filtrlash uchun qidiruv satridan foydalaning.
 
 ![Faoliyat jurnali](../../images/activity.png)
 
 ### Kirishlar tarixi
 
-**Login History** boʻlimi kirishlar tarixi orqali akkauntga kirishni kuzatish va xavfsizlikni tekshirish imkonini beradi.
+**Login History** boʻlimi akkauntga barcha kirishlarni, jumladan muvaffaqiyatsiz urinishlarni koʻrsatadi.
 
-- Chap menyudan **Profile** boʻlimiga oʻting.
-- Kirish yozuvlarini koʻrish uchun **Login History** ni tanlang.
+- Profil menyusida **Login History** ni oching.
 
 ![Kirishlar tarixi](../../images/loginhist.png)
 
 ### Xulosa
 
-Ushbu qoʻllanmaga amal qilib, siz UzCloud profilingizni samarali boshqarishingiz, xavfsizlikni kuchaytirishingiz va akkauntni oʻz ehtiyojlaringizga moslashingiz mumkin. Profil maʼlumotlarining dolzarbligi akkauntni qulay boshqarishni taʼminlaydi va platformadagi xavfsizlikni oshiradi.
+Ushbu qoʻllanmaga amal qilib, siz UzCloud profilingizni boshqarishingiz, akkaunt xavfsizligini oshirishingiz va konsolni oʻz ehtiyojlaringizga moslashingiz mumkin.

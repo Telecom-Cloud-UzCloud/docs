@@ -9,8 +9,8 @@
 ### Access the Instance Overview
 
 - From the left side menu, locate and click on **Instances**.
-- From **Virtual Machine Instance** page, select the VM instance you want to access.
-- In the **VM Overview** tab, find the **Username** and **Password** fields and copy them for later use.
+- Click the name of the VM you want to access.
+- On the **Overview** tab, find the **Username** and **Provisioning Password** fields and copy them for later use (click the eye icon to show the password).
 
 ![Instance Overview](../../images/instance-overview-rdp.png)
 
@@ -36,8 +36,8 @@ To connect to the VM, open an RDP client on your local machine:
 ### Connect to the Windows VM
 
 - To open the RDP Client, launch the Remote Desktop Connection tool on your local machine.
-- Find the **Public IP Address** of your VM in the UzCloud **Overview** tab.
-- Provide the **Public IP Address** in the RDP client.
+- Find the **Public IP** of your VM on the **Overview** tab in UzCloud.
+- Enter the public IP address in the RDP client.
 - When prompted, enter the **Username** and **Password** you copied from UzCloud.
 - If a security warning appears about the identity of the remote machine the check the **"Don't ask me again for connections to this computer"** and click **Yes**.
 - To initiate the connection, click **OK** or **Connect** to establish the remote session.

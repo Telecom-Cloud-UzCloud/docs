@@ -2,12 +2,12 @@
 
 ## Portlarni yoʻnaltirish
 
-Portlarni yoʻnaltirish (port forwarding) xost yoki ommaviy IP manzilning muayyan portidagi trafikni virtual mashina portiga yoʻnaltirish imkonini beradi. Masalan, veb-serverga kirish uchun 8080-portdagi tashqi trafikni VM’ning 80-portiga yoʻnaltirish mumkin. Bu VM’dagi xizmatlarga tashqaridan kirishni ochish uchun qulay va sozlamalarni moslashuvchan saqlaydi.
+Portlarni yoʻnaltirish ommaviy IP manzil portidagi trafikni virtual mashina portiga yoʻnaltiradi. Masalan, tashqi 8080-portni VM’ning 80-portiga yoʻnaltirish mumkin.
 
 ---
 
-- Tarmoq trafigini yoʻnaltirish uchun **VM settings** ni oching va **Port Forwarding** boʻlimiga oʻting.
-- Ushbu tarmoq uchun port sozlamalarini oʻzgartirish maqsadida **Manage** tugmasini bosing.
+- **VM Settings** yorligʻida **Port Forwarding** ni tanlang. Roʻyxatda VM’ning ommaviy IP manzillari va ularning tarmoqlari koʻrsatiladi.
+- IP manzil yonidagi **Manage** ni bosing. Ommaviy IP manzil sahifasi **Port Forwarding** yorligʻida ochiladi, u yerda qoidalarni qoʻshish va oʻchirish mumkin.
 
 ![Portlarni yoʻnaltirishni sozlash](../../../images/vm-portforwading.png)
 
@@ -15,4 +15,9 @@ Portlarni yoʻnaltirish (port forwarding) xost yoki ommaviy IP manzilning muayya
 
 ### Xulosa
 
-Portlarni yoʻnaltirish VM’dagi xizmatlarga tashqaridan kirish uchun kuchli imkoniyat. Veb-server, SSH yoki oʻz ilovangiz boʻlsin, toʻgʻri sozlash qulay va xavfsiz ulanishni taʼminlaydi. Ziddiyatlarning oldini olish va faqat kerakli portlarni ochish uchun port qoidalarini har doim tekshiring.
+Portlarni yoʻnaltirish VM’dagi xizmatlarga kirishni ochish imkonini beradi. Faqat haqiqatan ham kerakli portlarni oching.
+
+> [!TIP]
+> **Shuningdek qarang:**
+>
+> - **[Ommaviy IP manzil](../../networks/public-ip-address.md)**

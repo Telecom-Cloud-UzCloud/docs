@@ -26,11 +26,13 @@ Other languages: [Русский](../ru/README.md) · [Oʻzbekcha](../uz/README.
   - [Change Plan](compute/vm-settings/change-plan.md)
   - [Change Hostname](compute/vm-settings/change-hostname.md)
   - [Change OS](compute/vm-settings/change-os.md)
+  - [Reset Password](compute/vm-settings/reset-password.md)
   - [Change Startup Script](compute/vm-settings/change-startup-script.md)
   - [Firewall](compute/vm-settings/firewall.md)
   - [Port Forwarding](compute/vm-settings/port-forwarding.md)
   - [Networks](compute/vm-settings/networks.md)
   - [SSH Keys](compute/vm-settings/ssh-keys.md)
+  - [Settings](compute/vm-settings/settings.md)
 - [Console Access](compute/console-access.md)
 - [Instance Backups](compute/instance-backups.md)
 - [VM Activity Logs](compute/vm-activity-logs.md)
@@ -65,21 +67,12 @@ Other languages: [Русский](../ru/README.md) · [Oʻzbekcha](../uz/README.
 
 - [Create Affinity Groups](affinity-groups/create-affinity-groups.md)
 
-### Veeam Backup
-
-- [Veeam Backup](veeam-backup/create-veeam-backup.md)
-- [Manage Veeam Backup](veeam-backup/manage-veeam-backup.md)
-
 ### Kubernetes
 
 - [Create Kubernetes Cluster](kubernetes/create-kubernetes-cluster.md)
 - [Kubernetes Cluster Overview](kubernetes/kubernetes-cluster-overview.md)
 - [Kubernetes Cluster via CLI](kubernetes/kubernetes-cluster-via-cli.md)
 - [Kubernetes Dashboard UI Access](kubernetes/kubernetes-dashboard-ui-access.md)
-
-### Auto Scaling
-
-- [Create Auto Scaling](auto-scaling/create-auto-scaling.md)
 
 ### Object Storage (Ceph)
 
@@ -110,15 +103,6 @@ Other languages: [Русский](../ru/README.md) · [Oʻzbekcha](../uz/README.
 ### Load Balancer
 
 - [Load Balancer](load-balancer/load-balancer.md)
-
-### DNS
-
-- [Create DNS](dns/create-dns.md)
-- [Manage DNS](dns/manage-dns.md)
-
-### VNF Appliances
-
-- [VNF Appliances](vnf-appliances/vnf-appliances.md)
 
 ### Billing
 

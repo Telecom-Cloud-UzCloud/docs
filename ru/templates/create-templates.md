@@ -69,6 +69,5 @@
 > [!TIP]
 > **См. также:**
 >
-> - **[VNF-устройства](../vnf-appliances/vnf-appliances.md)**
 > - **[Виртуальная машина](../compute/compute-instance.md)**
 > - **[ISO-образы](../isos/import-iso.md)**

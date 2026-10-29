@@ -2,17 +2,17 @@
 
 ## VM tarif rejasini oʻzgartirish
 
-Ushbu sozlama yordamida VM resurslarini — CPU yadrolari soni, RAM va xotira hajmini oshirish yoki kamaytirish mumkin. Bu resurslarga boʻlgan talablar oʻzgarganda foydali — masalan, eng yuqori yuklama davrida unumdorlikni oshirish yoki resurslar kamroq kerak boʻlganda xarajatlarni qisqartirish uchun. Rejani oʻzgartirishda VM qayta ishga tushirilishi mumkin.
+Yuklama oshganda VM resurslarini — vCPU soni va xotira hajmini oshirish mumkin.
 
 ---
 
-- Tarif rejasini oʻzgartirish uchun **VM settings** ni oching va **Change Plan** boʻlimiga oʻting.
-- Mavjud variantlardan birini tanlang yoki oʻzingizning rejangizni yarating.
+- **VM Settings** yorligʻida **Change Plan** ni tanlang. Yuqorida joriy reja koʻrsatiladi.
+- **General Compute** yoki **GPU Compute** yorligʻida yangi rejani tanlang yoki **Custom Plan** qatorida oʻz konfiguratsiyangizni belgilang. Faqat joriy rejadan katta rejalar mavjud.
 
 > [!WARNING]
-> Tarif rejasini pasaytirish hozircha qoʻllab-quvvatlanmaydi. Maʼlumotlarni yoʻqotish xavfisiz disk hajmini kichraytirib boʻlmaydi.
+> Tarif rejasini pasaytirish qoʻllab-quvvatlanmaydi. Yangi resurslar va sozlamalar kuchga kirishi uchun virtual mashinani qayta ishga tushirish kerak.
 
-- Tanlangan parametrlarni tekshiring va yangi rejani qoʻllash uchun **Review and Change Plan** tugmasini bosing.
+- Sahifaning pastki qismida **Billing Cycle** ni tanlang, **Price Summary** ni tekshiring va **Review & Change Plan** tugmasini bosing.
 
 ![VM tarif rejasini oʻzgartirish](../../../images/vm-change-plans.png)
 
@@ -20,4 +20,4 @@ Ushbu sozlama yordamida VM resurslarini — CPU yadrolari soni, RAM va xotira ha
 
 ### Xulosa
 
-Tarif rejasini oʻzgartirish resurslarni joriy ehtiyojlarga muvofiq samarali masshtablash imkonini beradi. Unumdorlikni yoki xarajatlarni optimallashtirayotgan boʻlsangiz ham, rejani oʻzgartirish infratuzilmani biznes vazifalariga mos holda saqlashga yordam beradi. Reja parametrlarini diqqat bilan tekshiring va baʼzi oʻzgarishlar VM’ni qayta ishga tushirishni talab qilishi mumkinligini hisobga oling.
+Rejani oʻzgartirish yuklama oshishi bilan VM resurslarini masshtablash imkonini beradi. Oʻzgartirishni qayta ishga tushirish foydalanuvchilarga taʼsir qilmaydigan vaqtga rejalashtiring.

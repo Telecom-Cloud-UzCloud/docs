@@ -2,44 +2,36 @@
 
 ## Virtual mashinalar konsoliga kirish
 
-**Console Access** funksiyasi virtual mashinani (VM) veb-interfeys orqali boshqarish va u bilan ishlash imkonini beradi. Bu ayniqsa yuklashdagi muammolarni tashxislash, tizimni sozlash va VM operatsion tizimi bilan xuddi mashina yonida turgandek ishlash uchun foydali.
+**Console Access** funksiyasi virtual mashina (VM) bilan xuddi uning yonida turgandek bevosita brauzerda ishlash imkonini beradi. Bu yuklashdagi muammolarni tashxislash, tizimni sozlash yoki SSH yoki RDP mavjud boʻlmaganda VM’ga kirish uchun qulay.
 
-- Konsolni ochish uchun amallar menyusidagi konsol belgisini bosing.
+- VM kartochkasidagi tezkor amallarda yoki **Virtual Machine Overview** sahifasida **Console Access** belgisini bosing. Konsol brauzerning yangi yorligʻida ochiladi.
 
 ![Konsolga kirish](../../images/console-access.png)
 
-### Klaviatura tugmalari birikmalari
+### Konsol asboblar paneli
 
-Konsol interfeysida VM’ni qulay boshqarish uchun vositalar mavjud: maxsus klaviatura amallari, almashish buferi bilan ishlash va toʻliq ekran rejimi. Mavjud amallar:
+Asboblar panelini ochish uchun konsol oynasining chap chetidagi tutqichni bosing. Panelda uchta tugma bor:
 
-![Konsol tugmalari birikmalari](../../images/console-access-shortcuts.png)
+- **Show extra keys** — maxsus tugmalar panelini ochadi:
+  - **Toggle Ctrl**, **Toggle Shift**, **Toggle Alt** va **Toggle Windows** — VM’da tegishli tugmani bosib ushlab turadi;
+  - **Send Tab** va **Send Escape** — Tab yoki Esc tugmasini yuboradi;
+  - **Send Ctrl-Alt-Del** — Ctrl+Alt+Delete birikmasini yuboradi.
 
-- **Toggle Control (Ctrl)** — VM ichida Ctrl bilan buyruqlarni bajarish uchun Control tugmasini bosishni taqlid qiladi.
-- **Toggle Alt** — Alt tugmasini bosishni taqlid qiladi.
-- **Toggle Shift** — Shift tugmasini bosishni taqlid qiladi.
-- **Toggle Windows Key** — Windows tugmasini taqlid qiladi, bu Windows’da «Pusk» menyusini ochish yoki tizim tugmalari birikmalaridan foydalanish imkonini beradi.
-- **Send Tab** — VM’ga Tab tugmasini yuboradi, odatda forma maydonlari va interfeys elementlari oʻrtasida oʻtish uchun.
-- **Send Escape (Esc)** — Escape tugmasini yuboradi.
-- **Send Ctrl+Alt+Delete** — Ctrl+Alt+Delete birikmasini yuboradi.
-- **Clipboard** — mahalliy kompyuter va VM oʻrtasida matnni nusxalash imkonini beradi.
+![Maxsus tugmalar](../../images/console-access-shortcuts.png)
+
+- **Clipboard** — VM’ga matn uzatish uchun maydonni ochadi: matnni maydonga joylashtiring va **Send** tugmasini bosing. **Clear** tugmasi maydonni tozalaydi.
 
 ![Almashish buferi](../../images/console-access-shortcuts-clipboard.png)
 
-- **Full-Screen Mode** — VM konsolini butun ekranga yoyadi va xuddi jismoniy kompyuterdagidek chalgʻimasdan ishlash imkonini beradi.
+- **Full screen** — konsolni butun ekranga yoyadi.
 
 ### Virtual mashinani boshqarish
 
-Konsol orqali mashinaga bevosita kirishni talab qiladigan deyarli har qanday vazifani bajarish mumkin, masalan:
-
-- dasturiy taʼminotni oʻrnatish;
-- sozlamalarni oʻzgartirish;
-- operatsion tizim muammolarini tashxislash.
-
-Bu funksiya VM’ni boshqarishni soddalashtiradi va serverlarga SSH yoki RDP kabi tashqi dasturlarsiz veb-interfeys orqali xizmat koʻrsatishi kerak boʻlgan tizim administratorlari uchun ayniqsa foydali.
+Konsol orqali mashinaga bevosita kirishni talab qiladigan har qanday vazifani bajarish mumkin: dasturlarni oʻrnatish, sozlamalarni oʻzgartirish va operatsion tizim muammolarini tashxislash — SSH yoki RDP kabi tashqi vositalarsiz.
 
 ### Xulosa
 
-**Console Access** funksiyasi virtual mashinalar bilan bevosita veb-interfeys orqali ishlashning kuchli va tushunarli usulidir. Yuklash muammolarini tashxislayotgan, tizimni sozlayotgan yoki maʼmuriy vazifalarni bajarayotgan boʻlsangiz ham, konsol VM’larni qulay va samarali boshqarishni taʼminlaydi. Yordam kerak boʻlsa, UzCloud hujjatlarini oʻrganing yoki qoʻllab-quvvatlash xizmatiga murojaat qiling.
+**Console Access** funksiyasi virtual mashinalar bilan bevosita brauzerda ishlashning qulay usulidir. Yordam kerak boʻlsa, UzCloud hujjatlarini oʻrganing yoki qoʻllab-quvvatlash xizmatiga murojaat qiling.
 
 > [!TIP]
 > **Shuningdek qarang:**

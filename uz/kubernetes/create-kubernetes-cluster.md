@@ -85,5 +85,4 @@ Ushbu qoʻllanmaga amal qilib, siz UzCloud’da Kubernetes klasterini osongina y
 >
 > - **[Kubernetes klasterini boshqarish](kubernetes-cluster-overview.md)**
 > - **[Yuklama muvozanatlagich](../load-balancer/load-balancer.md)**
-> - **[Avtomatik masshtablash](../auto-scaling/create-auto-scaling.md)**
 > - **[Affinity guruhlari](../affinity-groups/create-affinity-groups.md)**

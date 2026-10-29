@@ -2,12 +2,11 @@
 
 ## UzCloud’da virtual mashinalarni zaxiralash
 
-**Zaxira nusxalar** virtual mashina maʼlumotlarini saqlaydi va tasodifiy oʻchirish, dasturiy nosozliklar va xavfsizlik tahdidlaridan himoya qiladi. Zaxiralashni yoqib, siz har doim tiklash mumkin boʻlgan VM versiyasiga ega boʻlasiz.
+**Zaxira nusxalar** virtual mashina maʼlumotlarini saqlaydi va ularni tasodifiy oʻchirish, dasturiy nosozliklar va xavfsizlik tahdidlaridan himoya qiladi.
 
-**UzCloud** har kuni, har hafta yoki oʻz jadvalingiz boʻyicha avtomatik zaxiralashni qoʻllab-quvvatlaydi — maʼlumotlarni qoʻlda ishlamasdan tiklash mumkin. Zaxiralash maʼlumotlarni himoya qilish va kutilmagan muammolarda ishlamay qolish vaqtini qisqartirish uchun juda muhim.
-
-- VM’ni avtomatik zaxiralashni sozlash uchun **Backups** yorligʻini oching.
-- **Backups** yorligʻida VM’ni avtomatik zaxiralashni yoqish yoki zaxira nusxani muayyan vaqtga rejalashtirish mumkin.
+- **Virtual Machine Overview** sahifasida **Backups** yorligʻini oching. Bu yerda VM’ning barcha zaxira nusxalari — qoʻlda va jadval boʻyicha yaratilganlari koʻrsatiladi.
+- Zaxira nusxa yaratish uchun **+ Create New** tugmasini bosing.
+- Zaxira nusxalar jadval boʻyicha avtomatik yaratilishi uchun **Schedules** yorligʻidan foydalaning.
 
 ![VM zaxira nusxalari](../../images/vm-backups.png)
 

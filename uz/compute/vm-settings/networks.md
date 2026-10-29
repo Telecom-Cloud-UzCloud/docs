@@ -2,12 +2,13 @@
 
 ## Tarmoqni sozlash
 
-Ushbu sozlama VM tarmoq interfeyslarini, jumladan xususiy va ommaviy tarmoqlarni boshqarish imkonini beradi. Xususiy tarmoqlar virtual mashinalar oʻrtasida internetga chiqmasdan aloqa qilish uchun ishlatiladi, ommaviy tarmoqlar esa internetga kirish uchun tashqi IP manzillarni taqdim etadi. Shu yerda oʻtkazish qobiliyati cheklovlarini oʻzgartirish va IP manzillarni tayinlash yoki olib tashlash mumkin.
+Bu yerda VM’ning tarmoq interfeyslari koʻrsatiladi, shuningdek uni qoʻshimcha tarmoqlarga ulash mumkin.
 
 ---
 
-- Tarmoq sozlamalarini qoʻshish yoki oʻzgartirish uchun **VM settings** ni oching va **Networks** boʻlimiga oʻting.
-- Tarmoq qoʻshish uchun **Add Network** tugmasini bosing yoki sozlamalarini oʻzgartirish uchun tarmoq ustiga bosing.
+- **VM Settings** yorligʻida **Networks** ni tanlang. Har bir tarmoq uchun nomi, MAC manzili, IP manzili, niqobi va turi koʻrsatiladi. Standart tarmoq **Default** belgisi bilan belgilangan.
+- VM’ni boshqa tarmoqqa ulash uchun **+ Add Network** ni bosing.
+- Tarmoq kartochkasidagi belgilar yordamida tarmoqni asosiy qilish (**Make This Network as Default**) yoki uni uzish (**Remove Network**) mumkin.
 
 ![Tarmoqni sozlash](../../../images/vm-networks.png)
 
@@ -15,7 +16,7 @@ Ushbu sozlama VM tarmoq interfeyslarini, jumladan xususiy va ommaviy tarmoqlarni
 
 ### Xulosa
 
-Tarmoq sozlamalarini boshqarish virtual mashinalarning bogʻlanishi va xavfsizligi uchun muhim. Xususiy tarmoqlar orqali ichki aloqani sozlayotgan yoki xizmatlarni ommaviy tarmoqlar orqali taqdim etayotgan boʻlsangiz ham, interfeyslarni moslashuvchan tayinlash infratuzilmani aniq vazifalarga moslash imkonini beradi. Ziddiyatlarning oldini olish va optimal unumdorlikni taʼminlash uchun oʻtkazish qobiliyati va kirish sozlamalarini tekshiring.
+Tarmoqlarni boshqarish VM uchun ichki aloqa va ommaviy kirishni birlashtirish imkonini beradi.
 
 > [!TIP]
 > - **[VPC tarmoqlarini yaratish](../../networks/vpc-network/create-vpc-network.md)**

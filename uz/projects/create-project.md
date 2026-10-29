@@ -2,54 +2,46 @@
 
 ## Loyihani yaratish va boshqarish
 
-Ushbu qoʻllanmada UzCloud’da loyiha yaratish, unga foydalanuvchilarni qoʻshish hamda loyiha uchun akkaunt limitlari va kvotalarni sozlash bosqichma-bosqich tushuntiriladi.
+Loyihalar resurslarni guruhlash va ularga kirishni boshqarishga yordam beradi. Ushbu qoʻllanmada UzCloud’da loyiha yaratish, unga foydalanuvchilarni qoʻshish va loyiha uchun kvotalarni belgilash tushuntiriladi.
 
 ### Yangi loyiha yaratish
 
-- Chap menyuda **Projects** ni bosing.
-- **Create a New Project** tugmasini bosing.
+- Chap menyuda **Projects** ni bosing. Sahifada barcha loyihalaringiz koʻrsatiladi.
+- **+ Create New Project** tugmasini bosing.
 
-![Loyiha yaratish](../../images/create-project.png)
+![Loyihalar](../../images/create-project.png)
 
-- Loyiha maʼlumotlarini kiriting: **Project Name** (nomi), **Project Description** (tavsifi) va **Project Purpose** (maqsadi).
-- **Create Project** tugmasini bosing. Loyiha yaratiladi.
+- **Project Name** (nomi) va **Project Description** (tavsifi, 250 belgigacha) ni kiriting hamda **Project Purpose** (maqsadi) ni tanlang. Xohlasangiz, rasmdagi qalamni bosib loyiha belgisini oʻzgartiring.
+- **Create Project** tugmasini bosing.
 
-![Yangi loyiha maʼlumotlari](../../images/create-new-project.png)
+![Loyiha yaratish](../../images/create-new-project.png)
 
 ### Loyiha resurslarini koʻrish
 
-Loyiha yaratilgach, u bilan bogʻliq resurslarni koʻrishingiz mumkin.
+Loyihani ochish uchun uning kartochkasidagi **VIEW** tugmasini bosing. Loyiha sahifasida resurslar soni koʻrsatiladi: **Instances**, **Instances Snapshot**, **Backups**, **Network**, **Load Balancer** va **Kubernetes**. Loyiha nomi va tavsifini oʻzgartirish uchun yuqori oʻng burchakdagi qalam belgisini bosing.
 
 ![Loyiha resurslari](../../images/create-new-project-resources.png)
 
-- **Virtual Machine** — ilovalarni ishga tushirish yoki veb-saytlarni joylashtirish uchun toʻliq sozlanadigan bulutli server.
-- **VM Snapshot** — virtual mashina holati va maʼlumotlarining maʼlum bir vaqtdagi nusxasi.
-- **Backup** — maʼlumotlarni himoya qilish va biznes uzluksizligini taʼminlash uchun boshqariladigan zaxira nusxalash.
-- **Block Storage** — virtual mashinalarga ulanadigan qoʻshimcha xotira disklari.
-- **Network** — bulutli resurslarni ulash va boshqarish uchun ommaviy va xususiy tarmoqlar.
-- **Load Balancer** — yuqori mavjudlikni taʼminlash uchun trafikni bir nechta virtual mashinalar oʻrtasida taqsimlaydi.
-
 ### Loyihaga foydalanuvchilarni qoʻshish
 
-- Loyihaga foydalanuvchilarni qoʻshish uchun **Add Users to the Project** tugmasini bosing.
-- Qidiruv satri yordamida kerakli foydalanuvchini toping.
-- Foydalanuvchini loyihaga qoʻshish uchun **Add** tugmasini bosing.
+- **Users In Project** blokida **+ Add users to the project** tugmasini bosing.
+- Qidiruv satri yordamida foydalanuvchilarni toping, ularni belgilang va **Assign** tugmasini bosing.
+- Agar foydalanuvchi hali mavjud boʻlmasa, **+ Create new user** ni bosing.
 
-![Foydalanuvchi qoʻshish](../../images/create-new-project-add-user.png)
+![Loyihaga foydalanuvchilarni qoʻshish](../../images/create-new-project-add-user.png)
 
-### Loyiha uchun akkaunt limitlarini sozlash
+### Loyiha kvotalarini sozlash
 
-- Loyiha resurslari limitlari akkaunt limitlari orqali belgilanadi.
-- **Project Account Limit** boʻlimiga oʻting. Bu yerda resurslar limitlari va joriy foydalanish koʻrsatiladi.
-- Limit belgilanadigan **Zone** (zona) ni tanlang.
+**Project Quota Limit** blokida tanlangan zonadagi loyiha resurslarining limiti va ulardan foydalanish koʻrsatiladi.
 
-![Akkaunt limitlari](../../images/create-new-project-account-limit.png)
+- **Select Zone** maydonida zonani tanlang.
 
-- **Edit Account Limit** tugmasini bosing. **Assign a Quota to the Project** sahifasi ochiladi.
-- **Zone** va kvotasi oʻzgartiriladigan **Resource** (resurs) ni tanlang.
-- Kerakli **Quota Limit** qiymatini kiriting. `-1` qiymati ushbu resurs uchun **cheklanmagan** kvotani bildiradi.
+![Loyiha kvotalari](../../images/create-new-project-account-limit.png)
+
+- **Edit Quota Limit** tugmasini bosing. **Assign a quota to the project** oynasi ochiladi.
+- Zonani tanlang va cheklash kerak boʻlgan resurslar uchun **Quota Limit** ni kiriting. `-1` qiymati **cheklanmagan** kvotani bildiradi.
 - **Submit** tugmasini bosing.
 
-![Kvotani oshirish](../../images/create-new-project-account-limit-increase.png)
+![Loyihaga kvota tayinlash](../../images/create-new-project-account-limit-increase.png)
 
-Ushbu qoʻllanmaga amal qilib, siz UzCloud’da loyihalarni samarali yaratishingiz va boshqarishingiz, qulay hamkorlik va resurslarni optimal taqsimlashni taʼminlashingiz mumkin.
+Ushbu qoʻllanmaga amal qilib, siz UzCloud’da loyihalarni yaratishingiz va boshqarishingiz, jamoa kirishini tashkil qilishingiz va resurslar isteʼmolini nazorat qilishingiz mumkin.

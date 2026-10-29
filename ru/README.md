@@ -26,11 +26,13 @@
   - [Смена тарифного плана](compute/vm-settings/change-plan.md)
   - [Изменение имени хоста](compute/vm-settings/change-hostname.md)
   - [Смена ОС](compute/vm-settings/change-os.md)
+  - [Сброс пароля](compute/vm-settings/reset-password.md)
   - [Изменение скрипта запуска](compute/vm-settings/change-startup-script.md)
   - [Межсетевой экран](compute/vm-settings/firewall.md)
   - [Проброс портов](compute/vm-settings/port-forwarding.md)
   - [Сети](compute/vm-settings/networks.md)
   - [SSH-ключи](compute/vm-settings/ssh-keys.md)
+  - [Параметры ВМ](compute/vm-settings/settings.md)
 - [Доступ к консоли](compute/console-access.md)
 - [Резервные копии ВМ](compute/instance-backups.md)
 - [Журнал активности ВМ](compute/vm-activity-logs.md)
@@ -65,21 +67,12 @@
 
 - [Создание групп привязки](affinity-groups/create-affinity-groups.md)
 
-### Veeam Backup
-
-- [Veeam Backup](veeam-backup/create-veeam-backup.md)
-- [Управление Veeam Backup](veeam-backup/manage-veeam-backup.md)
-
 ### Kubernetes
 
 - [Создание кластера Kubernetes](kubernetes/create-kubernetes-cluster.md)
 - [Обзор кластера Kubernetes](kubernetes/kubernetes-cluster-overview.md)
 - [Кластер Kubernetes через CLI](kubernetes/kubernetes-cluster-via-cli.md)
 - [Доступ к Kubernetes Dashboard](kubernetes/kubernetes-dashboard-ui-access.md)
-
-### Автомасштабирование
-
-- [Создание автомасштабирования](auto-scaling/create-auto-scaling.md)
 
 ### Объектное хранилище (Ceph)
 
@@ -110,15 +103,6 @@
 ### Балансировщик нагрузки
 
 - [Балансировщик нагрузки](load-balancer/load-balancer.md)
-
-### DNS
-
-- [Создание DNS](dns/create-dns.md)
-- [Управление DNS](dns/manage-dns.md)
-
-### VNF-устройства
-
-- [VNF-устройства](vnf-appliances/vnf-appliances.md)
 
 ### Биллинг
 

@@ -2,15 +2,15 @@
 
 ## Change Operating System
 
-This setting allows you to reinstall or switch the operating system (OS) running on your virtual machine. You can choose from various OS options, such as Linux distributions (Ubuntu, CentOS, Debian, etc.) or Windows Server versions. Note that changing the OS will erase all existing data and configurations on the VM, so ensure to back up critical data beforehand.
+This setting allows you to reinstall the operating system of your virtual machine or switch to another one.
 
 ---
 
-- To change operating system go to the **VM settings** and navigate to the **Change OS** section.
-- From **Templates** select the OS and the particular version and then click on **Change OS**.
+- On the **VM Settings** tab, select **Change OS**. The current OS and the date of the last change are shown at the top.
+- In **Select Template**, select the OS and its version, then click **Change OS**.
 
 > [!WARNING]
-> Changing to different operating system will wipe all data on the server. Delete snapshots and backups before changing the OS.
+> Changing the operating system will wipe all data on the server. Delete snapshots and backups before changing the OS.
 
 ![Change OS Settings](../../../images/vm-settings-change-os.png)
 
@@ -18,7 +18,7 @@ This setting allows you to reinstall or switch the operating system (OS) running
 
 ### Conclusion
 
-Changing the OS of a virtual machine allows you to adapt to different software requirements or start fresh with a clean environment. Always ensure proper backups are taken before proceeding, as this operation removes existing configurations and data. Select a reliable and compatible OS template to match your workload needs.
+Changing the OS lets you start fresh with a clean environment. Always back up important data before proceeding.
 
 > [!TIP]
 > **See also:**

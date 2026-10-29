@@ -10,21 +10,21 @@ Virtual mashinani terminal orqali SSH yordamida boshqarish mumkin. Bu xavfsiz ul
 
 Ulanishdan oldin sizda quyidagi maʼlumotlar borligiga ishonch hosil qiling:
 
-- **IP manzil** — VM kartochkasida yoki Virtual Machine Overview sahifasida koʻrsatilgan.
+- **IP manzil** — VM kartochkasida va Virtual Machine Overview sahifasida (**Public IP**) koʻrsatilgan.
 
 - **Standart foydalanuvchi nomi** — operatsion tizimga bogʻliq (`root`, `ubuntu`, `ec2-user`).
 
 - **Autentifikatsiya usuli**:
 
   - **SSH kalit (tavsiya etiladi)** — sizda maxfiy kalit fayli borligiga ishonch hosil qiling.
-  - **Standart parol** — SSH kalit ishlatilmasa, Virtual Machine Overview sahifasida koʻrsatilgan.
+  - **Parol** — SSH kalit ishlatilmasa, Virtual Machine Overview sahifasidagi **Provisioning Password** maydonida koʻrsatilgan.
 
 ![VM kartochkasi](../../images/instance.png)
 
 ### Virtual mashina haqida maʼlumot
 
-- VM’ning **IP manzili** yaratilgandan soʻng uning kartochkasida koʻrsatiladi. Nusxalash uchun kursorni uning ustiga olib boring.
-- VM haqida batafsil maʼlumot **Virtual Machine Overview** sahifasida — uni kartochkadagi VM nomini bosib ochishingiz mumkin.
+- VM’ning **IP manzili** uning kartochkasida koʻrsatiladi. Uni nusxalash uchun yonidagi nusxalash belgisini bosing.
+- **Virtual Machine Overview** sahifasini ochish uchun VM nomini bosing: unda ommaviy IP, SSH porti, foydalanuvchi nomi va parol koʻrsatilgan.
 
 ![Resurs xususiyatlari](../../images/instance-overview-details.png)
 

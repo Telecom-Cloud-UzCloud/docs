@@ -2,12 +2,12 @@
 
 ## Tarmoqlararo ekranni sozlash
 
-Tarmoqlararo ekran (firewall) virtual mashinaning kiruvchi va chiquvchi tarmoq trafigi uchun xavfsizlik qoidalarini belgilash imkonini beradi. Muayyan IP manzillar, portlar yoki protokollar uchun kirishga ruxsat berish yoki uni taqiqlash mumkin. Masalan, SSH (22-port) va veb-trafik (80/443-portlar) dan tashqari barcha trafikni bloklash mumkin. Bu VM’ni ruxsatsiz kirishdan himoya qilish uchun muhim.
+Tarmoqlararo ekran qoidalari virtual mashinaga qaysi kiruvchi trafik yetib borishi mumkinligini belgilaydi: qaysi IP manzillardan, qaysi portlarga va qaysi protokollar orqali. Masalan, faqat SSH (22-port) va veb-trafikka (80/443-portlar) ruxsat berish mumkin.
 
 ---
 
-- Tarmoqlararo ekran sozlamalarini oʻzgartirish uchun **VM settings** ni oching va **Firewall** boʻlimiga oʻting.
-- Ushbu tarmoq uchun tarmoqlararo ekran sozlamalarini oʻzgartirish maqsadida **Manage** tugmasini bosing.
+- **VM Settings** yorligʻida **Firewall** ni tanlang. Roʻyxatda VM’ning ommaviy IP manzillari va ularning tarmoqlari koʻrsatiladi.
+- IP manzil yonidagi **Manage** ni bosing. Ommaviy IP manzil sahifasi **Firewall** yorligʻida ochiladi, u yerda qoidalarni qoʻshish va oʻchirish mumkin.
 
 ![Tarmoqlararo ekranni sozlash](../../../images/vm-firewall.png)
 
@@ -15,4 +15,9 @@ Tarmoqlararo ekran (firewall) virtual mashinaning kiruvchi va chiquvchi tarmoq t
 
 ### Xulosa
 
-Tarmoqlararo ekranni toʻgʻri sozlash virtual mashinalar xavfsizligi va yaxlitligi uchun juda muhim. Ruxsat etilgan va taqiqlangan trafik uchun aniq qoidalarni belgilab, siz hujum yuzasini kamaytirasiz va faqat ishonchli ulanishlarga ruxsat berasiz. Tarmoqlararo ekran sozlamalarini xavfsizlik siyosatlariga muvofiqligini muntazam tekshirib turing.
+Tarmoqlararo ekranni toʻgʻri sozlash hujum yuzasini kamaytiradi. Qoidalarni muntazam tekshiring va faqat kerakli portlarni oching.
+
+> [!TIP]
+> **Shuningdek qarang:**
+>
+> - **[Ommaviy IP manzil](../../networks/public-ip-address.md)**

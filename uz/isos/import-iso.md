@@ -61,6 +61,5 @@ Ushbu qoʻllanmaga amal qilib, siz UzCloud’da ISO obrazlarni osongina yaratish
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[VNF qurilmalari](../vnf-appliances/vnf-appliances.md)**
 > - **[Virtual mashina](../compute/compute-instance.md)**
 > - **[Shablonlar yaratish](../templates/create-templates.md)**

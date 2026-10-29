@@ -2,12 +2,12 @@
 
 ## Firewall Configuration
 
-The Firewall setting provides a way to define security rules for incoming and outgoing network traffic to your virtual machine. You can allow or deny access to specific IP addresses, ports, or protocols. For example, you might block all traffic except for SSH (port 22) and web traffic (port 80/443). This is essential for securing your VM against unauthorized access.
+Firewall rules define which incoming traffic is allowed to reach your virtual machine: from which IP addresses, to which ports, and over which protocols. For example, you can allow only SSH (port 22) and web traffic (ports 80/443).
 
 ---
 
-- To change and manage your firewall configurations, go to the **VM settings** and navigate to the **Firewall** section.
-- Click on **Manage** to change firewall configurations for that network.
+- On the **VM Settings** tab, select **Firewall**. The list shows the public IP addresses of the VM and their networks.
+- Click **Manage** next to the IP address. The public IP address page opens on the **Firewall** tab, where you can add and remove rules.
 
 ![Firewall Configuration Settings](../../../images/vm-firewall.png)
 
@@ -15,4 +15,9 @@ The Firewall setting provides a way to define security rules for incoming and ou
 
 ### Conclusion
 
-Proper firewall configuration is critical for maintaining the security and integrity of your virtual machines. By setting precise rules for allowed and blocked traffic, you minimize potential attack surfaces and ensure that only trusted connections are permitted. Regularly audit your firewall settings to keep them aligned with your security policies.
+Proper firewall configuration minimizes the attack surface. Regularly review your rules and open only the ports you need.
+
+> [!TIP]
+> **See also:**
+>
+> - **[Public IP Address](../../networks/public-ip-address.md)**
