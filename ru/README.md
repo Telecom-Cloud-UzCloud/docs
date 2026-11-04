@@ -11,6 +11,15 @@
 - [Введение](getting-started/introduction.md)
 - [Настройка профиля](getting-started/profile-setup.md)
 
+### Безопасность
+
+- [Чек-лист безопасности](security/security-checklist.md)
+- [Обновление операционной системы](security/update-os.md)
+- [Защита SSH](security/ssh-hardening.md)
+- [Сетевой доступ](security/network-access.md)
+- [Безопасность аккаунта](security/account-security.md)
+- [CVE-2026-98432: уязвимость TCP в ядре Linux](security/bulletins/cve-2026-98432.md)
+
 ### Проекты
 
 - [Создание проекта](projects/create-project.md)

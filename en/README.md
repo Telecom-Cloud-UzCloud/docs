@@ -11,6 +11,15 @@ Other languages: [Русский](../ru/README.md) · [Oʻzbekcha](../uz/README.
 - [Introduction](getting-started/introduction.md)
 - [Profile Setup](getting-started/profile-setup.md)
 
+### Security
+
+- [Security Checklist](security/security-checklist.md)
+- [Update the Operating System](security/update-os.md)
+- [SSH Hardening](security/ssh-hardening.md)
+- [Network Access](security/network-access.md)
+- [Account Security](security/account-security.md)
+- [CVE-2026-98432: Linux Kernel TCP Vulnerability](security/bulletins/cve-2026-98432.md)
+
 ### Projects
 
 - [Create Project](projects/create-project.md)
