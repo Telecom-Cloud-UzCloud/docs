@@ -117,6 +117,8 @@ Other languages: [Русский](../ru/README.md) · [Oʻzbekcha](../uz/README.
   - [JavaScript (Node.js)](object-storage/sdk/javascript.md)
   - [PHP](object-storage/sdk/php.md)
   - [Go](object-storage/sdk/go.md)
+  - [Java](object-storage/sdk/java.md)
+  - [C# / .NET](object-storage/sdk/dotnet.md)
   - [Laravel](object-storage/sdk/laravel.md)
   - [Django](object-storage/sdk/django.md)
 
