@@ -24,4 +24,4 @@ OT’ni oʻzgartirish toza muhit bilan ishni boshlash imkonini beradi. Bu amalda
 > **Shuningdek qarang:**
 >
 > - **[Shablon yaratish](../../templates/create-templates.md)**
-> - **[ISO import qilish](../../isos/import-iso.md)**
+> - **[ISO import qilish](../../iso/import-iso.md)**

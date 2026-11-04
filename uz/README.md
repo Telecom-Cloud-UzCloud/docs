@@ -73,7 +73,7 @@ Boshqa tillar: [English](../en/README.md) · [Русский](../ru/README.md)
 
 ### ISO obrazlar
 
-- [ISO import qilish](isos/import-iso.md)
+- [ISO import qilish](iso/import-iso.md)
 
 ### Affinity guruhlari
 
@@ -90,6 +90,38 @@ Boshqa tillar: [English](../en/README.md) · [Русский](../ru/README.md)
 
 - [Obyektli xotira yaratish](object-storage/create-object-storage.md)
 - [Obyektli xotirani boshqarish](object-storage/manage-object-storage.md)
+- [S3 orqali ulanish](object-storage/connection.md)
+- **Bucketlar bilan ishlash**
+  - [Obyektlarni versiyalash](object-storage/buckets/versioning.md)
+  - [Object Lock](object-storage/buckets/object-lock.md)
+  - [Obyektlarning hayot sikli](object-storage/buckets/lifecycle.md)
+  - [CORS’ni sozlash](object-storage/buckets/cors.md)
+  - [Bucket Policy](object-storage/buckets/bucket-policy.md)
+  - [Statik sayt](object-storage/buckets/static-website.md)
+- **Obyektlar bilan ishlash**
+  - [Obyekt sarlavhalari](object-storage/objects/object-headers.md)
+  - [Multipart yuklash](object-storage/objects/multipart-upload.md)
+  - [Presigned URL](object-storage/objects/presigned-url.md)
+- **Vositalar**
+  - [AWS CLI](object-storage/tools/aws-cli.md)
+  - [s3cmd](object-storage/tools/s3cmd.md)
+  - [rclone](object-storage/tools/rclone.md)
+  - [s3fs](object-storage/tools/s3fs.md)
+  - [Cyberduck](object-storage/tools/cyberduck.md)
+  - [S3 Browser](object-storage/tools/s3-browser.md)
+- **Koddan ishlash**
+  - [Python (boto3)](object-storage/sdk/python.md)
+  - [JavaScript (Node.js)](object-storage/sdk/javascript.md)
+  - [PHP](object-storage/sdk/php.md)
+  - [Go](object-storage/sdk/go.md)
+  - [Java](object-storage/sdk/java.md)
+  - [C# / .NET](object-storage/sdk/dotnet.md)
+  - [Laravel](object-storage/sdk/laravel.md)
+  - [Django](object-storage/sdk/django.md)
+- **Amaliy misollar**
+  - [restic bilan server zaxira nusxalari](object-storage/examples/server-backup-restic.md)
+  - [Maʼlumotlar bazalari zaxira nusxalari](object-storage/examples/database-backup.md)
+  - [S3’ni Nginx orqali proksilash](object-storage/examples/nginx-proxy.md)
 
 ### Tarmoqlar
 

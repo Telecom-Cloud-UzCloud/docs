@@ -10,28 +10,28 @@ Ushbu nazorat roʻyxatida har bir VM’da nima qilish kerakligi keltirilgan. Har
 
 ### VM yaratilgandan keyin darhol
 
-- [ ] **Faqat SSH kalitlar orqali kiring.** VM yaratishda SSH kalit qoʻshing, soʻng parol orqali kirishni va root sifatida bevosita kirishni oʻchiring. **[SSH himoyasi](ssh-hardening.md)** ga qarang.
-- [ ] **Barcha yangilanishlarni oʻrnating va VM’ni qayta ishga tushiring.** Yangi VM bir necha hafta oldingi obrazdan yaratilgan boʻlishi mumkin. **[Operatsion tizimni yangilash](update-os.md)** ga qarang.
-- [ ] **Faqat kerakli portlarni oching.** SSH (22) va RDP (3389) ga faqat oʻz IP manzillaringizdan ruxsat bering, hech qachon `0.0.0.0/0` uchun emas. **[Tarmoqqa kirish](network-access.md)** ga qarang.
-- [ ] **Zaxira nusxalashni sozlang.** VM disklarini jadval boʻyicha zaxiralashni yoqing. **[Zaxira nusxalar](../backups/create-backups.md)** va **[Jadvallar](../schedules/schedules.md)** ga qarang.
+- **Faqat SSH kalitlar orqali kiring.** VM yaratishda SSH kalit qoʻshing, soʻng parol orqali kirishni va root sifatida bevosita kirishni oʻchiring. **[SSH himoyasi](ssh-hardening.md)** ga qarang.
+- **Barcha yangilanishlarni oʻrnating va VM’ni qayta ishga tushiring.** Yangi VM bir necha hafta oldingi obrazdan yaratilgan boʻlishi mumkin. **[Operatsion tizimni yangilash](update-os.md)** ga qarang.
+- **Faqat kerakli portlarni oching.** SSH (22) va RDP (3389) ga faqat oʻz IP manzillaringizdan ruxsat bering, hech qachon `0.0.0.0/0` uchun emas. **[Tarmoqqa kirish](network-access.md)** ga qarang.
+- **Zaxira nusxalashni sozlang.** VM disklarini jadval boʻyicha zaxiralashni yoqing. **[Zaxira nusxalar](../backups/create-backups.md)** va **[Jadvallar](../schedules/schedules.md)** ga qarang.
 
 ### Har oy
 
-- [ ] Xavfsizlik yangilanishlari oʻrnatilganini tekshiring va yadro yangilangan boʻlsa, VM’ni qayta ishga tushiring.
-- [ ] Ochiq portlar va xavfsizlik devori qoidalari roʻyxatini koʻrib chiqing va keraksizlarini oʻchiring.
-- [ ] Operatsion tizim hali ishlab chiqaruvchi tomonidan qoʻllab-quvvatlanishini tekshiring (end of life).
-- [ ] UzCloud hisobingizning **Activity Logs** va **Login History** boʻlimlarini koʻrib chiqing.
+- Xavfsizlik yangilanishlari oʻrnatilganini tekshiring va yadro yangilangan boʻlsa, VM’ni qayta ishga tushiring.
+- Ochiq portlar va xavfsizlik devori qoidalari roʻyxatini koʻrib chiqing va keraksizlarini oʻchiring.
+- Operatsion tizim hali ishlab chiqaruvchi tomonidan qoʻllab-quvvatlanishini tekshiring (end of life).
+- UzCloud hisobingizning **Activity Logs** va **Login History** boʻlimlarini koʻrib chiqing.
 
 ### Har chorakda
 
-- [ ] VM’ni zaxira nusxadan tiklashni sinab koʻring. Hech qachon tiklanmagan zaxira nusxa kafolat emas.
-- [ ] UzCloud hisobi foydalanuvchilari va ularning rollarini koʻrib chiqing, kirish endi kerak boʻlmaganlarni oʻchiring.
-- [ ] API tokenlari va S3 kirish kalitlarini almashtiring.
+- VM’ni zaxira nusxadan tiklashni sinab koʻring. Hech qachon tiklanmagan zaxira nusxa kafolat emas.
+- UzCloud hisobi foydalanuvchilari va ularning rollarini koʻrib chiqing, kirish endi kerak boʻlmaganlarni oʻchiring.
+- API tokenlari va S3 kirish kalitlarini almashtiring.
 
 ### UzCloud hisobini himoya qilish
 
-- [ ] Ikki bosqichli autentifikatsiyani yoqing. **[Hisob xavfsizligi](account-security.md)** ga qarang.
-- [ ] Bitta umumiy hisob oʻrniga har bir xodim uchun minimal zarur rolga ega alohida foydalanuvchi yarating.
+- Ikki bosqichli autentifikatsiyani yoqing. **[Hisob xavfsizligi](account-security.md)** ga qarang.
+- Bitta umumiy hisob oʻrniga har bir xodim uchun minimal zarur rolga ega alohida foydalanuvchi yarating.
 
 ---
 

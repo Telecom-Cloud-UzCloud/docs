@@ -24,4 +24,4 @@ Changing the OS lets you start fresh with a clean environment. Always back up im
 > **See also:**
 >
 > - **[Create Template](../../templates/create-templates.md)**
-> - **[Import ISO](../../isos/import-iso.md)**
+> - **[Import ISO](../../iso/import-iso.md)**

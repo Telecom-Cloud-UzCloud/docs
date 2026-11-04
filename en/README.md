@@ -73,7 +73,7 @@ Other languages: [Русский](../ru/README.md) · [Oʻzbekcha](../uz/README.
 
 ### ISOs
 
-- [Import ISO](isos/import-iso.md)
+- [Import ISO](iso/import-iso.md)
 
 ### Affinity Groups
 
@@ -90,6 +90,38 @@ Other languages: [Русский](../ru/README.md) · [Oʻzbekcha](../uz/README.
 
 - [Create Object Storage](object-storage/create-object-storage.md)
 - [Manage Object Storage](object-storage/manage-object-storage.md)
+- [Connecting over S3](object-storage/connection.md)
+- **Working with Buckets**
+  - [Object Versioning](object-storage/buckets/versioning.md)
+  - [Object Lock](object-storage/buckets/object-lock.md)
+  - [Object Lifecycle](object-storage/buckets/lifecycle.md)
+  - [CORS Setup](object-storage/buckets/cors.md)
+  - [Bucket Policy](object-storage/buckets/bucket-policy.md)
+  - [Static Website](object-storage/buckets/static-website.md)
+- **Working with Objects**
+  - [Object Headers](object-storage/objects/object-headers.md)
+  - [Multipart Upload](object-storage/objects/multipart-upload.md)
+  - [Presigned URL](object-storage/objects/presigned-url.md)
+- **Tools**
+  - [AWS CLI](object-storage/tools/aws-cli.md)
+  - [s3cmd](object-storage/tools/s3cmd.md)
+  - [rclone](object-storage/tools/rclone.md)
+  - [s3fs](object-storage/tools/s3fs.md)
+  - [Cyberduck](object-storage/tools/cyberduck.md)
+  - [S3 Browser](object-storage/tools/s3-browser.md)
+- **Working from Code**
+  - [Python (boto3)](object-storage/sdk/python.md)
+  - [JavaScript (Node.js)](object-storage/sdk/javascript.md)
+  - [PHP](object-storage/sdk/php.md)
+  - [Go](object-storage/sdk/go.md)
+  - [Java](object-storage/sdk/java.md)
+  - [C# / .NET](object-storage/sdk/dotnet.md)
+  - [Laravel](object-storage/sdk/laravel.md)
+  - [Django](object-storage/sdk/django.md)
+- **Practical Examples**
+  - [Server Backups with restic](object-storage/examples/server-backup-restic.md)
+  - [Database Backups](object-storage/examples/database-backup.md)
+  - [Nginx Proxy for S3](object-storage/examples/nginx-proxy.md)
 
 ### Networks
 

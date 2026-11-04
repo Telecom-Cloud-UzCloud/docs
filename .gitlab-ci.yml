@@ -1,0 +1,11 @@
+stages:
+  - check
+
+check-docs:
+  stage: check
+  image: python:3.12-alpine
+  script:
+    - python3 scripts/check-docs.py
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
