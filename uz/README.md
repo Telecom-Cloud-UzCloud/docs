@@ -111,7 +111,6 @@ Boshqa tillar: [English](../en/README.md) · [Русский](../ru/README.md)
 - **Foydalanish stsenariylari**
   - [restic bilan server zaxira nusxalari](object-storage/use-cases/server-backup-restic.md)
   - [Maʼlumotlar bazalari zaxira nusxalari](object-storage/use-cases/database-backup.md)
-  - [S3 bilan Nextcloud](object-storage/use-cases/nextcloud.md)
   - [S3’ni Nginx orqali proksilash](object-storage/use-cases/nginx-proxy.md)
 - **SDK**
   - [Python (boto3)](object-storage/sdk/python.md)

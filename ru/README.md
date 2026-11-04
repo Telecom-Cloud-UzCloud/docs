@@ -111,7 +111,6 @@
 - **Сценарии использования**
   - [Бэкапы сервера с restic](object-storage/use-cases/server-backup-restic.md)
   - [Бэкапы баз данных](object-storage/use-cases/database-backup.md)
-  - [Nextcloud с S3](object-storage/use-cases/nextcloud.md)
   - [Проксирование S3 через Nginx](object-storage/use-cases/nginx-proxy.md)
 - **SDK**
   - [Python (boto3)](object-storage/sdk/python.md)

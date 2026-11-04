@@ -111,7 +111,6 @@ Other languages: [Русский](../ru/README.md) · [Oʻzbekcha](../uz/README.
 - **Use Cases**
   - [Server Backups with restic](object-storage/use-cases/server-backup-restic.md)
   - [Database Backups](object-storage/use-cases/database-backup.md)
-  - [Nextcloud with S3](object-storage/use-cases/nextcloud.md)
   - [Nginx Proxy for S3](object-storage/use-cases/nginx-proxy.md)
 - **SDK**
   - [Python (boto3)](object-storage/sdk/python.md)
