@@ -108,13 +108,13 @@
   - [Заголовки объектов](object-storage/features/object-headers.md)
   - [Мультипарт-загрузка](object-storage/features/multipart-upload.md)
   - [Presigned URL](object-storage/features/presigned-url.md)
-  - [Проксирование S3 через Nginx](object-storage/features/nginx-proxy.md)
   - [Статический сайт](object-storage/features/static-website.md)
 - **Сценарии использования**
   - [Обзор сценариев](object-storage/use-cases/overview.md)
   - [Бэкапы сервера с restic](object-storage/use-cases/server-backup-restic.md)
   - [Бэкапы баз данных](object-storage/use-cases/database-backup.md)
   - [Nextcloud с S3](object-storage/use-cases/nextcloud.md)
+  - [Проксирование S3 через Nginx](object-storage/use-cases/nginx-proxy.md)
 - **SDK**
   - [SDK для S3](object-storage/sdk/overview.md)
   - [Python (boto3)](object-storage/sdk/python.md)

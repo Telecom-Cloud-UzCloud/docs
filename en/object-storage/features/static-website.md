@@ -34,7 +34,7 @@ The files are now available at `https://s3.uzcstorage.uz/my-site/index.html`.
 
 ## Step 3. Connect Your Domain
 
-To open the site at `https://example.com` and to serve `index.html` for folder addresses, put Nginx in front of the bucket. Use the configuration from **[Nginx Proxy for S3](nginx-proxy.md)** and replace the `location` block:
+To open the site at `https://example.com` and to serve `index.html` for folder addresses, put Nginx in front of the bucket. Use the configuration from **[Nginx Proxy for S3](../use-cases/nginx-proxy.md)** and replace the `location` block:
 
 ```nginx
 location / {
