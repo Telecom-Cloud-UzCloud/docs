@@ -119,4 +119,4 @@ Muntazam yangilanishlar va qoʻllab-quvvatlanadigan OT maʼlum zaifliklarning ak
 > **Shuningdek qarang:**
 >
 > - **[Xavfsizlik boʻyicha nazorat roʻyxati](security-checklist.md)**
-> - **[CVE-2026-98432: Linux yadrosidagi TCP zaifligi](bulletins/cve-2026-98432.md)**
+> - **[CVE-2026-98432: Linux yadrosidagi TCP zaifligi](vulnerabilities/cve-2026-98432.md)**

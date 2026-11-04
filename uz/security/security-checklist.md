@@ -35,11 +35,11 @@ Ushbu nazorat roʻyxatida har bir VM’da nima qilish kerakligi keltirilgan. Har
 
 ---
 
-### Xavfsizlik byulletenlari
+### Dolzarb zaifliklar haqida ogohlantirishlar
 
-Muhim zaiflik mijozlarimizning VM’lariga taʼsir qilganda, biz koʻrsatmalar bilan byulleten eʼlon qilamiz:
+Muhim zaiflik mijozlarimizning VM’lariga taʼsir qilganda, biz koʻrsatmalar bilan ogohlantirish eʼlon qilamiz:
 
-- **[CVE-2026-98432: Linux yadrosidagi TCP zaifligi](bulletins/cve-2026-98432.md)** — 2026-yil 4-noyabr
+- **[CVE-2026-98432: Linux yadrosidagi TCP zaifligi](vulnerabilities/cve-2026-98432.md)** — 2026-yil 4-noyabr
 
 > [!TIP]
 > Agar server muhim boʻlsa yoki biror narsa tushunarsiz boʻlsa, ishni boshlashdan oldin **[qoʻllab-quvvatlash xizmatiga](../support/support.md)** murojaat qiling — amallarni rejalashtirishga yordam beramiz.

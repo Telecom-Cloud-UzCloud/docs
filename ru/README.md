@@ -18,7 +18,7 @@
 - [Защита SSH](security/ssh-hardening.md)
 - [Сетевой доступ](security/network-access.md)
 - [Безопасность аккаунта](security/account-security.md)
-- [CVE-2026-98432: уязвимость TCP в ядре Linux](security/bulletins/cve-2026-98432.md)
+- [CVE-2026-98432: уязвимость TCP в ядре Linux](security/vulnerabilities/cve-2026-98432.md)
 
 ### Проекты
 

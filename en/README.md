@@ -18,7 +18,7 @@ Other languages: [Русский](../ru/README.md) · [Oʻzbekcha](../uz/README.
 - [SSH Hardening](security/ssh-hardening.md)
 - [Network Access](security/network-access.md)
 - [Account Security](security/account-security.md)
-- [CVE-2026-98432: Linux Kernel TCP Vulnerability](security/bulletins/cve-2026-98432.md)
+- [CVE-2026-98432: Linux Kernel TCP Vulnerability](security/vulnerabilities/cve-2026-98432.md)
 
 ### Projects
 

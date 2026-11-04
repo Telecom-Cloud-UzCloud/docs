@@ -119,4 +119,4 @@ Regular updates and a supported OS close most known vulnerabilities. Combine the
 > **See also:**
 >
 > - **[Security Checklist](security-checklist.md)**
-> - **[CVE-2026-98432: Linux kernel TCP vulnerability](bulletins/cve-2026-98432.md)**
+> - **[CVE-2026-98432: Linux kernel TCP vulnerability](vulnerabilities/cve-2026-98432.md)**

@@ -119,4 +119,4 @@ sudo systemctl enable --now dnf-automatic-install.timer
 > **См. также:**
 >
 > - **[Чек-лист безопасности](security-checklist.md)**
-> - **[CVE-2026-98432: уязвимость TCP в ядре Linux](bulletins/cve-2026-98432.md)**
+> - **[CVE-2026-98432: уязвимость TCP в ядре Linux](vulnerabilities/cve-2026-98432.md)**
