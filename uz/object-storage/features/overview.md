@@ -12,7 +12,6 @@ UzCloud obyektli xotirasi Ceph asosida qurilgan va Amazon S3 API’ning asosiy i
 | [Obyekt sarlavhalari](object-headers.md) | Content-Type, Cache-Control, metamaʼlumotlar | — | ✓ |
 | [Multipart yuklash](multipart-upload.md) | Katta fayllarni qismlarga boʻlib yuklash | — | ✓ |
 | [Presigned URL](presigned-url.md) | Yopiq obyektlarga vaqtinchalik havolalar | — | ✓ |
-| [Nginx orqali proksilash](nginx-proxy.md) | Oʻz domeningiz va keshlash | — | — |
 | [Statik sayt](static-website.md) | Bucketda statik sayt joylashtirish | — | ✓ |
 
 Konsolda mavjud boʻlmagan imkoniyatlar uchun **[vositalar](../tools/overview.md)** yoki **[SDK](../sdk/overview.md)** dan foydalaning.

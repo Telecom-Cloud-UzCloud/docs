@@ -12,7 +12,6 @@ UzCloud Object Storage is built on Ceph and supports the core Amazon S3 API. The
 | [Object headers](object-headers.md) | Content-Type, Cache-Control, metadata | — | ✓ |
 | [Multipart upload](multipart-upload.md) | Upload large files in parts | — | ✓ |
 | [Presigned URL](presigned-url.md) | Temporary links to private objects | — | ✓ |
-| [Nginx proxy](nginx-proxy.md) | Your own domain and caching | — | — |
 | [Static website](static-website.md) | Host a static site in a bucket | — | ✓ |
 
 To work with features that are not available in the console, use the **[tools](../tools/overview.md)** or an **[SDK](../sdk/overview.md)**.
