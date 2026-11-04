@@ -73,7 +73,7 @@ Other languages: [Русский](../ru/README.md) · [Oʻzbekcha](../uz/README.
 
 ### ISOs
 
-- [Import ISO](isos/import-iso.md)
+- [Import ISO](iso/import-iso.md)
 
 ### Affinity Groups
 

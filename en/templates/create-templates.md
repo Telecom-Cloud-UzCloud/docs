@@ -54,4 +54,4 @@ Templates let you deploy virtual machines with the same configuration quickly an
 > **See also:**
 >
 > - **[Compute Instance](../compute/compute-instance.md)**
-> - **[ISOs](../isos/import-iso.md)**
+> - **[ISOs](../iso/import-iso.md)**

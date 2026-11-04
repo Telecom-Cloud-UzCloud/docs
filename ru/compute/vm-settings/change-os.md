@@ -24,4 +24,4 @@
 > **См. также:**
 >
 > - **[Создание шаблона](../../templates/create-templates.md)**
-> - **[Импорт ISO](../../isos/import-iso.md)**
+> - **[Импорт ISO](../../iso/import-iso.md)**

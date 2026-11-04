@@ -73,7 +73,7 @@
 
 ### ISO-образы
 
-- [Импорт ISO](isos/import-iso.md)
+- [Импорт ISO](iso/import-iso.md)
 
 ### Группы привязки
 

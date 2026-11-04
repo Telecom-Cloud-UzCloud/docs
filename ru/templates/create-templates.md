@@ -54,4 +54,4 @@
 > **См. также:**
 >
 > - **[Виртуальная машина](../compute/compute-instance.md)**
-> - **[ISO-образы](../isos/import-iso.md)**
+> - **[ISO-образы](../iso/import-iso.md)**

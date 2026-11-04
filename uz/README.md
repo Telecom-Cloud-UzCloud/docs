@@ -73,7 +73,7 @@ Boshqa tillar: [English](../en/README.md) · [Русский](../ru/README.md)
 
 ### ISO obrazlar
 
-- [ISO import qilish](isos/import-iso.md)
+- [ISO import qilish](iso/import-iso.md)
 
 ### Affinity guruhlari
 

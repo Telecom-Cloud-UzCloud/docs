@@ -54,4 +54,4 @@ Shablonlar bir xil konfiguratsiyaga ega virtual mashinalarni tez va bir xilda jo
 > **Shuningdek qarang:**
 >
 > - **[Virtual mashina](../compute/compute-instance.md)**
-> - **[ISO obrazlar](../isos/import-iso.md)**
+> - **[ISO obrazlar](../iso/import-iso.md)**
