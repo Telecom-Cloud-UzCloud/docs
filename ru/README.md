@@ -117,6 +117,8 @@
   - [JavaScript (Node.js)](object-storage/sdk/javascript.md)
   - [PHP](object-storage/sdk/php.md)
   - [Go](object-storage/sdk/go.md)
+  - [Laravel](object-storage/sdk/laravel.md)
+  - [Django](object-storage/sdk/django.md)
 
 ### Сети
 
