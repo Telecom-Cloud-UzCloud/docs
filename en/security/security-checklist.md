@@ -10,28 +10,28 @@ This checklist lists what to do on every VM. Each item links to a detailed guide
 
 ### Right After Creating a VM
 
-- [ ] **Sign in with SSH keys only.** Add an SSH key when you create the VM, then disable password login and direct root login. See **[SSH Hardening](ssh-hardening.md)**.
-- [ ] **Install all updates and reboot.** A new VM may be created from an image that is several weeks old. See **[Update the Operating System](update-os.md)**.
-- [ ] **Open only the ports you need.** Allow SSH (22) or RDP (3389) only from your IP addresses, never from `0.0.0.0/0`. See **[Network Access](network-access.md)**.
-- [ ] **Set up backups.** Configure scheduled backups of the VM disks. See **[Backups](../backups/create-backups.md)** and **[Schedules](../schedules/schedules.md)**.
+- **Sign in with SSH keys only.** Add an SSH key when you create the VM, then disable password login and direct root login. See **[SSH Hardening](ssh-hardening.md)**.
+- **Install all updates and reboot.** A new VM may be created from an image that is several weeks old. See **[Update the Operating System](update-os.md)**.
+- **Open only the ports you need.** Allow SSH (22) or RDP (3389) only from your IP addresses, never from `0.0.0.0/0`. See **[Network Access](network-access.md)**.
+- **Set up backups.** Configure scheduled backups of the VM disks. See **[Backups](../backups/create-backups.md)** and **[Schedules](../schedules/schedules.md)**.
 
 ### Every Month
 
-- [ ] Check that security updates are installed, and reboot the VM if the kernel was updated.
-- [ ] Review the list of open ports and firewall rules, and remove the ones you no longer need.
-- [ ] Check that the operating system is still supported by its vendor (end of life).
-- [ ] Review the **Activity Logs** and **Login History** of your UzCloud account.
+- Check that security updates are installed, and reboot the VM if the kernel was updated.
+- Review the list of open ports and firewall rules, and remove the ones you no longer need.
+- Check that the operating system is still supported by its vendor (end of life).
+- Review the **Activity Logs** and **Login History** of your UzCloud account.
 
 ### Every Quarter
 
-- [ ] Test restoring a VM from a backup. A backup that has never been restored is not a guarantee.
-- [ ] Review the users of your UzCloud account and their roles, and remove the ones who no longer need access.
-- [ ] Rotate API tokens and S3 access keys.
+- Test restoring a VM from a backup. A backup that has never been restored is not a guarantee.
+- Review the users of your UzCloud account and their roles, and remove the ones who no longer need access.
+- Rotate API tokens and S3 access keys.
 
 ### Protect Your UzCloud Account
 
-- [ ] Enable two-factor authentication. See **[Account Security](account-security.md)**.
-- [ ] Give each employee their own user with the minimum required role instead of sharing one account.
+- Enable two-factor authentication. See **[Account Security](account-security.md)**.
+- Give each employee their own user with the minimum required role instead of sharing one account.
 
 ---
 
