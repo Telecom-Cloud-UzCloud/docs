@@ -94,7 +94,7 @@ $url = Storage::disk('s3')->temporaryUrl($path, now()->addMinutes(30), [
 ]);
 ```
 
-For public files (for example, product images), open read access to a folder with a **[bucket policy](../features/bucket-policy.md)** and use a permanent link:
+For public files (for example, product images), open read access to a folder with a **[bucket policy](../buckets/bucket-policy.md)** and use a permanent link:
 
 ```php
 $url = Storage::disk('s3')->url('public/products/1.jpg');
@@ -112,7 +112,7 @@ Large files are better uploaded by the browser directly to the bucket, without p
 return response()->json(compact('url', 'headers'));
 ```
 
-The browser sends the file with `fetch(url, { method: "PUT", headers, body: file })`. Configure **[CORS](../features/cors.md)** for the bucket.
+The browser sends the file with `fetch(url, { method: "PUT", headers, body: file })`. Configure **[CORS](../buckets/cors.md)** for the bucket.
 
 > [!TIP]
 > Keep `public` and `local` disks for temporary files and move user files to `s3`: then the application servers stay stateless and can be scaled or recreated without losing data.

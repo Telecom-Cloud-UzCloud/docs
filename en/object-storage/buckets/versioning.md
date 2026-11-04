@@ -6,7 +6,7 @@ The examples use **[AWS CLI](../tools/aws-cli.md)** configured for UzCloud. Repl
 
 ## Enable Versioning
 
-**In the console:** turn on **Bucket Versioning** when you create a bucket. See **[Manage Object Storage](../../object-storage/manage-object-storage.md)**.
+**In the console:** turn on **Bucket Versioning** when you create a bucket. See **[Manage Object Storage](../manage-object-storage.md)**.
 
 **With AWS CLI:**
 

@@ -82,7 +82,7 @@ Add `--delete` to `aws s3 sync` to also delete objects in the bucket that no lon
 
 ## Large Files
 
-AWS CLI automatically splits files larger than 8 MB into parts and uploads them in parallel (multipart upload). See **[Multipart Upload](../features/multipart-upload.md)**.
+AWS CLI automatically splits files larger than 8 MB into parts and uploads them in parallel (multipart upload). See **[Multipart Upload](../objects/multipart-upload.md)**.
 
 ## Temporary Links
 
@@ -92,7 +92,7 @@ Create a link that gives access to a private object for a limited time (in secon
 aws s3 presign s3://my-bucket/docs/report.pdf --expires-in 3600
 ```
 
-See **[Presigned URL](../features/presigned-url.md)**.
+See **[Presigned URL](../objects/presigned-url.md)**.
 
 > [!TIP]
 > **See also:**

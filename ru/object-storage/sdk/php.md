@@ -114,7 +114,7 @@ while (!$body->eof()) {
 
 ## Presigned URL
 
-Presigned URL дает временный доступ к объекту без передачи ключей. Ссылка на загрузку позволяет браузеру или другому сервису загрузить файл прямо в бакет — см. **[Presigned URL](../features/presigned-url.md)** и **[CORS](../features/cors.md)**.
+Presigned URL дает временный доступ к объекту без передачи ключей. Ссылка на загрузку позволяет браузеру или другому сервису загрузить файл прямо в бакет — см. **[Presigned URL](../objects/presigned-url.md)** и **[CORS](../buckets/cors.md)**.
 
 ```php
 // Download link, valid for 1 hour

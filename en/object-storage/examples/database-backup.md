@@ -44,7 +44,7 @@ echo "30 2 * * * root /usr/local/bin/db-backup.sh >> /var/log/db-backup.log 2>&1
 
 ## Delete Old Dumps Automatically
 
-Add a **[lifecycle rule](../features/lifecycle.md)** that deletes dumps after 30 days:
+Add a **[lifecycle rule](../buckets/lifecycle.md)** that deletes dumps after 30 days:
 
 ```bash
 aws s3api put-bucket-lifecycle-configuration --bucket my-backups --lifecycle-configuration '{

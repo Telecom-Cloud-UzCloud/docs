@@ -114,7 +114,7 @@ while (!$body->eof()) {
 
 ## Presigned URL
 
-Presigned URL kalitlarni bermasdan obyektga vaqtinchalik kirish imkonini beradi. Yuklash havolasi brauzer yoki boshqa xizmatga faylni bevosita bucketga yuklash imkonini beradi — **[Presigned URL](../features/presigned-url.md)** va **[CORS](../features/cors.md)** ga qarang.
+Presigned URL kalitlarni bermasdan obyektga vaqtinchalik kirish imkonini beradi. Yuklash havolasi brauzer yoki boshqa xizmatga faylni bevosita bucketga yuklash imkonini beradi — **[Presigned URL](../objects/presigned-url.md)** va **[CORS](../buckets/cors.md)** ga qarang.
 
 ```php
 // Download link, valid for 1 hour

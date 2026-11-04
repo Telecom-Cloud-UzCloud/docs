@@ -34,7 +34,7 @@ Endi fayllar `https://s3.uzcstorage.uz/my-site/index.html` manzilida mavjud.
 
 ## 3-qadam. Oʻz domeningizni ulang
 
-Sayt `https://example.com` manzilida ochilishi va papka manzillari uchun `index.html` berilishi uchun bucket oldiga Nginx qoʻying. **[S3’ni Nginx orqali proksilash](../use-cases/nginx-proxy.md)** maqolasidagi konfiguratsiyani oling va `location` blokini almashtiring:
+Sayt `https://example.com` manzilida ochilishi va papka manzillari uchun `index.html` berilishi uchun bucket oldiga Nginx qoʻying. **[S3’ni Nginx orqali proksilash](../examples/nginx-proxy.md)** maqolasidagi konfiguratsiyani oling va `location` blokini almashtiring:
 
 ```nginx
 location / {

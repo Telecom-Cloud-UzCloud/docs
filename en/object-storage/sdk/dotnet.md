@@ -105,7 +105,7 @@ await using (var stream = File.OpenRead("video.mp4"))
 
 ## Presigned URLs
 
-A presigned URL gives temporary access to an object without sharing your keys. An upload link lets a browser or another service upload a file directly to the bucket — see **[Presigned URL](../features/presigned-url.md)** and **[CORS](../features/cors.md)**.
+A presigned URL gives temporary access to an object without sharing your keys. An upload link lets a browser or another service upload a file directly to the bucket — see **[Presigned URL](../objects/presigned-url.md)** and **[CORS](../buckets/cors.md)**.
 
 ```csharp
 // Download link, valid for 1 hour

@@ -6,7 +6,7 @@ Misollarda UzCloud uchun sozlangan **[AWS CLI](../tools/aws-cli.md)** ishlatilad
 
 ## Versiyalashni yoqish
 
-**Konsolda:** bucket yaratishda **Bucket Versioning** ni yoqing. **[Obyektli xotirani boshqarish](../../object-storage/manage-object-storage.md)** ga qarang.
+**Konsolda:** bucket yaratishda **Bucket Versioning** ni yoqing. **[Obyektli xotirani boshqarish](../manage-object-storage.md)** ga qarang.
 
 **AWS CLI orqali:**
 

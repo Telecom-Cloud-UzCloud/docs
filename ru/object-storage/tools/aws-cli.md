@@ -82,7 +82,7 @@ aws s3 rm s3://my-bucket/tmp/ --recursive
 
 ## Большие файлы
 
-AWS CLI автоматически делит файлы больше 8 МБ на части и загружает их параллельно (мультипарт-загрузка). См. **[Мультипарт-загрузка](../features/multipart-upload.md)**.
+AWS CLI автоматически делит файлы больше 8 МБ на части и загружает их параллельно (мультипарт-загрузка). См. **[Мультипарт-загрузка](../objects/multipart-upload.md)**.
 
 ## Временные ссылки
 
@@ -92,7 +92,7 @@ AWS CLI автоматически делит файлы больше 8 МБ н�
 aws s3 presign s3://my-bucket/docs/report.pdf --expires-in 3600
 ```
 
-См. **[Presigned URL](../features/presigned-url.md)**.
+См. **[Presigned URL](../objects/presigned-url.md)**.
 
 > [!TIP]
 > **См. также:**

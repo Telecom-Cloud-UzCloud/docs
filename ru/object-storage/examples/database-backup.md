@@ -44,7 +44,7 @@ echo "30 2 * * * root /usr/local/bin/db-backup.sh >> /var/log/db-backup.log 2>&1
 
 ## Автоматическое удаление старых дампов
 
-Добавьте **[правило жизненного цикла](../features/lifecycle.md)**, которое удаляет дампы через 30 дней:
+Добавьте **[правило жизненного цикла](../buckets/lifecycle.md)**, которое удаляет дампы через 30 дней:
 
 ```bash
 aws s3api put-bucket-lifecycle-configuration --bucket my-backups --lifecycle-configuration '{

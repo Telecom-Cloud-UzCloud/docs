@@ -72,7 +72,7 @@ aws s3api abort-multipart-upload --bucket my-bucket \
   --key backups/backup.tar.gz --upload-id <UploadId>
 ```
 
-Чтобы удалять их автоматически, добавьте **[правило жизненного цикла](lifecycle.md)** `AbortIncompleteMultipartUpload`.
+Чтобы удалять их автоматически, добавьте **[правило жизненного цикла](../buckets/lifecycle.md)** `AbortIncompleteMultipartUpload`.
 
 > [!TIP]
 > **См. также:**

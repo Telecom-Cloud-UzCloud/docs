@@ -54,7 +54,7 @@ STORAGES = {
 }
 ```
 
-`static/` papkasiga **[bucket siyosati](../features/bucket-policy.md)** yordamida oʻqish huquqini oching (misolda `public/*` ni `static/*` ga almashtiring) va statik fayllarni yuklang:
+`static/` papkasiga **[bucket siyosati](../buckets/bucket-policy.md)** yordamida oʻqish huquqini oching (misolda `public/*` ni `static/*` ga almashtiring) va statik fayllarni yuklang:
 
 ```bash
 python manage.py collectstatic --noinput

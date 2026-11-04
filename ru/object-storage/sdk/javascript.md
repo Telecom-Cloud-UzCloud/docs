@@ -111,7 +111,7 @@ await pipeline(Body, createWriteStream("video-copy.mp4"));
 
 ## Presigned URL
 
-Presigned URL дает временный доступ к объекту без передачи ключей. Ссылка на загрузку позволяет браузеру или другому сервису загрузить файл прямо в бакет — см. **[Presigned URL](../features/presigned-url.md)** и **[CORS](../features/cors.md)**.
+Presigned URL дает временный доступ к объекту без передачи ключей. Ссылка на загрузку позволяет браузеру или другому сервису загрузить файл прямо в бакет — см. **[Presigned URL](../objects/presigned-url.md)** и **[CORS](../buckets/cors.md)**.
 
 ```javascript
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
@@ -160,7 +160,7 @@ async function uploadFile(file) {
 ```
 
 > [!IMPORTANT]
-> Для загрузки из браузера разрешите домен сайта и метод `PUT` в правилах **[CORS](../features/cors.md)** бакета.
+> Для загрузки из браузера разрешите домен сайта и метод `PUT` в правилах **[CORS](../buckets/cors.md)** бакета.
 
 ## Ошибки и повторные попытки
 

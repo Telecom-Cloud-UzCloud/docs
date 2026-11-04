@@ -44,7 +44,7 @@ echo "30 2 * * * root /usr/local/bin/db-backup.sh >> /var/log/db-backup.log 2>&1
 
 ## Eski damplarni avtomatik oʻchirish
 
-Damplarni 30 kundan keyin oʻchiradigan **[hayot sikli qoidasini](../features/lifecycle.md)** qoʻshing:
+Damplarni 30 kundan keyin oʻchiradigan **[hayot sikli qoidasini](../buckets/lifecycle.md)** qoʻshing:
 
 ```bash
 aws s3api put-bucket-lifecycle-configuration --bucket my-backups --lifecycle-configuration '{

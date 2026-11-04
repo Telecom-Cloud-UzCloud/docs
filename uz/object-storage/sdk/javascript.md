@@ -111,7 +111,7 @@ Oqimdan yuklash uchun `Upload` dan foydalaning (yuqoriga qarang): `PutObjectComm
 
 ## Presigned URL
 
-Presigned URL kalitlarni bermasdan obyektga vaqtinchalik kirish imkonini beradi. Yuklash havolasi brauzer yoki boshqa xizmatga faylni bevosita bucketga yuklash imkonini beradi — **[Presigned URL](../features/presigned-url.md)** va **[CORS](../features/cors.md)** ga qarang.
+Presigned URL kalitlarni bermasdan obyektga vaqtinchalik kirish imkonini beradi. Yuklash havolasi brauzer yoki boshqa xizmatga faylni bevosita bucketga yuklash imkonini beradi — **[Presigned URL](../objects/presigned-url.md)** va **[CORS](../buckets/cors.md)** ga qarang.
 
 ```javascript
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
@@ -160,7 +160,7 @@ async function uploadFile(file) {
 ```
 
 > [!IMPORTANT]
-> Brauzerdan yuklash uchun bucketning **[CORS](../features/cors.md)** qoidalarida sayt domeni va `PUT` usuliga ruxsat bering.
+> Brauzerdan yuklash uchun bucketning **[CORS](../buckets/cors.md)** qoidalarida sayt domeni va `PUT` usuliga ruxsat bering.
 
 ## Xatolar va qayta urinishlar
 

@@ -54,7 +54,7 @@ STORAGES = {
 }
 ```
 
-Откройте доступ на чтение к папке `static/` **[политикой бакета](../features/bucket-policy.md)** (в примере замените `public/*` на `static/*`) и загрузите статику:
+Откройте доступ на чтение к папке `static/` **[политикой бакета](../buckets/bucket-policy.md)** (в примере замените `public/*` на `static/*`) и загрузите статику:
 
 ```bash
 python manage.py collectstatic --noinput

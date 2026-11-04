@@ -94,7 +94,7 @@ $url = Storage::disk('s3')->temporaryUrl($path, now()->addMinutes(30), [
 ]);
 ```
 
-Для публичных файлов (например, изображений товаров) откройте доступ на чтение к папке **[политикой бакета](../features/bucket-policy.md)** и используйте постоянную ссылку:
+Для публичных файлов (например, изображений товаров) откройте доступ на чтение к папке **[политикой бакета](../buckets/bucket-policy.md)** и используйте постоянную ссылку:
 
 ```php
 $url = Storage::disk('s3')->url('public/products/1.jpg');
@@ -112,7 +112,7 @@ $url = Storage::disk('s3')->url('public/products/1.jpg');
 return response()->json(compact('url', 'headers'));
 ```
 
-Браузер отправляет файл запросом `fetch(url, { method: "PUT", headers, body: file })`. Настройте для бакета **[CORS](../features/cors.md)**.
+Браузер отправляет файл запросом `fetch(url, { method: "PUT", headers, body: file })`. Настройте для бакета **[CORS](../buckets/cors.md)**.
 
 > [!TIP]
 > Оставьте диски `public` и `local` для временных файлов, а пользовательские файлы перенесите на `s3`: тогда серверы приложения не хранят состояние, их можно масштабировать и пересоздавать без потери данных.

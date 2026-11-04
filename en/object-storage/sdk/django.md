@@ -54,7 +54,7 @@ STORAGES = {
 }
 ```
 
-Open read access to the `static/` folder with a **[bucket policy](../features/bucket-policy.md)** (replace `public/*` with `static/*` in the example), then upload the static files:
+Open read access to the `static/` folder with a **[bucket policy](../buckets/bucket-policy.md)** (replace `public/*` with `static/*` in the example), then upload the static files:
 
 ```bash
 python manage.py collectstatic --noinput

@@ -82,7 +82,7 @@ Mahalliy ravishda endi mavjud boʻlmagan obyektlarni bucketdan ham oʻchirish uc
 
 ## Katta fayllar
 
-AWS CLI 8 MB dan katta fayllarni avtomatik ravishda qismlarga boʻladi va ularni parallel yuklaydi (multipart yuklash). **[Multipart yuklash](../features/multipart-upload.md)** ga qarang.
+AWS CLI 8 MB dan katta fayllarni avtomatik ravishda qismlarga boʻladi va ularni parallel yuklaydi (multipart yuklash). **[Multipart yuklash](../objects/multipart-upload.md)** ga qarang.
 
 ## Vaqtinchalik havolalar
 
@@ -92,7 +92,7 @@ Yopiq obyektga cheklangan vaqt (soniyalarda) kirish imkonini beradigan havola ya
 aws s3 presign s3://my-bucket/docs/report.pdf --expires-in 3600
 ```
 
-**[Presigned URL](../features/presigned-url.md)** ga qarang.
+**[Presigned URL](../objects/presigned-url.md)** ga qarang.
 
 > [!TIP]
 > **Shuningdek qarang:**

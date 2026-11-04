@@ -72,7 +72,7 @@ aws s3api abort-multipart-upload --bucket my-bucket \
   --key backups/backup.tar.gz --upload-id <UploadId>
 ```
 
-To clean them up automatically, add the `AbortIncompleteMultipartUpload` **[lifecycle rule](lifecycle.md)**.
+To clean them up automatically, add the `AbortIncompleteMultipartUpload` **[lifecycle rule](../buckets/lifecycle.md)**.
 
 > [!TIP]
 > **See also:**

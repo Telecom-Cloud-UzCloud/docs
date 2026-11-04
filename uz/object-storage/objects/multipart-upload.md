@@ -72,7 +72,7 @@ aws s3api abort-multipart-upload --bucket my-bucket \
   --key backups/backup.tar.gz --upload-id <UploadId>
 ```
 
-Ularni avtomatik tozalash uchun `AbortIncompleteMultipartUpload` **[hayot sikli qoidasini](lifecycle.md)** qoʻshing.
+Ularni avtomatik tozalash uchun `AbortIncompleteMultipartUpload` **[hayot sikli qoidasini](../buckets/lifecycle.md)** qoʻshing.
 
 > [!TIP]
 > **Shuningdek qarang:**

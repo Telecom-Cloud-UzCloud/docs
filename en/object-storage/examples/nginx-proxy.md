@@ -1,15 +1,15 @@
-# S3’ni Nginx orqali proksilash
+# Nginx Proxy for S3
 
-Bucket oldidagi Nginx proksi fayllarni oʻz domeningizdan (masalan, `https://cdn.example.com/...`) tarqatish, ularni serverda keshlash va S3 xizmat sarlavhalarini yashirish imkonini beradi.
+An Nginx proxy in front of a bucket lets you serve files from your own domain (for example, `https://cdn.example.com/...`), cache them on the server and hide S3 service headers.
 
-## Tayyorgarlik
+## Before You Start
 
-- Nginx oʻrnatilgan VM va uning ommaviy IP manziliga yoʻnaltirilgan domen;
-- tarqatmoqchi boʻlgan fayllaringizga ommaviy oʻqish huquqi — **[Bucket Policy](../features/bucket-policy.md#papkaga-ommaviy-kirish)** ga qarang.
+- a VM with Nginx and a domain pointing to its public IP address;
+- public read access to the files you want to serve — see **[Bucket Policy](../buckets/bucket-policy.md#public-read-for-a-folder)**.
 
-## Nginx konfiguratsiyasi
+## Nginx Configuration
 
-`/etc/nginx/conf.d/s3-proxy.conf` faylini yarating. `cdn.example.com` ni oʻz domeningizga, `my-bucket` ni esa bucket nomiga almashtiring:
+Create `/etc/nginx/conf.d/s3-proxy.conf`. Replace `cdn.example.com` with your domain and `my-bucket` with the name of your bucket:
 
 ```nginx
 proxy_cache_path /var/cache/nginx/s3 levels=1:2 keys_zone=s3cache:10m
@@ -42,25 +42,25 @@ server {
 }
 ```
 
-Konfiguratsiyani tekshiring va Nginx’ni qayta yuklang:
+Check the configuration and reload Nginx:
 
 ```bash
 sudo nginx -t && sudo systemctl reload nginx
 ```
 
-HTTPS sertifikatini oling, masalan, Let's Encrypt’dan:
+Get an HTTPS certificate, for example with Let's Encrypt:
 
 ```bash
 sudo apt install certbot python3-certbot-nginx
 sudo certbot --nginx -d cdn.example.com
 ```
 
-Tekshiring: `curl -I https://cdn.example.com/public/logo.png`. Takroriy soʻrovda `X-Cache-Status: HIT` sarlavhasi fayl keshdan berilganini koʻrsatadi.
+Check: `curl -I https://cdn.example.com/public/logo.png`. On the second request, the `X-Cache-Status: HIT` header shows that the file was served from the cache.
 
 > [!TIP]
-> VM xavfsizlik devorida 80 va 443 portlarini oching. **[Xavfsizlik devori](../../compute/vm-settings/firewall.md)** ga qarang.
+> Open ports 80 and 443 on the VM firewall. See **[Firewall](../../compute/vm-settings/firewall.md)**.
 
 > [!TIP]
-> **Shuningdek qarang:**
+> **See also:**
 >
-> - **[Ulanish parametrlari](../connection.md)**
+> - **[Connection Parameters](../connection.md)**

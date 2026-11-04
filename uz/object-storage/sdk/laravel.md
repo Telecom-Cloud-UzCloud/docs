@@ -94,7 +94,7 @@ $url = Storage::disk('s3')->temporaryUrl($path, now()->addMinutes(30), [
 ]);
 ```
 
-Ommaviy fayllar uchun (masalan, mahsulot rasmlari) **[bucket siyosati](../features/bucket-policy.md)** yordamida papkaga oʻqish huquqini oching va doimiy havoladan foydalaning:
+Ommaviy fayllar uchun (masalan, mahsulot rasmlari) **[bucket siyosati](../buckets/bucket-policy.md)** yordamida papkaga oʻqish huquqini oching va doimiy havoladan foydalaning:
 
 ```php
 $url = Storage::disk('s3')->url('public/products/1.jpg');
@@ -112,7 +112,7 @@ Katta fayllarni PHP orqali oʻtkazmasdan, brauzerdan bevosita bucketga yuklagan 
 return response()->json(compact('url', 'headers'));
 ```
 
-Brauzer faylni `fetch(url, { method: "PUT", headers, body: file })` soʻrovi bilan yuboradi. Bucket uchun **[CORS](../features/cors.md)** ni sozlang.
+Brauzer faylni `fetch(url, { method: "PUT", headers, body: file })` soʻrovi bilan yuboradi. Bucket uchun **[CORS](../buckets/cors.md)** ni sozlang.
 
 > [!TIP]
 > `public` va `local` disklarini vaqtinchalik fayllar uchun qoldiring, foydalanuvchi fayllarini esa `s3` ga oʻtkazing: shunda ilova serverlari holat saqlamaydi, ularni maʼlumotlarni yoʻqotmasdan masshtablash va qayta yaratish mumkin.

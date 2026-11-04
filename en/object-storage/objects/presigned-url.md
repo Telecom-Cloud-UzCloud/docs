@@ -44,7 +44,7 @@ Upload a file using the link (the `Content-Type` must match the one used when si
 curl -X PUT -H "Content-Type: image/jpeg" --upload-file photo.jpg "<presigned URL>"
 ```
 
-To upload from a browser, also configure **[CORS](cors.md)** for the bucket. Examples for other languages: **[JavaScript](../sdk/javascript.md)**, **[PHP](../sdk/php.md)**, **[Go](../sdk/go.md)**.
+To upload from a browser, also configure **[CORS](../buckets/cors.md)** for the bucket. Examples for other languages: **[JavaScript](../sdk/javascript.md)**, **[PHP](../sdk/php.md)**, **[Go](../sdk/go.md)**.
 
 > [!TIP]
 > **See also:**

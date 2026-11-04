@@ -158,7 +158,7 @@ try (InputStream in = Files.newInputStream(Paths.get("video.mp4"))) {
 
 ## Presigned URLs
 
-A presigned URL gives temporary access to an object without sharing your keys. An upload link lets a browser or another service upload a file directly to the bucket — see **[Presigned URL](../features/presigned-url.md)** and **[CORS](../features/cors.md)**.
+A presigned URL gives temporary access to an object without sharing your keys. An upload link lets a browser or another service upload a file directly to the bucket — see **[Presigned URL](../objects/presigned-url.md)** and **[CORS](../buckets/cors.md)**.
 
 ```java
 import java.time.Duration;

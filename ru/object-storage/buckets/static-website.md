@@ -34,7 +34,7 @@ aws s3api put-bucket-policy --bucket my-site --policy file://policy.json
 
 ## Шаг 3. Подключите свой домен
 
-Чтобы сайт открывался по адресу `https://example.com`, а для адресов папок отдавался `index.html`, поставьте перед бакетом Nginx. Возьмите конфигурацию из статьи **[Проксирование S3 через Nginx](../use-cases/nginx-proxy.md)** и замените блок `location`:
+Чтобы сайт открывался по адресу `https://example.com`, а для адресов папок отдавался `index.html`, поставьте перед бакетом Nginx. Возьмите конфигурацию из статьи **[Проксирование S3 через Nginx](../examples/nginx-proxy.md)** и замените блок `location`:
 
 ```nginx
 location / {

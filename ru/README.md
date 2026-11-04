@@ -91,6 +91,17 @@
 - [Создание объектного хранилища](object-storage/create-object-storage.md)
 - [Управление объектным хранилищем](object-storage/manage-object-storage.md)
 - [Подключение по S3](object-storage/connection.md)
+- **Работа с бакетами**
+  - [Версионирование объектов](object-storage/buckets/versioning.md)
+  - [Object Lock](object-storage/buckets/object-lock.md)
+  - [Жизненный цикл объектов](object-storage/buckets/lifecycle.md)
+  - [Настройка CORS](object-storage/buckets/cors.md)
+  - [Bucket Policy](object-storage/buckets/bucket-policy.md)
+  - [Статический сайт](object-storage/buckets/static-website.md)
+- **Работа с объектами**
+  - [Заголовки объектов](object-storage/objects/object-headers.md)
+  - [Мультипарт-загрузка](object-storage/objects/multipart-upload.md)
+  - [Presigned URL](object-storage/objects/presigned-url.md)
 - **Инструменты**
   - [AWS CLI](object-storage/tools/aws-cli.md)
   - [s3cmd](object-storage/tools/s3cmd.md)
@@ -98,21 +109,7 @@
   - [s3fs](object-storage/tools/s3fs.md)
   - [Cyberduck](object-storage/tools/cyberduck.md)
   - [S3 Browser](object-storage/tools/s3-browser.md)
-- **Поддерживаемые возможности**
-  - [Версионирование объектов](object-storage/features/versioning.md)
-  - [Object Lock](object-storage/features/object-lock.md)
-  - [Жизненный цикл объектов](object-storage/features/lifecycle.md)
-  - [Настройка CORS](object-storage/features/cors.md)
-  - [Bucket Policy](object-storage/features/bucket-policy.md)
-  - [Заголовки объектов](object-storage/features/object-headers.md)
-  - [Мультипарт-загрузка](object-storage/features/multipart-upload.md)
-  - [Presigned URL](object-storage/features/presigned-url.md)
-  - [Статический сайт](object-storage/features/static-website.md)
-- **Сценарии использования**
-  - [Бэкапы сервера с restic](object-storage/use-cases/server-backup-restic.md)
-  - [Бэкапы баз данных](object-storage/use-cases/database-backup.md)
-  - [Проксирование S3 через Nginx](object-storage/use-cases/nginx-proxy.md)
-- **SDK**
+- **Работа из кода**
   - [Python (boto3)](object-storage/sdk/python.md)
   - [JavaScript (Node.js)](object-storage/sdk/javascript.md)
   - [PHP](object-storage/sdk/php.md)
@@ -121,6 +118,10 @@
   - [C# / .NET](object-storage/sdk/dotnet.md)
   - [Laravel](object-storage/sdk/laravel.md)
   - [Django](object-storage/sdk/django.md)
+- **Практические примеры**
+  - [Бэкапы сервера с restic](object-storage/examples/server-backup-restic.md)
+  - [Бэкапы баз данных](object-storage/examples/database-backup.md)
+  - [Проксирование S3 через Nginx](object-storage/examples/nginx-proxy.md)
 
 ### Сети
 
