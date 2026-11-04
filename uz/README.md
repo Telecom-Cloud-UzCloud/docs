@@ -18,7 +18,7 @@ Boshqa tillar: [English](../en/README.md) · [Русский](../ru/README.md)
 - [SSH himoyasi](security/ssh-hardening.md)
 - [Tarmoqqa kirish](security/network-access.md)
 - [Hisob xavfsizligi](security/account-security.md)
-- [CVE-2026-98432: Linux yadrosidagi TCP zaifligi](security/bulletins/cve-2026-98432.md)
+- [CVE-2026-98432: Linux yadrosidagi TCP zaifligi](security/vulnerabilities/cve-2026-98432.md)
 
 ### Loyihalar
 

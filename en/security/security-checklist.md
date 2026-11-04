@@ -35,11 +35,11 @@ This checklist lists what to do on every VM. Each item links to a detailed guide
 
 ---
 
-### Security Bulletins
+### Current Vulnerability Alerts
 
-When a critical vulnerability affects VMs of our clients, we publish a bulletin with instructions:
+When a critical vulnerability affects VMs of our clients, we publish an alert with instructions:
 
-- **[CVE-2026-98432: Linux kernel TCP vulnerability](bulletins/cve-2026-98432.md)** — November 4, 2026
+- **[CVE-2026-98432: Linux kernel TCP vulnerability](vulnerabilities/cve-2026-98432.md)** — November 4, 2026
 
 > [!TIP]
 > If your server is critical or something is unclear, contact **[support](../support/support.md)** before you start: we will help you plan the work.
