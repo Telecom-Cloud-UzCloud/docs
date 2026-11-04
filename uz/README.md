@@ -11,6 +11,15 @@ Boshqa tillar: [English](../en/README.md) · [Русский](../ru/README.md)
 - [Kirish](getting-started/introduction.md)
 - [Profilni sozlash](getting-started/profile-setup.md)
 
+### Xavfsizlik
+
+- [Xavfsizlik boʻyicha nazorat roʻyxati](security/security-checklist.md)
+- [Operatsion tizimni yangilash](security/update-os.md)
+- [SSH himoyasi](security/ssh-hardening.md)
+- [Tarmoqqa kirish](security/network-access.md)
+- [Hisob xavfsizligi](security/account-security.md)
+- [CVE-2026-98432: Linux yadrosidagi TCP zaifligi](security/vulnerabilities/cve-2026-98432.md)
+
 ### Loyihalar
 
 - [Loyiha yaratish](projects/create-project.md)
