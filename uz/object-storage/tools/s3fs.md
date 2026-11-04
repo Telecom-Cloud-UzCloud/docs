@@ -51,4 +51,4 @@ Yozuvni qayta ishga tushirmasdan tekshiring: `sudo mount -a`. Uzish uchun: `sudo
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[Vositalar va ulanish parametrlari](overview.md)**
+> - **[Ulanish parametrlari](../connection.md)**

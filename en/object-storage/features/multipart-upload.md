@@ -77,4 +77,4 @@ To clean them up automatically, add the `AbortIncompleteMultipartUpload` **[life
 > [!TIP]
 > **See also:**
 >
-> - **[Supported Features](overview.md)**
+> - **[Connection Parameters](../connection.md)**

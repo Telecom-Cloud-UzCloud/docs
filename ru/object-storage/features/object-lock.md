@@ -56,4 +56,4 @@ aws s3api put-object-legal-hold --bucket my-backups --key db/2026-11-01.sql.gz \
 > [!TIP]
 > **См. также:**
 >
-> - **[Поддерживаемые возможности](overview.md)**
+> - **[Параметры подключения](../connection.md)**

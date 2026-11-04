@@ -32,4 +32,4 @@ Ulanishni saqlash uchun xuddi shu parametrlar bilan **Bookmark → New Bookmark*
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[Vositalar va ulanish parametrlari](overview.md)**
+> - **[Ulanish parametrlari](../connection.md)**

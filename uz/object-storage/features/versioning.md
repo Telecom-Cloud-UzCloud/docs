@@ -62,4 +62,4 @@ aws s3api delete-object --bucket my-bucket --key docs/report.pdf \
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[Qoʻllab-quvvatlanadigan imkoniyatlar](overview.md)**
+> - **[Ulanish parametrlari](../connection.md)**

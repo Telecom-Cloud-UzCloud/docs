@@ -48,4 +48,4 @@ Qoidalarni oʻchirish uchun: `aws s3api delete-bucket-cors --bucket my-bucket`.
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[Qoʻllab-quvvatlanadigan imkoniyatlar](overview.md)**
+> - **[Ulanish parametrlari](../connection.md)**

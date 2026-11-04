@@ -51,4 +51,4 @@ my-bucket /mnt/s3 fuse.s3fs _netdev,allow_other,use_path_request_style,url=https
 > [!TIP]
 > **См. также:**
 >
-> - **[Инструменты и параметры подключения](overview.md)**
+> - **[Параметры подключения](../connection.md)**

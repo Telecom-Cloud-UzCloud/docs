@@ -51,4 +51,4 @@ aws s3api copy-object --bucket my-bucket --key docs/report.pdf \
 > [!TIP]
 > **See also:**
 >
-> - **[Supported Features](overview.md)**
+> - **[Connection Parameters](../connection.md)**

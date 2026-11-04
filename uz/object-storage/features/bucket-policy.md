@@ -80,4 +80,4 @@ Zaxira nusxalarni ishonchli himoya qilish uchun **[Object Lock](object-lock.md)*
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[Qoʻllab-quvvatlanadigan imkoniyatlar](overview.md)**
+> - **[Ulanish parametrlari](../connection.md)**

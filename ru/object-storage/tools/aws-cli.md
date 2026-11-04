@@ -97,4 +97,4 @@ aws s3 presign s3://my-bucket/docs/report.pdf --expires-in 3600
 > [!TIP]
 > **См. также:**
 >
-> - **[Инструменты и параметры подключения](overview.md)**
+> - **[Параметры подключения](../connection.md)**

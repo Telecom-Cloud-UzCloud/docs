@@ -63,4 +63,4 @@ sudo certbot --nginx -d cdn.example.com
 > [!TIP]
 > **См. также:**
 >
-> - **[Сценарии использования](overview.md)**
+> - **[Параметры подключения](../connection.md)**

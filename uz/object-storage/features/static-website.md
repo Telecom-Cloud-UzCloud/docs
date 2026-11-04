@@ -59,4 +59,4 @@ Oddiy koʻp sahifali sayt uchun oxirgi qatorni `error_page 404 /404.html;` ga al
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[Qoʻllab-quvvatlanadigan imkoniyatlar](overview.md)**
+> - **[Ulanish parametrlari](../connection.md)**

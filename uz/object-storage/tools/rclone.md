@@ -61,4 +61,4 @@ rclone copy old-cloud:source-bucket uzcloud:my-bucket --transfers 16 --progress
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[Vositalar va ulanish parametrlari](overview.md)**
+> - **[Ulanish parametrlari](../connection.md)**

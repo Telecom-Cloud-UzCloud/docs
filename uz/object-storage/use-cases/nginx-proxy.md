@@ -63,4 +63,4 @@ Tekshiring: `curl -I https://cdn.example.com/public/logo.png`. Takroriy soʻrovd
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[Foydalanish stsenariylari](overview.md)**
+> - **[Ulanish parametrlari](../connection.md)**

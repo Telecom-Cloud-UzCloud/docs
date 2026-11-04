@@ -80,4 +80,4 @@ aws s3api delete-bucket-policy --bucket my-bucket   # remove the policy
 > [!TIP]
 > **См. также:**
 >
-> - **[Поддерживаемые возможности](overview.md)**
+> - **[Параметры подключения](../connection.md)**

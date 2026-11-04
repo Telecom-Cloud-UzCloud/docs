@@ -95,4 +95,4 @@ Katta fayllar uchun `github.com/aws/aws-sdk-go-v2/feature/s3/manager` dagi `mana
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[S3 uchun SDK](overview.md)**
+> - **[Ulanish parametrlari](../connection.md)**

@@ -63,4 +63,4 @@ Check: `curl -I https://cdn.example.com/public/logo.png`. On the second request,
 > [!TIP]
 > **See also:**
 >
-> - **[Use Cases](overview.md)**
+> - **[Connection Parameters](../connection.md)**

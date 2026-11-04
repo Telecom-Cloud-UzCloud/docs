@@ -59,4 +59,4 @@ aws s3api get-bucket-lifecycle-configuration --bucket my-bucket
 > [!TIP]
 > **См. также:**
 >
-> - **[Поддерживаемые возможности](overview.md)**
+> - **[Параметры подключения](../connection.md)**

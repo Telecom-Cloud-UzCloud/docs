@@ -67,4 +67,4 @@ s3.delete_object(Bucket=BUCKET, Key="docs/report.pdf")
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[S3 uchun SDK](overview.md)**
+> - **[Ulanish parametrlari](../connection.md)**

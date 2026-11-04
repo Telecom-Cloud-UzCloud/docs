@@ -48,4 +48,4 @@ curl -i -X OPTIONS "https://s3.uzcstorage.uz/my-bucket/image.png" \
 > [!TIP]
 > **См. также:**
 >
-> - **[Поддерживаемые возможности](overview.md)**
+> - **[Параметры подключения](../connection.md)**

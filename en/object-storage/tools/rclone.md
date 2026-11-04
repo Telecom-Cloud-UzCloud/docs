@@ -61,4 +61,4 @@ rclone copy old-cloud:source-bucket uzcloud:my-bucket --transfers 16 --progress
 > [!TIP]
 > **See also:**
 >
-> - **[Tools and connection parameters](overview.md)**
+> - **[Connection Parameters](../connection.md)**

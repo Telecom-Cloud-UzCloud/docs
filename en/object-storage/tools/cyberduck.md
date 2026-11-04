@@ -32,4 +32,4 @@ To save the connection for later, use **Bookmark → New Bookmark** with the sam
 > [!TIP]
 > **See also:**
 >
-> - **[Tools and connection parameters](overview.md)**
+> - **[Connection Parameters](../connection.md)**

@@ -55,4 +55,4 @@ s3cmd signurl s3://my-bucket/docs/report.pdf +3600
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[Vositalar va ulanish parametrlari](overview.md)**
+> - **[Ulanish parametrlari](../connection.md)**

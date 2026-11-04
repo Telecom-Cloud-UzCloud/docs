@@ -56,4 +56,4 @@ aws s3api put-object-legal-hold --bucket my-backups --key db/2026-11-01.sql.gz \
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[Qoʻllab-quvvatlanadigan imkoniyatlar](overview.md)**
+> - **[Ulanish parametrlari](../connection.md)**

@@ -21,4 +21,4 @@ Bucketlar roʻyxati ochiladi. Fayllarni yuklash uchun ularni oynaga sudrab tashl
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[Vositalar va ulanish parametrlari](overview.md)**
+> - **[Ulanish parametrlari](../connection.md)**

@@ -55,4 +55,4 @@ s3cmd signurl s3://my-bucket/docs/report.pdf +3600
 > [!TIP]
 > **See also:**
 >
-> - **[Tools and connection parameters](overview.md)**
+> - **[Connection Parameters](../connection.md)**

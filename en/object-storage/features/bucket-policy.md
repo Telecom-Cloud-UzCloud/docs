@@ -80,4 +80,4 @@ For reliable protection of backups, use **[Object Lock](object-lock.md)**: unlik
 > [!TIP]
 > **See also:**
 >
-> - **[Supported Features](overview.md)**
+> - **[Connection Parameters](../connection.md)**

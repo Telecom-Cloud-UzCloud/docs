@@ -97,4 +97,4 @@ aws s3 presign s3://my-bucket/docs/report.pdf --expires-in 3600
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[Vositalar va ulanish parametrlari](overview.md)**
+> - **[Ulanish parametrlari](../connection.md)**

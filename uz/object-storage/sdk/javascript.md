@@ -72,4 +72,4 @@ Kodni `s3.mjs` fayliga saqlang va `node s3.mjs` buyrugʻi bilan ishga tushiring.
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[S3 uchun SDK](overview.md)**
+> - **[Ulanish parametrlari](../connection.md)**

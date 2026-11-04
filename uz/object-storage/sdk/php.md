@@ -66,4 +66,4 @@ Katta fayllar uchun `Aws\S3\MultipartUploader` dan foydalaning.
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[S3 uchun SDK](overview.md)**
+> - **[Ulanish parametrlari](../connection.md)**

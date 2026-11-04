@@ -66,4 +66,4 @@ $s3->deleteObject(['Bucket' => $bucket, 'Key' => 'docs/report.pdf']);
 > [!TIP]
 > **См. также:**
 >
-> - **[SDK для S3](overview.md)**
+> - **[Параметры подключения](../connection.md)**

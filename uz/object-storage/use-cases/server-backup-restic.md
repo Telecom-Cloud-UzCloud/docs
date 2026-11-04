@@ -81,4 +81,4 @@ Tiklashni muntazam tekshiring: hech qachon tiklanmagan zaxira nusxa kafolat emas
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[Foydalanish stsenariylari](overview.md)**
+> - **[Ulanish parametrlari](../connection.md)**

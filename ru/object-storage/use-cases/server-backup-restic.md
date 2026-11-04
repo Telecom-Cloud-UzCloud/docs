@@ -81,4 +81,4 @@ $R check                                                 # verify the repository
 > [!TIP]
 > **См. также:**
 >
-> - **[Сценарии использования](overview.md)**
+> - **[Параметры подключения](../connection.md)**

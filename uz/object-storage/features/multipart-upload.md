@@ -77,4 +77,4 @@ Ularni avtomatik tozalash uchun `AbortIncompleteMultipartUpload` **[hayot sikli 
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[Qoʻllab-quvvatlanadigan imkoniyatlar](overview.md)**
+> - **[Ulanish parametrlari](../connection.md)**

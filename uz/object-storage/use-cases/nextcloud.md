@@ -43,4 +43,4 @@ Nextcloud fayllarni bucketda `urn:oid:<id>` nomli obyektlar sifatida saqlaydi, s
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[Foydalanish stsenariylari](overview.md)**
+> - **[Ulanish parametrlari](../connection.md)**

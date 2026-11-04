@@ -72,4 +72,4 @@ await s3.send(new DeleteObjectCommand({ Bucket, Key: "docs/report.pdf" }));
 > [!TIP]
 > **См. также:**
 >
-> - **[SDK для S3](overview.md)**
+> - **[Параметры подключения](../connection.md)**

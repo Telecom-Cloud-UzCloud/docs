@@ -48,4 +48,4 @@ To remove the rules: `aws s3api delete-bucket-cors --bucket my-bucket`.
 > [!TIP]
 > **See also:**
 >
-> - **[Supported Features](overview.md)**
+> - **[Connection Parameters](../connection.md)**

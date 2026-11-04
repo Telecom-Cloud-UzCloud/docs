@@ -95,4 +95,4 @@ For large files, use the `manager.Uploader` from `github.com/aws/aws-sdk-go-v2/f
 > [!TIP]
 > **See also:**
 >
-> - **[SDK for S3](overview.md)**
+> - **[Connection Parameters](../connection.md)**

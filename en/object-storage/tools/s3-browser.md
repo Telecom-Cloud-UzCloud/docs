@@ -21,4 +21,4 @@ The list of buckets opens. Drag files into the window to upload them; use the co
 > [!TIP]
 > **See also:**
 >
-> - **[Tools and connection parameters](overview.md)**
+> - **[Connection Parameters](../connection.md)**

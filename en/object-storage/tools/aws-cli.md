@@ -97,4 +97,4 @@ See **[Presigned URL](../features/presigned-url.md)**.
 > [!TIP]
 > **See also:**
 >
-> - **[Tools and connection parameters](overview.md)**
+> - **[Connection Parameters](../connection.md)**

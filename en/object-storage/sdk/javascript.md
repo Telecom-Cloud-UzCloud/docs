@@ -72,4 +72,4 @@ Save the code to `s3.mjs` and run it with `node s3.mjs`. For large files, use `U
 > [!TIP]
 > **See also:**
 >
-> - **[SDK for S3](overview.md)**
+> - **[Connection Parameters](../connection.md)**

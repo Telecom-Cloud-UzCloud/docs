@@ -62,4 +62,4 @@ aws s3api delete-object --bucket my-bucket --key docs/report.pdf \
 > [!TIP]
 > **См. также:**
 >
-> - **[Поддерживаемые возможности](overview.md)**
+> - **[Параметры подключения](../connection.md)**

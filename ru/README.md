@@ -90,8 +90,8 @@
 
 - [Создание объектного хранилища](object-storage/create-object-storage.md)
 - [Управление объектным хранилищем](object-storage/manage-object-storage.md)
+- [Подключение по S3](object-storage/connection.md)
 - **Инструменты**
-  - [Инструменты и параметры подключения](object-storage/tools/overview.md)
   - [AWS CLI](object-storage/tools/aws-cli.md)
   - [s3cmd](object-storage/tools/s3cmd.md)
   - [rclone](object-storage/tools/rclone.md)
@@ -99,7 +99,6 @@
   - [Cyberduck](object-storage/tools/cyberduck.md)
   - [S3 Browser](object-storage/tools/s3-browser.md)
 - **Поддерживаемые возможности**
-  - [Обзор возможностей](object-storage/features/overview.md)
   - [Версионирование объектов](object-storage/features/versioning.md)
   - [Object Lock](object-storage/features/object-lock.md)
   - [Жизненный цикл объектов](object-storage/features/lifecycle.md)
@@ -110,13 +109,11 @@
   - [Presigned URL](object-storage/features/presigned-url.md)
   - [Статический сайт](object-storage/features/static-website.md)
 - **Сценарии использования**
-  - [Обзор сценариев](object-storage/use-cases/overview.md)
   - [Бэкапы сервера с restic](object-storage/use-cases/server-backup-restic.md)
   - [Бэкапы баз данных](object-storage/use-cases/database-backup.md)
   - [Nextcloud с S3](object-storage/use-cases/nextcloud.md)
   - [Проксирование S3 через Nginx](object-storage/use-cases/nginx-proxy.md)
 - **SDK**
-  - [SDK для S3](object-storage/sdk/overview.md)
   - [Python (boto3)](object-storage/sdk/python.md)
   - [JavaScript (Node.js)](object-storage/sdk/javascript.md)
   - [PHP](object-storage/sdk/php.md)

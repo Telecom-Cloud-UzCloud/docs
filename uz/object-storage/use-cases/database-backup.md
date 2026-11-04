@@ -72,4 +72,4 @@ aws s3 cp s3://my-backups/mysql/shop/shop-2026-11-04-0230.sql.gz - | gunzip | my
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[Foydalanish stsenariylari](overview.md)**
+> - **[Ulanish parametrlari](../connection.md)**

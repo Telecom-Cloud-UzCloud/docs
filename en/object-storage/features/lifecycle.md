@@ -59,4 +59,4 @@ To remove all rules: `aws s3api delete-bucket-lifecycle --bucket my-bucket`.
 > [!TIP]
 > **See also:**
 >
-> - **[Supported Features](overview.md)**
+> - **[Connection Parameters](../connection.md)**

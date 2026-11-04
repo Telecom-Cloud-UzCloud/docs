@@ -44,9 +44,9 @@ print(url)
 curl -X PUT -H "Content-Type: image/jpeg" --upload-file photo.jpg "<presigned URL>"
 ```
 
-Для загрузки из браузера также настройте для бакета **[CORS](cors.md)**. Примеры для других языков — в разделе **[SDK](../sdk/overview.md)**.
+Для загрузки из браузера также настройте для бакета **[CORS](cors.md)**. Примеры для других языков: **[JavaScript](../sdk/javascript.md)**, **[PHP](../sdk/php.md)**, **[Go](../sdk/go.md)**.
 
 > [!TIP]
 > **См. также:**
 >
-> - **[Поддерживаемые возможности](overview.md)**
+> - **[Параметры подключения](../connection.md)**

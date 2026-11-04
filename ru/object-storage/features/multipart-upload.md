@@ -77,4 +77,4 @@ aws s3api abort-multipart-upload --bucket my-bucket \
 > [!TIP]
 > **См. также:**
 >
-> - **[Поддерживаемые возможности](overview.md)**
+> - **[Параметры подключения](../connection.md)**

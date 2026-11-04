@@ -72,4 +72,4 @@ aws s3 cp s3://my-backups/mysql/shop/shop-2026-11-04-0230.sql.gz - | gunzip | my
 > [!TIP]
 > **См. также:**
 >
-> - **[Сценарии использования](overview.md)**
+> - **[Параметры подключения](../connection.md)**

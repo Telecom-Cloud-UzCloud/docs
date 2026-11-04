@@ -43,4 +43,4 @@ Nextcloud stores files in the bucket as objects named `urn:oid:<id>`, so the fil
 > [!TIP]
 > **See also:**
 >
-> - **[Use Cases](overview.md)**
+> - **[Connection Parameters](../connection.md)**

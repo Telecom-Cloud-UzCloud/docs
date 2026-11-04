@@ -59,4 +59,4 @@ Barcha qoidalarni oʻchirish uchun: `aws s3api delete-bucket-lifecycle --bucket 
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[Qoʻllab-quvvatlanadigan imkoniyatlar](overview.md)**
+> - **[Ulanish parametrlari](../connection.md)**

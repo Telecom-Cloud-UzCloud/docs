@@ -67,4 +67,4 @@ s3.delete_object(Bucket=BUCKET, Key="docs/report.pdf")
 > [!TIP]
 > **See also:**
 >
-> - **[SDK for S3](overview.md)**
+> - **[Connection Parameters](../connection.md)**

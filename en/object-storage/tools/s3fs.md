@@ -51,4 +51,4 @@ Check the entry without rebooting: `sudo mount -a`. To unmount: `sudo umount /mn
 > [!TIP]
 > **See also:**
 >
-> - **[Tools and connection parameters](overview.md)**
+> - **[Connection Parameters](../connection.md)**

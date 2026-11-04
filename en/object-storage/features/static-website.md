@@ -59,4 +59,4 @@ For a regular multi-page site, replace the last line with `error_page 404 /404.h
 > [!TIP]
 > **See also:**
 >
-> - **[Supported Features](overview.md)**
+> - **[Connection Parameters](../connection.md)**

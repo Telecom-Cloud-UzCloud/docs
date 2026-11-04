@@ -66,4 +66,4 @@ For large files, use `Aws\S3\MultipartUploader`.
 > [!TIP]
 > **See also:**
 >
-> - **[SDK for S3](overview.md)**
+> - **[Connection Parameters](../connection.md)**

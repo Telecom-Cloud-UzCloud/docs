@@ -44,9 +44,9 @@ Faylni havola orqali yuklang (`Content-Type` imzolashda koʻrsatilgan bilan mos 
 curl -X PUT -H "Content-Type: image/jpeg" --upload-file photo.jpg "<presigned URL>"
 ```
 
-Brauzerdan yuklash uchun bucket uchun **[CORS](cors.md)** ni ham sozlang. Boshqa tillar uchun misollar **[SDK](../sdk/overview.md)** boʻlimida.
+Brauzerdan yuklash uchun bucket uchun **[CORS](cors.md)** ni ham sozlang. Boshqa tillar uchun misollar: **[JavaScript](../sdk/javascript.md)**, **[PHP](../sdk/php.md)**, **[Go](../sdk/go.md)**.
 
 > [!TIP]
 > **Shuningdek qarang:**
 >
-> - **[Qoʻllab-quvvatlanadigan imkoniyatlar](overview.md)**
+> - **[Ulanish parametrlari](../connection.md)**
