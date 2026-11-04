@@ -99,13 +99,13 @@ Other languages: [Русский](../ru/README.md) · [Oʻzbekcha](../uz/README.
   - [Object Headers](object-storage/features/object-headers.md)
   - [Multipart Upload](object-storage/features/multipart-upload.md)
   - [Presigned URL](object-storage/features/presigned-url.md)
-  - [Nginx Proxy for S3](object-storage/features/nginx-proxy.md)
   - [Static Website](object-storage/features/static-website.md)
 - **Use Cases**
   - [Use Cases](object-storage/use-cases/overview.md)
   - [Server Backups with restic](object-storage/use-cases/server-backup-restic.md)
   - [Database Backups](object-storage/use-cases/database-backup.md)
   - [Nextcloud with S3](object-storage/use-cases/nextcloud.md)
+  - [Nginx Proxy for S3](object-storage/use-cases/nginx-proxy.md)
 - **SDK**
   - [SDK for S3](object-storage/sdk/overview.md)
   - [Python (boto3)](object-storage/sdk/python.md)

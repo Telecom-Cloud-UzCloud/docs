@@ -7,7 +7,7 @@ Object storage is cheaper than disks and grows without limits, so it is well sui
 | Backups of server files with encryption and deduplication | [Server Backups with restic](server-backup-restic.md) |
 | Daily dumps of PostgreSQL and MySQL databases | [Database Backups](database-backup.md) |
 | File storage for Nextcloud | [Nextcloud with S3](nextcloud.md) |
-| Images, video and other static files of a website | [Nginx Proxy for S3](../features/nginx-proxy.md) |
+| Images, video and other static files of a website | [Nginx Proxy for S3](nginx-proxy.md) |
 | Hosting a static website | [Static Website](../features/static-website.md) |
 
 > [!TIP]

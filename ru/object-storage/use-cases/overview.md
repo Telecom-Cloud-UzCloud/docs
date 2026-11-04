@@ -7,7 +7,7 @@
 | Резервные копии файлов сервера с шифрованием и дедупликацией | [Бэкапы сервера с restic](server-backup-restic.md) |
 | Ежедневные дампы баз данных PostgreSQL и MySQL | [Бэкапы баз данных](database-backup.md) |
 | Хранилище файлов для Nextcloud | [Nextcloud с S3](nextcloud.md) |
-| Изображения, видео и другая статика сайта | [Проксирование S3 через Nginx](../features/nginx-proxy.md) |
+| Изображения, видео и другая статика сайта | [Проксирование S3 через Nginx](nginx-proxy.md) |
 | Размещение статического сайта | [Статический сайт](../features/static-website.md) |
 
 > [!TIP]
