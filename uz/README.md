@@ -81,6 +81,37 @@ Boshqa tillar: [English](../en/README.md) · [Русский](../ru/README.md)
 
 - [Obyektli xotira yaratish](object-storage/create-object-storage.md)
 - [Obyektli xotirani boshqarish](object-storage/manage-object-storage.md)
+- **Vositalar**
+  - [Vositalar va ulanish parametrlari](object-storage/tools/overview.md)
+  - [AWS CLI](object-storage/tools/aws-cli.md)
+  - [s3cmd](object-storage/tools/s3cmd.md)
+  - [rclone](object-storage/tools/rclone.md)
+  - [s3fs](object-storage/tools/s3fs.md)
+  - [Cyberduck](object-storage/tools/cyberduck.md)
+  - [S3 Browser](object-storage/tools/s3-browser.md)
+- **Qoʻllab-quvvatlanadigan imkoniyatlar**
+  - [Imkoniyatlar sharhi](object-storage/features/overview.md)
+  - [Obyektlarni versiyalash](object-storage/features/versioning.md)
+  - [Object Lock](object-storage/features/object-lock.md)
+  - [Obyektlarning hayot sikli](object-storage/features/lifecycle.md)
+  - [CORS’ni sozlash](object-storage/features/cors.md)
+  - [Bucket Policy](object-storage/features/bucket-policy.md)
+  - [Obyekt sarlavhalari](object-storage/features/object-headers.md)
+  - [Multipart yuklash](object-storage/features/multipart-upload.md)
+  - [Presigned URL](object-storage/features/presigned-url.md)
+  - [S3’ni Nginx orqali proksilash](object-storage/features/nginx-proxy.md)
+  - [Statik sayt](object-storage/features/static-website.md)
+- **Foydalanish stsenariylari**
+  - [Stsenariylar sharhi](object-storage/use-cases/overview.md)
+  - [restic bilan server zaxira nusxalari](object-storage/use-cases/server-backup-restic.md)
+  - [Maʼlumotlar bazalari zaxira nusxalari](object-storage/use-cases/database-backup.md)
+  - [S3 bilan Nextcloud](object-storage/use-cases/nextcloud.md)
+- **SDK**
+  - [S3 uchun SDK](object-storage/sdk/overview.md)
+  - [Python (boto3)](object-storage/sdk/python.md)
+  - [JavaScript (Node.js)](object-storage/sdk/javascript.md)
+  - [PHP](object-storage/sdk/php.md)
+  - [Go](object-storage/sdk/go.md)
 
 ### Tarmoqlar
 
