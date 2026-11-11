@@ -109,6 +109,7 @@
   - [s3fs](object-storage/tools/s3fs.md)
   - [Cyberduck](object-storage/tools/cyberduck.md)
   - [S3 Browser](object-storage/tools/s3-browser.md)
+  - [S3 Explorer](object-storage/tools/s3-explorer.md)
 - **Работа из кода**
   - [Python (boto3)](object-storage/sdk/python.md)
   - [JavaScript (Node.js)](object-storage/sdk/javascript.md)
