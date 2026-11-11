@@ -34,7 +34,7 @@ Manzil, mintaqa va kalitlardan tashqari, vositangiz yoki SDK’da ikkita sozlama
 Mashhur mijozlar uchun tayyor sozlamalar:
 
 - Buyruqlar satri: **[AWS CLI](tools/aws-cli.md)**, **[s3cmd](tools/s3cmd.md)**, **[rclone](tools/rclone.md)**, **[s3fs](tools/s3fs.md)**.
-- Fayl menejerlari: **[Cyberduck](tools/cyberduck.md)**, **[S3 Browser](tools/s3-browser.md)**.
+- Fayl menejerlari: **[Cyberduck](tools/cyberduck.md)**, **[S3 Browser](tools/s3-browser.md)**, **[S3 Explorer](tools/s3-explorer.md)**.
 - Dasturlash tillari: **[Python](sdk/python.md)**, **[JavaScript](sdk/javascript.md)**, **[PHP](sdk/php.md)**, **[Go](sdk/go.md)**.
 
 > [!TIP]
