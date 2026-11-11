@@ -34,7 +34,7 @@ In addition to the endpoint, region and keys, check two settings in your tool or
 Ready-made settings for popular clients:
 
 - Command line: **[AWS CLI](tools/aws-cli.md)**, **[s3cmd](tools/s3cmd.md)**, **[rclone](tools/rclone.md)**, **[s3fs](tools/s3fs.md)**.
-- File managers: **[Cyberduck](tools/cyberduck.md)**, **[S3 Browser](tools/s3-browser.md)**.
+- File managers: **[Cyberduck](tools/cyberduck.md)**, **[S3 Browser](tools/s3-browser.md)**, **[S3 Explorer](tools/s3-explorer.md)**.
 - Programming languages: **[Python](sdk/python.md)**, **[JavaScript](sdk/javascript.md)**, **[PHP](sdk/php.md)**, **[Go](sdk/go.md)**.
 
 > [!TIP]
